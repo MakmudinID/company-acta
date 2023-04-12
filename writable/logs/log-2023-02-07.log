@@ -1,0 +1,80 @@
+INFO - 2023-02-07 00:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-07 00:33:08 --> Encrypter needs a starter key.
+in SYSTEMPATH\Encryption\Encryption.php on line 124.
+ 1 SYSTEMPATH\Encryption\Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH\Config\Services.php(242): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH\Controllers\Cms.php(166): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 00:33:09 --> Encrypter needs a starter key.
+in SYSTEMPATH\Encryption\Encryption.php on line 124.
+ 1 SYSTEMPATH\Encryption\Encryption.php(124): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH\Config\Services.php(242): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH\Controllers\Cms.php(166): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-07 00:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:50:04 --> CSRF token verified.
+INFO - 2023-02-07 00:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:50:12 --> CSRF token verified.
+INFO - 2023-02-07 00:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:50:21 --> CSRF token verified.
+INFO - 2023-02-07 00:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:50:55 --> CSRF token verified.
+INFO - 2023-02-07 00:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:52:09 --> CSRF token verified.
+INFO - 2023-02-07 00:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:52:38 --> CSRF token verified.
+INFO - 2023-02-07 00:52:52 --> CSRF token verified.
+INFO - 2023-02-07 00:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:52:52 --> CSRF token verified.
+INFO - 2023-02-07 00:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:58:49 --> CSRF token verified.
+INFO - 2023-02-07 00:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:59:31 --> CSRF token verified.
+INFO - 2023-02-07 00:59:43 --> CSRF token verified.
+INFO - 2023-02-07 00:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 00:59:44 --> CSRF token verified.
+INFO - 2023-02-07 01:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 01:01:04 --> CSRF token verified.
+INFO - 2023-02-07 01:01:18 --> CSRF token verified.
+INFO - 2023-02-07 01:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 01:01:18 --> CSRF token verified.
+INFO - 2023-02-07 01:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-07 01:02:08 --> CSRF token verified.
+INFO - 2023-02-07 01:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

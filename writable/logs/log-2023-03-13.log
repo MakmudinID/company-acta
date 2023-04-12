@@ -1,0 +1,877 @@
+ERROR - 2023-03-13 13:51:43 --> mysqli_sql_exception: Table 'acta.produk_value' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-03-13 13:51:43 --> Table 'acta.produk_value' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `produk_value`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 06:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 06:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 06:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 06:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 06:57:14 --> CSRF token verified.
+INFO - 2023-03-13 06:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 06:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 06:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 06:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 06:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 06:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 06:59:04 --> CSRF token verified.
+CRITICAL - 2023-03-13 13:59:04 --> Undefined property: stdClass::$video_url
+in APPPATH\Controllers\Konfigurasi.php on line 631.
+ 1 APPPATH\Controllers\Konfigurasi.php(631): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$video_url', 'APPPATH\\Controllers\\Konfigurasi.php', 631)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:02:01 --> CSRF token verified.
+CRITICAL - 2023-03-13 14:02:01 --> Undefined property: stdClass::$video_url
+in APPPATH\Controllers\Konfigurasi.php on line 631.
+ 1 APPPATH\Controllers\Konfigurasi.php(631): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$video_url', 'APPPATH\\Controllers\\Konfigurasi.php', 631)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:02:18 --> CSRF token verified.
+CRITICAL - 2023-03-13 14:02:18 --> Undefined property: stdClass::$video_url
+in APPPATH\Controllers\Konfigurasi.php on line 631.
+ 1 APPPATH\Controllers\Konfigurasi.php(631): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$video_url', 'APPPATH\\Controllers\\Konfigurasi.php', 631)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:02:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:02:29 --> CSRF token verified.
+CRITICAL - 2023-03-13 14:02:29 --> Undefined property: stdClass::$video_url
+in APPPATH\Controllers\Konfigurasi.php on line 631.
+ 1 APPPATH\Controllers\Konfigurasi.php(631): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$video_url', 'APPPATH\\Controllers\\Konfigurasi.php', 631)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:02:59 --> CSRF token verified.
+ERROR - 2023-03-13 14:02:59 --> mysqli_sql_exception: Table 'acta.produk_value' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `produk_...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `produk_...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `produk_...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `produk_...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(677): App\Models\ServerSideModel->limitRows('produk_value', 'produk_value.*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_value_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:02:59 --> Table 'acta.produk_value' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `produk_value`.*
+FROM `produk_value`
+ORDER BY `deskripsi` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(677): App\Models\ServerSideModel->limitRows('produk_value', 'produk_value.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_value_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:03:04 --> CSRF token verified.
+ERROR - 2023-03-13 14:03:04 --> mysqli_sql_exception: Table 'acta.merek_dagang' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:03:04 --> Table 'acta.merek_dagang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `merek_dagang`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:03:59 --> CSRF token verified.
+ERROR - 2023-03-13 14:03:59 --> mysqli_sql_exception: Table 'acta.merek_dagang' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:03:59 --> Table 'acta.merek_dagang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `merek_dagang`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:04:18 --> CSRF token verified.
+ERROR - 2023-03-13 14:04:18 --> mysqli_sql_exception: Table 'acta.merek_dagang' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:04:18 --> Table 'acta.merek_dagang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `merek_dagang`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:04:58 --> CSRF token verified.
+ERROR - 2023-03-13 14:04:58 --> mysqli_sql_exception: Table 'acta.merek_dagang' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:04:58 --> Table 'acta.merek_dagang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `merek_dagang`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-13 14:05:07 --> mysqli_sql_exception: Table 'acta.merek_dagang' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Controllers\Cms.php(1246): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery()
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-03-13 14:05:07 --> Table 'acta.merek_dagang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `merek_dagang`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Controllers\Cms.php(1246): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:05:09 --> CSRF token verified.
+ERROR - 2023-03-13 14:05:09 --> mysqli_sql_exception: Table 'acta.merek_dagang' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:05:09 --> Table 'acta.merek_dagang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `merek_dagang`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:06:34 --> CSRF token verified.
+ERROR - 2023-03-13 14:06:34 --> mysqli_sql_exception: Table 'acta.merek_dagang' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:06:34 --> Table 'acta.merek_dagang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `merek_dagang`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:07:15 --> CSRF token verified.
+ERROR - 2023-03-13 14:07:15 --> mysqli_sql_exception: Table 'acta.merek_dagang' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:07:15 --> Table 'acta.merek_dagang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `merek_dagang`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:07:31 --> CSRF token verified.
+ERROR - 2023-03-13 14:07:31 --> mysqli_sql_exception: Table 'acta.pengurus' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Konfigurasi.php(140): App\Models\ServerSideModel->limitRows('pengurus', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Konfigurasi->struktur_organisasi_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:07:31 --> Table 'acta.pengurus' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengurus`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Konfigurasi.php(140): App\Models\ServerSideModel->limitRows('pengurus', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->struktur_organisasi_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:07:38 --> CSRF token verified.
+CRITICAL - 2023-03-13 14:07:38 --> Undefined property: stdClass::$video_url
+in APPPATH\Controllers\Konfigurasi.php on line 631.
+ 1 APPPATH\Controllers\Konfigurasi.php(631): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$video_url', 'APPPATH\\Controllers\\Konfigurasi.php', 631)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-13 14:07:43 --> mysqli_sql_exception: Table 'acta.merek_dagang' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Controllers\Cms.php(447): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_unggulan()
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-03-13 14:07:43 --> Table 'acta.merek_dagang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `merek_dagang`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Controllers\Cms.php(447): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_unggulan()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:07:45 --> CSRF token verified.
+CRITICAL - 2023-03-13 14:07:45 --> Undefined property: stdClass::$video_url
+in APPPATH\Controllers\Konfigurasi.php on line 631.
+ 1 APPPATH\Controllers\Konfigurasi.php(631): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$video_url', 'APPPATH\\Controllers\\Konfigurasi.php', 631)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:07:49 --> CSRF token verified.
+ERROR - 2023-03-13 14:07:49 --> mysqli_sql_exception: Table 'acta.merek_dagang' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:07:49 --> Table 'acta.merek_dagang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `merek_dagang`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:09:02 --> CSRF token verified.
+ERROR - 2023-03-13 14:09:03 --> mysqli_sql_exception: Table 'acta.merek_dagang' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:09:03 --> Table 'acta.merek_dagang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `merek_dagang`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-13 14:09:07 --> mysqli_sql_exception: Table 'acta.produk_value' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-03-13 14:09:07 --> Table 'acta.produk_value' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `produk_value`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:12:53 --> CSRF token verified.
+ERROR - 2023-03-13 14:12:53 --> mysqli_sql_exception: Table 'acta.merek_dagang' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:12:53 --> Table 'acta.merek_dagang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `merek_dagang`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:13:04 --> CSRF token verified.
+ERROR - 2023-03-13 14:13:04 --> mysqli_sql_exception: Table 'acta.merek_dagang' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:13:04 --> Table 'acta.merek_dagang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `merek_dagang`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:13:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:13:12 --> CSRF token verified.
+ERROR - 2023-03-13 14:13:12 --> mysqli_sql_exception: Table 'acta.merek_dagang' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:13:12 --> Table 'acta.merek_dagang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `merek_dagang`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:13:17 --> CSRF token verified.
+ERROR - 2023-03-13 14:13:18 --> mysqli_sql_exception: Table 'acta.merek_dagang' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:13:18 --> Table 'acta.merek_dagang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `merek_dagang`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(974): App\Models\ServerSideModel->limitRows('merek_dagang', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->merek_dagang_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:16:15 --> CSRF token verified.
+CRITICAL - 2023-03-13 14:16:15 --> Undefined property: stdClass::$video_url
+in APPPATH\Controllers\Konfigurasi.php on line 631.
+ 1 APPPATH\Controllers\Konfigurasi.php(631): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$video_url', 'APPPATH\\Controllers\\Konfigurasi.php', 631)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:16:46 --> CSRF token verified.
+CRITICAL - 2023-03-13 14:16:46 --> Undefined property: stdClass::$video_url
+in APPPATH\Controllers\Konfigurasi.php on line 631.
+ 1 APPPATH\Controllers\Konfigurasi.php(631): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$video_url', 'APPPATH\\Controllers\\Konfigurasi.php', 631)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:17:06 --> CSRF token verified.
+CRITICAL - 2023-03-13 14:17:06 --> Undefined property: stdClass::$video_url
+in APPPATH\Controllers\Konfigurasi.php on line 631.
+ 1 APPPATH\Controllers\Konfigurasi.php(631): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$video_url', 'APPPATH\\Controllers\\Konfigurasi.php', 631)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:17:10 --> CSRF token verified.
+INFO - 2023-03-13 07:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:22:51 --> CSRF token verified.
+INFO - 2023-03-13 07:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:23:40 --> CSRF token verified.
+INFO - 2023-03-13 07:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:30:28 --> CSRF token verified.
+INFO - 2023-03-13 07:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:30:50 --> CSRF token verified.
+ERROR - 2023-03-13 14:30:50 --> mysqli_sql_exception: Unknown column 'status' in 'field list' in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(35): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(867): App\Models\ServerSideModel->createRows(Array, 'product_categor...')
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->create_product_category()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:30:50 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_category` (`nama`, `status`, `create_user`, `create_date`, `photo_url`) VALUES (:nama:, :status:, :create_user:, :create_date:, :photo_url:)', [...], false)
+ 2 APPPATH\Models\ServerSideModel.php(35): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Cms.php(867): App\Models\ServerSideModel->createRows([...], 'product_category')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->create_product_category()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:31:36 --> CSRF token verified.
+INFO - 2023-03-13 07:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:31:36 --> CSRF token verified.
+INFO - 2023-03-13 07:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:33:51 --> CSRF token verified.
+INFO - 2023-03-13 07:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:33:58 --> CSRF token verified.
+ERROR - 2023-03-13 14:33:58 --> mysqli_sql_exception: Unknown column 'no_urut' in 'order clause' in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `gallery...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `gallery...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `gallery...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(1259): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:33:58 --> Unknown column 'no_urut' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery`.*
+FROM `gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1259): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:34:02 --> CSRF token verified.
+ERROR - 2023-03-13 14:34:02 --> mysqli_sql_exception: Unknown column 'no_urut' in 'order clause' in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `gallery...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `gallery...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `gallery...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(1259): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 14:34:02 --> Unknown column 'no_urut' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery`.*
+FROM `gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1259): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 07:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:34:10 --> CSRF token verified.
+INFO - 2023-03-13 07:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 07:46:23 --> CSRF token verified.
+INFO - 2023-03-13 07:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 08:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 08:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 08:03:26 --> CSRF token verified.
+INFO - 2023-03-13 08:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 08:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 08:03:37 --> CSRF token verified.
+INFO - 2023-03-13 08:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 15:03:39 --> Undefined variable $merek_dagang
+in APPPATH\Views\cms\produk\product.php on line 54.
+ 1 APPPATH\Views\cms\produk\product.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $merek_dagang', 'APPPATH\\Views\\cms\\produk\\product.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cms\\produk\\product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('cms/produk/product', [], true)
+ 5 APPPATH\Views\template\template.php(4): view('cms/produk/product')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template/template', [], true)
+ 9 APPPATH\Controllers\Cms.php(450): view('template/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->product()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 08:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-13 15:03:43 --> Undefined variable $merek_dagang
+in APPPATH\Views\cms\produk\product.php on line 54.
+ 1 APPPATH\Views\cms\produk\product.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $merek_dagang', 'APPPATH\\Views\\cms\\produk\\product.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cms\\produk\\product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('cms/produk/product', [], true)
+ 5 APPPATH\Views\template\template.php(4): view('cms/produk/product')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template/template', [], true)
+ 9 APPPATH\Controllers\Cms.php(450): view('template/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->product()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 08:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 08:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 08:04:22 --> CSRF token verified.
+INFO - 2023-03-13 08:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 08:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 08:04:36 --> CSRF token verified.
+ERROR - 2023-03-13 15:04:36 --> mysqli_sql_exception: Table 'acta.testimoni' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(46): App\Models\ServerSideModel->limitRows('testimoni', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->testimoni_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 15:04:36 --> Table 'acta.testimoni' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `testimoni`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(46): App\Models\ServerSideModel->limitRows('testimoni', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->testimoni_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-13 08:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 08:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-13 08:04:40 --> CSRF token verified.
+ERROR - 2023-03-13 15:04:40 --> mysqli_sql_exception: Table 'acta.mitra' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(261): App\Models\ServerSideModel->limitRows('mitra', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->mitra_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-13 15:04:40 --> Table 'acta.mitra' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mitra`
+ORDER BY `nama_mitra` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(261): App\Models\ServerSideModel->limitRows('mitra', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->mitra_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

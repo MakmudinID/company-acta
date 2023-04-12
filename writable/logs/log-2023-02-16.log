@@ -1,0 +1,213 @@
+ERROR - 2023-02-16 06:43:59 --> mysqli_sql_exception: Table 'cv-thi.produk_gallery' doesn't exist in C:\xampp\htdocs\tiarahalalindonesia\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tiarahalalindonesia\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `produk_...', 0)
+#1 C:\xampp\htdocs\tiarahalalindonesia\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `produk_...')
+#2 C:\xampp\htdocs\tiarahalalindonesia\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `produk_...')
+#3 C:\xampp\htdocs\tiarahalalindonesia\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `produk_...', Array, false)
+#4 C:\xampp\htdocs\tiarahalalindonesia\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tiarahalalindonesia\app\Controllers\Cms.php(1256): App\Models\ServerSideModel->limitRows('produk_gallery', 'produk_gallery....', Array, Array, Array)
+#6 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tiarahalalindonesia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\tiarahalalindonesia\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-16 06:43:59 --> Table 'cv-thi.produk_gallery' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `produk_gallery`.*
+FROM `produk_gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1256): App\Models\ServerSideModel->limitRows('produk_gallery', 'produk_gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 06:44:19 --> mysqli_sql_exception: Table 'cv-thi.produk_gallery' doesn't exist in C:\xampp\htdocs\tiarahalalindonesia\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tiarahalalindonesia\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `produk_...', 0)
+#1 C:\xampp\htdocs\tiarahalalindonesia\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `produk_...')
+#2 C:\xampp\htdocs\tiarahalalindonesia\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `produk_...')
+#3 C:\xampp\htdocs\tiarahalalindonesia\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `produk_...', Array, false)
+#4 C:\xampp\htdocs\tiarahalalindonesia\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tiarahalalindonesia\app\Controllers\Cms.php(1256): App\Models\ServerSideModel->limitRows('produk_gallery', 'produk_gallery....', Array, Array, Array)
+#6 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tiarahalalindonesia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\tiarahalalindonesia\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-16 06:44:19 --> Table 'cv-thi.produk_gallery' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `produk_gallery`.*
+FROM `produk_gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1256): App\Models\ServerSideModel->limitRows('produk_gallery', 'produk_gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-16 06:44:54 --> mysqli_sql_exception: Table 'cv-thi.produk_gallery' doesn't exist in C:\xampp\htdocs\tiarahalalindonesia\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tiarahalalindonesia\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `produk_...', 0)
+#1 C:\xampp\htdocs\tiarahalalindonesia\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `produk_...')
+#2 C:\xampp\htdocs\tiarahalalindonesia\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `produk_...')
+#3 C:\xampp\htdocs\tiarahalalindonesia\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `produk_...', Array, false)
+#4 C:\xampp\htdocs\tiarahalalindonesia\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tiarahalalindonesia\app\Controllers\Cms.php(1256): App\Models\ServerSideModel->limitRows('produk_gallery', 'produk_gallery....', Array, Array, Array)
+#6 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tiarahalalindonesia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\tiarahalalindonesia\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-16 06:44:54 --> Table 'cv-thi.produk_gallery' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `produk_gallery`.*
+FROM `produk_gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1256): App\Models\ServerSideModel->limitRows('produk_gallery', 'produk_gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 06:50:30 --> Decrypting: authentication failed.
+in SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php on line 137.
+ 1 SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php(137): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH\Controllers\Cms.php(1365): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->update_produk_gallery()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 06:50:57 --> Decrypting: authentication failed.
+in SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php on line 137.
+ 1 SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php(137): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH\Controllers\Cms.php(1365): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->update_produk_gallery()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-16 00:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 00:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 00:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 00:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 00:03:18 --> CSRF token verified.
+INFO - 2023-02-16 00:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 00:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 00:03:26 --> CSRF token verified.
+INFO - 2023-02-16 00:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 00:03:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 00:03:28 --> CSRF token verified.
+INFO - 2023-02-16 00:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 00:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 00:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 00:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 00:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 00:59:21 --> CSRF token verified.
+INFO - 2023-02-16 01:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:16:04 --> CSRF token verified.
+INFO - 2023-02-16 01:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:25:21 --> CSRF token verified.
+INFO - 2023-02-16 01:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:25:22 --> CSRF token verified.
+INFO - 2023-02-16 01:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:26:14 --> CSRF token verified.
+INFO - 2023-02-16 01:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:29:11 --> CSRF token verified.
+INFO - 2023-02-16 01:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:29:21 --> CSRF token verified.
+INFO - 2023-02-16 01:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:29:21 --> CSRF token verified.
+INFO - 2023-02-16 01:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:29:33 --> CSRF token verified.
+INFO - 2023-02-16 01:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:30:18 --> CSRF token verified.
+INFO - 2023-02-16 01:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:30:22 --> CSRF token verified.
+INFO - 2023-02-16 01:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:30:22 --> CSRF token verified.
+INFO - 2023-02-16 01:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:32:03 --> CSRF token verified.
+INFO - 2023-02-16 01:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:33:11 --> CSRF token verified.
+INFO - 2023-02-16 01:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:33:32 --> CSRF token verified.
+INFO - 2023-02-16 01:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:33:49 --> CSRF token verified.
+INFO - 2023-02-16 01:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:34:38 --> CSRF token verified.
+INFO - 2023-02-16 01:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:36:12 --> CSRF token verified.
+INFO - 2023-02-16 01:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:37:37 --> CSRF token verified.
+INFO - 2023-02-16 01:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:38:38 --> CSRF token verified.
+INFO - 2023-02-16 01:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 01:38:51 --> CSRF token verified.
+INFO - 2023-02-16 02:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 02:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 02:02:06 --> CSRF token verified.
+INFO - 2023-02-16 02:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 02:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-16 09:13:18 --> Undefined variable $tag
+in APPPATH\Views\home\index.php on line 322.
+ 1 APPPATH\Views\home\index.php(322): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tag', 'APPPATH\\Views\\home\\index.php', 322)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('home/index', [], true)
+ 5 APPPATH\Views\template-front\template.php(4): view('home/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/template', [], true)
+ 9 APPPATH\Controllers\Home.php(31): view('template-front/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-16 09:14:03 --> Undefined variable $tag
+in APPPATH\Views\home\index.php on line 322.
+ 1 APPPATH\Views\home\index.php(322): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tag', 'APPPATH\\Views\\home\\index.php', 322)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('home/index', [], true)
+ 5 APPPATH\Views\template-front\template.php(4): view('home/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/template', [], true)
+ 9 APPPATH\Controllers\Home.php(31): view('template-front/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-16 02:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 02:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-16 02:34:22 --> CSRF token verified.

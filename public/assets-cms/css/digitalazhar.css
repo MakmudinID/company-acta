@@ -1,0 +1,398 @@
+input.parsley-success,
+textarea.parsley-success {
+    color: #468847;
+    border: 1px solid #d6e9c6;
+    background-color: #dff0d8;
+}
+
+input.parsley-error,
+textarea.parsley-error {
+    color: #b94a48;
+    border: 1px solid #eed3d7;
+    background-color: #f2dede;
+}
+
+ul.parsley-errors-list {
+    font-size: 12px;
+    margin: 2px;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.parsley-errors-list li {
+    line-height: 12px;
+    color: red;
+}
+
+.logo {
+    color: black;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+
+.bs-callout code {
+    border-radius: 3px;
+}
+
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+
+.bs-callout-default {
+    border-left-color: #777;
+}
+
+.bs-callout-default h4 {
+    color: #777;
+}
+
+.bs-callout-primary {
+    border-left-color: #428bca;
+}
+
+.bs-callout-primary h4 {
+    color: #428bca;
+}
+
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+
+.bs-callout-success h4 {
+    color: #5cb85c;
+}
+
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+
+.bs-callout-info h4 {
+    color: #5bc0de;
+}
+
+td.details-control {
+    background: url('../../assets/img/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+
+tr.shown td.details-control {
+    background: url('../../assets/img/details_close.png') no-repeat center center;
+}
+
+td.DTE_EditorDetails:hover {
+    background-color: white !important;
+}
+
+.bg-kuning-muda {
+    background-color: lightyellow;
+}
+
+.bg-biru-muda {
+    background-color: lightblue;
+}
+
+.chartdiv {
+    width: 100%;
+    min-height: 300px;
+}
+
+.chartdivx {
+    width: 100%;
+    min-height: 300px;
+}
+
+.chartdivy {
+    width: 100%;
+    min-height: 500px;
+}
+
+.chartdiv_pie1,
+.chartdiv_pie2 {
+    width: 100%;
+    min-height: 500px;
+}
+
+.chartdiv1,
+.chartdiv2,
+.chartdiv3,
+.chartdiv4,
+.chartdiv5 {
+    width: 100%;
+    min-height: 400px;
+    height: 400px;
+}
+
+#customForm {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#customForm fieldset {
+    flex: 1;
+    border: 1px solid #aaa;
+    margin: 0.5em;
+}
+
+#customForm fieldset legend {
+    padding: 5px 20px;
+    border: 1px solid #aaa;
+    font-weight: bold;
+}
+
+#customForm fieldset.main {
+    flex: 2 100%;
+}
+
+#customForm fieldset.main legend {
+    background: #bfffbf;
+}
+
+#customForm fieldset.col1 legend {
+    background: #ffffbf;
+}
+
+#customForm fieldset.col2 legend {
+    background: #ffbfbf;
+}
+
+#customForm fieldset.col3 legend {
+    background: #428bca;
+}
+
+#customForm div.DTE_Field {
+    padding: 5px;
+}
+
+.card-transparant {
+    background-color: rgba(245, 245, 245, 0.9) !important;
+}
+
+fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    width: auto;
+    padding: 0 10px;
+    border-bottom: none;
+}
+
+.daterange-picker {
+    z-index: 1100 !important;
+}
+
+.datepicker {
+    z-index: 1100 !important;
+}
+
+#table tfoot tr {
+    background: lightcyan;
+}
+
+#table tfoot td {
+    font-weight: bold;
+}
+
+table.dataTable tbody tr.selected {
+    color: black !important;
+    background-color: #f0ff1f !important;
+}
+
+table.dataTable tbody tr:hover {
+    color: black !important;
+}
+
+table.dataTable tbody tr:hover>.sorting_1 {
+    color: black !important;
+}
+
+.modal {
+    z-index: 1109 !important;
+}
+
+.modal-backdrop {
+    z-index: 1108 !important;
+}
+
+.DTED_Lightbox_Wrapper {
+    z-index: 1110 !important;
+}
+
+.pdf-table tr td {
+    font-size: 11px;
+    font-family: arial;
+    padding: 5px;
+    border: 1px solid #dadada;
+    border-collapse: collapse;
+}
+
+.pdf-table {
+    border-collapse: collapse;
+}
+
+.pdf-footer tr td {
+    font-size: 11px;
+    font-family: arial;
+}
+
+.pdf {
+    font-family: arial;
+}
+
+.pdf p,
+table tr td {
+    font-family: arial;
+    font-size: 12px;
+}
+
+.pdf li {
+    font-family: arial;
+    font-size: 12px;
+}
+
+.no-border tr td {
+    border: 0px;
+}
+
+td.highlight {
+    background-color: lightskyblue !important;
+}
+
+img {
+    image-orientation: from-image;
+}
+
+
+/** SPINNER CREATION **/
+
+.loader {
+    position: relative;
+    text-align: center;
+    margin: 15px auto 35px auto;
+    z-index: 9999;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 10px solid rgba(0, 0, 0, .3);
+    border-radius: 50%;
+    border-top-color: #000;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+div.DTED DTED_Lightbox_Wrapper {
+    z-index: 65000;
+}
+
+.easy-autocomplete-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 9999 !important;
+    float: left;
+    min-width: 300px;
+    width: 500px;
+    padding: 4px 0;
+    margin: 2px 0 0 0;
+    list-style: none;
+    color: #000;
+    background-color: #ffffff;
+}
+
+#txt_user_mobilephone {
+    width: 300px;
+}
+
+.ui-autocomplete {
+    padding-left: 200px;
+    position: absolute !important;
+    cursor: default;
+    z-index: 2500 !important;
+}
+
+#myBtn {
+    display: none;
+    position: sticky;
+    bottom: 0px;
+    right: 30px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+}
+
+#myBtn:hover {
+    background-color: blue;
+}
+
+.bg-kuning-muda {
+    background-color: #fdffb6 !important;
+}
+
+.bg-biru-muda {
+    background-color: lightblue !important;
+}
+
+.swal2-container {
+    z-index: 20000 !important;
+}

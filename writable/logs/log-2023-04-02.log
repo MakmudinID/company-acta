@@ -1,0 +1,1760 @@
+CRITICAL - 2023-04-02 00:07:53 --> Undefined variable $produk
+in APPPATH\Views\cms\produk\produk_gallery.php on line 52.
+ 1 APPPATH\Views\cms\produk\produk_gallery.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'APPPATH\\Views\\cms\\produk\\produk_gallery.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cms\\produk\\produk_gallery.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('cms/produk/produk_gallery', [], true)
+ 5 APPPATH\Views\template\template.php(4): view('cms/produk/produk_gallery')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template/template', [], true)
+ 9 APPPATH\Controllers\Cms.php(1430): view('template/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-02 00:43:36 --> Undefined property: stdClass::$nama_produk
+in APPPATH\Controllers\Cms.php on line 649.
+ 1 APPPATH\Controllers\Cms.php(649): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_produk', 'APPPATH\\Controllers\\Cms.php', 649)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->product_()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-02 09:00:47 --> mysqli_sql_exception: Table 'acta.produk_value' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-04-02 09:00:47 --> Table 'acta.produk_value' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `produk_value`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 02:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:00:57 --> CSRF token verified.
+INFO - 2023-04-02 02:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:01:02 --> CSRF token verified.
+INFO - 2023-04-02 02:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:32:07 --> CSRF token verified.
+INFO - 2023-04-02 02:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:39:00 --> CSRF token verified.
+INFO - 2023-04-02 02:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:43:37 --> CSRF token verified.
+CRITICAL - 2023-04-02 09:43:37 --> Undefined property: stdClass::$id_kategori
+in APPPATH\Controllers\CmsProduk.php on line 64.
+ 1 APPPATH\Controllers\CmsProduk.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_kategori', 'APPPATH\\Controllers\\CmsProduk.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsProduk->product_()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsProduk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 02:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:43:51 --> CSRF token verified.
+CRITICAL - 2023-04-02 09:43:51 --> Undefined property: stdClass::$id_kategori
+in APPPATH\Controllers\CmsProduk.php on line 64.
+ 1 APPPATH\Controllers\CmsProduk.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_kategori', 'APPPATH\\Controllers\\CmsProduk.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsProduk->product_()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsProduk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 02:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:44:06 --> CSRF token verified.
+INFO - 2023-04-02 02:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:45:45 --> CSRF token verified.
+INFO - 2023-04-02 02:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:46:33 --> CSRF token verified.
+INFO - 2023-04-02 02:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:46:33 --> CSRF token verified.
+INFO - 2023-04-02 02:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:46:47 --> CSRF token verified.
+INFO - 2023-04-02 02:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:47:06 --> CSRF token verified.
+INFO - 2023-04-02 02:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:47:25 --> CSRF token verified.
+INFO - 2023-04-02 02:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:47:43 --> CSRF token verified.
+INFO - 2023-04-02 02:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:47:43 --> CSRF token verified.
+INFO - 2023-04-02 02:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:47:48 --> CSRF token verified.
+INFO - 2023-04-02 02:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:47:48 --> CSRF token verified.
+INFO - 2023-04-02 02:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:48:19 --> CSRF token verified.
+INFO - 2023-04-02 02:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:48:22 --> CSRF token verified.
+INFO - 2023-04-02 02:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:57:48 --> CSRF token verified.
+INFO - 2023-04-02 02:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:57:53 --> CSRF token verified.
+INFO - 2023-04-02 02:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:58:01 --> CSRF token verified.
+INFO - 2023-04-02 02:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:58:10 --> CSRF token verified.
+INFO - 2023-04-02 02:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:59:05 --> CSRF token verified.
+INFO - 2023-04-02 02:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 02:59:39 --> CSRF token verified.
+INFO - 2023-04-02 03:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:00:55 --> CSRF token verified.
+INFO - 2023-04-02 03:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:02:20 --> CSRF token verified.
+INFO - 2023-04-02 03:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:04:09 --> CSRF token verified.
+INFO - 2023-04-02 03:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:04:38 --> CSRF token verified.
+INFO - 2023-04-02 03:06:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:06:13 --> CSRF token verified.
+INFO - 2023-04-02 03:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:06:28 --> CSRF token verified.
+INFO - 2023-04-02 03:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:06:40 --> CSRF token verified.
+INFO - 2023-04-02 03:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:06:40 --> CSRF token verified.
+INFO - 2023-04-02 03:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:07:53 --> CSRF token verified.
+INFO - 2023-04-02 03:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:08:16 --> CSRF token verified.
+INFO - 2023-04-02 03:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:09:01 --> CSRF token verified.
+INFO - 2023-04-02 03:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:11:17 --> CSRF token verified.
+INFO - 2023-04-02 03:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:11:32 --> CSRF token verified.
+INFO - 2023-04-02 03:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:23:30 --> CSRF token verified.
+INFO - 2023-04-02 03:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:24:10 --> CSRF token verified.
+INFO - 2023-04-02 03:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:25:57 --> CSRF token verified.
+INFO - 2023-04-02 03:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:26:12 --> CSRF token verified.
+INFO - 2023-04-02 03:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:26:41 --> CSRF token verified.
+INFO - 2023-04-02 03:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:27:51 --> CSRF token verified.
+INFO - 2023-04-02 03:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:28:37 --> CSRF token verified.
+INFO - 2023-04-02 03:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:31:01 --> CSRF token verified.
+INFO - 2023-04-02 03:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:31:48 --> CSRF token verified.
+INFO - 2023-04-02 03:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:32:33 --> CSRF token verified.
+INFO - 2023-04-02 03:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:53:01 --> CSRF token verified.
+INFO - 2023-04-02 03:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:55:11 --> CSRF token verified.
+INFO - 2023-04-02 03:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:56:26 --> CSRF token verified.
+INFO - 2023-04-02 03:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:57:12 --> CSRF token verified.
+INFO - 2023-04-02 03:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:57:12 --> CSRF token verified.
+INFO - 2023-04-02 03:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:57:29 --> CSRF token verified.
+INFO - 2023-04-02 03:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 03:59:52 --> CSRF token verified.
+INFO - 2023-04-02 04:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:00:45 --> CSRF token verified.
+INFO - 2023-04-02 04:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:01:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:01:40 --> CSRF token verified.
+INFO - 2023-04-02 04:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:04:01 --> CSRF token verified.
+INFO - 2023-04-02 04:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:06:07 --> CSRF token verified.
+INFO - 2023-04-02 04:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:08:02 --> CSRF token verified.
+INFO - 2023-04-02 04:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:10:02 --> CSRF token verified.
+INFO - 2023-04-02 04:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:10:12 --> CSRF token verified.
+INFO - 2023-04-02 04:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:11:34 --> CSRF token verified.
+INFO - 2023-04-02 04:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:12:04 --> CSRF token verified.
+INFO - 2023-04-02 04:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:14:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:14:33 --> CSRF token verified.
+INFO - 2023-04-02 04:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:16:37 --> CSRF token verified.
+INFO - 2023-04-02 04:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:16:46 --> CSRF token verified.
+INFO - 2023-04-02 04:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:17:33 --> CSRF token verified.
+INFO - 2023-04-02 04:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:18:27 --> CSRF token verified.
+INFO - 2023-04-02 04:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:21:35 --> CSRF token verified.
+INFO - 2023-04-02 04:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:22:41 --> CSRF token verified.
+INFO - 2023-04-02 04:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:23:41 --> CSRF token verified.
+INFO - 2023-04-02 04:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:24:22 --> CSRF token verified.
+INFO - 2023-04-02 04:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:24:38 --> CSRF token verified.
+INFO - 2023-04-02 04:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:24:39 --> CSRF token verified.
+INFO - 2023-04-02 04:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:25:39 --> CSRF token verified.
+INFO - 2023-04-02 04:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:25:43 --> CSRF token verified.
+INFO - 2023-04-02 04:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:25:47 --> CSRF token verified.
+INFO - 2023-04-02 04:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:25:50 --> CSRF token verified.
+ERROR - 2023-04-02 11:25:50 --> mysqli_sql_exception: Table 'acta.mitra' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(251): App\Models\ServerSideModel->limitRows('mitra', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->mitra_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 11:25:50 --> Table 'acta.mitra' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mitra`
+ORDER BY `nama_mitra` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CmsData.PHP(251): App\Models\ServerSideModel->limitRows('mitra', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->mitra_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 04:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:26:35 --> CSRF token verified.
+ERROR - 2023-04-02 11:26:35 --> mysqli_sql_exception: Table 'acta.testimoni' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(625): App\Models\ServerSideModel->limitRows('testimoni', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 11:26:35 --> Table 'acta.testimoni' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `testimoni`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CmsData.PHP(625): App\Models\ServerSideModel->limitRows('testimoni', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 04:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:39:27 --> CSRF token verified.
+ERROR - 2023-04-02 11:39:27 --> mysqli_sql_exception: Table 'acta.testimoni' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(625): App\Models\ServerSideModel->limitRows('testimoni', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 11:39:27 --> Table 'acta.testimoni' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `testimoni`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CmsData.PHP(625): App\Models\ServerSideModel->limitRows('testimoni', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 04:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:39:42 --> CSRF token verified.
+ERROR - 2023-04-02 11:39:42 --> mysqli_sql_exception: Table 'acta.testimoni' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(625): App\Models\ServerSideModel->limitRows('testimoni', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 11:39:42 --> Table 'acta.testimoni' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `testimoni`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CmsData.PHP(625): App\Models\ServerSideModel->limitRows('testimoni', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 04:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:42:07 --> CSRF token verified.
+ERROR - 2023-04-02 11:42:07 --> mysqli_sql_exception: Table 'acta.testimoni' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(625): App\Models\ServerSideModel->limitRows('testimoni', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 11:42:07 --> Table 'acta.testimoni' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `testimoni`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CmsData.PHP(625): App\Models\ServerSideModel->limitRows('testimoni', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 04:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-02 11:46:00 --> mysqli_sql_exception: Table 'acta.portfolio_tag' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT DISTINCT...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(183): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...')
+#4 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(439): App\Models\ServerSideModel->listTagPortfolio()
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->portfolio()
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-04-02 11:46:00 --> Table 'acta.portfolio_tag' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ServerSideModel.php(183): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT(`name`) FROM portfolio_tag')
+ 2 APPPATH\Controllers\CmsData.PHP(439): App\Models\ServerSideModel->listTagPortfolio()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 04:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-02 11:47:02 --> mysqli_sql_exception: Table 'acta.portfolio_tag' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT DISTINCT...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(183): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...')
+#4 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(439): App\Models\ServerSideModel->listTagPortfolio()
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->portfolio()
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-04-02 11:47:02 --> Table 'acta.portfolio_tag' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ServerSideModel.php(183): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT(`nama`) FROM portfolio_tag')
+ 2 APPPATH\Controllers\CmsData.PHP(439): App\Models\ServerSideModel->listTagPortfolio()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 04:47:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-02 11:47:08 --> mysqli_sql_exception: Table 'acta.portfolio_tag' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT DISTINCT...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(183): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...')
+#4 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(439): App\Models\ServerSideModel->listTagPortfolio()
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->portfolio()
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-04-02 11:47:08 --> Table 'acta.portfolio_tag' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ServerSideModel.php(183): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT(`nama`) FROM portfolio_tag')
+ 2 APPPATH\Controllers\CmsData.PHP(439): App\Models\ServerSideModel->listTagPortfolio()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 04:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:47:42 --> CSRF token verified.
+ERROR - 2023-04-02 11:47:42 --> mysqli_sql_exception: Table 'acta.testimoni' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(626): App\Models\ServerSideModel->limitRows('testimoni', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 11:47:42 --> Table 'acta.testimoni' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `testimoni`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CmsData.PHP(626): App\Models\ServerSideModel->limitRows('testimoni', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 04:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:55:18 --> CSRF token verified.
+ERROR - 2023-04-02 11:55:18 --> mysqli_sql_exception: Table 'acta.testimoni' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(686): App\Models\ServerSideModel->limitRows('testimoni', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 11:55:18 --> Table 'acta.testimoni' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `testimoni`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CmsData.PHP(686): App\Models\ServerSideModel->limitRows('testimoni', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 04:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:55:40 --> CSRF token verified.
+ERROR - 2023-04-02 11:55:40 --> mysqli_sql_exception: Table 'acta.testimoni' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(686): App\Models\ServerSideModel->limitRows('testimoni', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 11:55:40 --> Table 'acta.testimoni' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `testimoni`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CmsData.PHP(686): App\Models\ServerSideModel->limitRows('testimoni', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 04:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:56:17 --> CSRF token verified.
+ERROR - 2023-04-02 11:56:17 --> mysqli_sql_exception: Table 'acta.testimoni' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(686): App\Models\ServerSideModel->limitRows('testimoni', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 11:56:17 --> Table 'acta.testimoni' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `testimoni`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CmsData.PHP(686): App\Models\ServerSideModel->limitRows('testimoni', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 04:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:57:31 --> CSRF token verified.
+INFO - 2023-04-02 04:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:58:19 --> CSRF token verified.
+INFO - 2023-04-02 04:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:59:26 --> CSRF token verified.
+INFO - 2023-04-02 04:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 04:59:31 --> CSRF token verified.
+INFO - 2023-04-02 05:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:00:21 --> CSRF token verified.
+INFO - 2023-04-02 05:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:00:58 --> CSRF token verified.
+INFO - 2023-04-02 05:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:01:08 --> CSRF token verified.
+ERROR - 2023-04-02 12:01:08 --> mysqli_sql_exception: Table 'acta.mitra' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(263): App\Models\ServerSideModel->limitRows('mitra', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->mitra_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 12:01:08 --> Table 'acta.mitra' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mitra`
+ORDER BY `nama_mitra` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CmsData.PHP(263): App\Models\ServerSideModel->limitRows('mitra', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->mitra_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 05:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:01:13 --> CSRF token verified.
+INFO - 2023-04-02 05:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:02:07 --> CSRF token verified.
+INFO - 2023-04-02 05:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:02:16 --> CSRF token verified.
+INFO - 2023-04-02 05:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:02:33 --> CSRF token verified.
+INFO - 2023-04-02 05:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:03:06 --> CSRF token verified.
+INFO - 2023-04-02 05:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:11:22 --> CSRF token verified.
+INFO - 2023-04-02 05:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:11:49 --> CSRF token verified.
+INFO - 2023-04-02 05:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:12:26 --> CSRF token verified.
+INFO - 2023-04-02 05:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:12:31 --> CSRF token verified.
+INFO - 2023-04-02 05:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:12:44 --> CSRF token verified.
+INFO - 2023-04-02 05:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:13:27 --> CSRF token verified.
+INFO - 2023-04-02 05:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:13:27 --> CSRF token verified.
+INFO - 2023-04-02 05:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:13:33 --> CSRF token verified.
+INFO - 2023-04-02 05:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:13:49 --> CSRF token verified.
+INFO - 2023-04-02 05:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:13:49 --> CSRF token verified.
+INFO - 2023-04-02 05:14:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:14:58 --> CSRF token verified.
+INFO - 2023-04-02 05:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:15:06 --> CSRF token verified.
+INFO - 2023-04-02 05:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:15:15 --> CSRF token verified.
+ERROR - 2023-04-02 12:15:15 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `portfol...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `portfol...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `portfol...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `portfol...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(60): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(621): App\Models\ServerSideModel->updateRows('2', Array, 'portfolio')
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->update_portfolio()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 12:15:16 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `portfolio` SET `nama` = :nama:, `title` = :title:, `deskripsi` = :deskripsi:, `youtube_url` = :youtube_url:, `status` = :status:, `edit_user` = :edit_user:, `edit_date` = :edit_date:, `photo_url` = :photo_url:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ServerSideModel.php(60): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\CmsData.PHP(621): App\Models\ServerSideModel->updateRows('2', [...], 'portfolio')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->update_portfolio()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 05:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:15:26 --> CSRF token verified.
+ERROR - 2023-04-02 12:15:26 --> mysqli_sql_exception: Unknown column 'nama' in 'field list' in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `portfol...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `portfol...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `portfol...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `portfol...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(60): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(621): App\Models\ServerSideModel->updateRows('2', Array, 'portfolio')
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->update_portfolio()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 12:15:26 --> Unknown column 'nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `portfolio` SET `nama` = :nama:, `title` = :title:, `deskripsi` = :deskripsi:, `youtube_url` = :youtube_url:, `status` = :status:, `edit_user` = :edit_user:, `edit_date` = :edit_date:, `photo_url` = :photo_url:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ServerSideModel.php(60): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\CmsData.PHP(621): App\Models\ServerSideModel->updateRows('2', [...], 'portfolio')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->update_portfolio()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 05:20:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:20:37 --> CSRF token verified.
+INFO - 2023-04-02 05:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:21:40 --> CSRF token verified.
+INFO - 2023-04-02 05:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:22:28 --> CSRF token verified.
+INFO - 2023-04-02 05:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:24:07 --> CSRF token verified.
+INFO - 2023-04-02 05:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:24:14 --> CSRF token verified.
+INFO - 2023-04-02 05:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:24:14 --> CSRF token verified.
+INFO - 2023-04-02 05:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:28:35 --> CSRF token verified.
+INFO - 2023-04-02 05:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 05:28:40 --> CSRF token verified.
+CRITICAL - 2023-04-02 12:28:40 --> Undefined property: stdClass::$video_url
+in APPPATH\Controllers\Konfigurasi.php on line 631.
+ 1 APPPATH\Controllers\Konfigurasi.php(631): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$video_url', 'APPPATH\\Controllers\\Konfigurasi.php', 631)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:08:45 --> CSRF token verified.
+INFO - 2023-04-02 06:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:10:48 --> CSRF token verified.
+ERROR - 2023-04-02 13:10:48 --> mysqli_sql_exception: Table 'acta.testimoni' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(678): App\Models\ServerSideModel->limitRows('testimoni', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 13:10:48 --> Table 'acta.testimoni' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `testimoni`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CmsData.PHP(678): App\Models\ServerSideModel->limitRows('testimoni', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:11:34 --> CSRF token verified.
+ERROR - 2023-04-02 13:11:34 --> mysqli_sql_exception: Table 'acta.testimoni' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(678): App\Models\ServerSideModel->limitRows('testimoni', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 13:11:34 --> Table 'acta.testimoni' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `testimoni`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CmsData.PHP(678): App\Models\ServerSideModel->limitRows('testimoni', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->testimoni_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:12:19 --> CSRF token verified.
+INFO - 2023-04-02 06:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:12:29 --> CSRF token verified.
+INFO - 2023-04-02 06:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:15:21 --> CSRF token verified.
+INFO - 2023-04-02 06:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:15:32 --> CSRF token verified.
+INFO - 2023-04-02 06:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:15:32 --> CSRF token verified.
+INFO - 2023-04-02 06:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:20:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:20:45 --> CSRF token verified.
+ERROR - 2023-04-02 13:20:45 --> mysqli_sql_exception: Table 'acta.mitra' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\CmsData.PHP(260): App\Models\ServerSideModel->limitRows('mitra', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\CmsData->mitra_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 13:20:45 --> Table 'acta.mitra' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mitra`
+ORDER BY `nama_mitra` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CmsData.PHP(260): App\Models\ServerSideModel->limitRows('mitra', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CmsData->mitra_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CmsData))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:23:10 --> CSRF token verified.
+INFO - 2023-04-02 06:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:29:14 --> CSRF token verified.
+INFO - 2023-04-02 06:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:31:13 --> CSRF token verified.
+INFO - 2023-04-02 06:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:31:16 --> CSRF token verified.
+INFO - 2023-04-02 06:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:31:25 --> CSRF token verified.
+INFO - 2023-04-02 06:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:31:31 --> CSRF token verified.
+INFO - 2023-04-02 06:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:32:53 --> CSRF token verified.
+ERROR - 2023-04-02 13:32:53 --> mysqli_sql_exception: Table 'acta.pengurus' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Konfigurasi.php(140): App\Models\ServerSideModel->limitRows('pengurus', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Konfigurasi->struktur_organisasi_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 13:32:53 --> Table 'acta.pengurus' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengurus`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Konfigurasi.php(140): App\Models\ServerSideModel->limitRows('pengurus', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->struktur_organisasi_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:34:30 --> CSRF token verified.
+ERROR - 2023-04-02 13:34:30 --> mysqli_sql_exception: Table 'acta.pengurus' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Konfigurasi.php(140): App\Models\ServerSideModel->limitRows('pengurus', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Konfigurasi->struktur_organisasi_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 13:34:30 --> Table 'acta.pengurus' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengurus`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Konfigurasi.php(140): App\Models\ServerSideModel->limitRows('pengurus', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->struktur_organisasi_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:35:30 --> CSRF token verified.
+INFO - 2023-04-02 06:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:35:32 --> CSRF token verified.
+INFO - 2023-04-02 06:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:35:54 --> CSRF token verified.
+INFO - 2023-04-02 06:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:35:54 --> CSRF token verified.
+INFO - 2023-04-02 06:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:37:41 --> CSRF token verified.
+CRITICAL - 2023-04-02 13:37:41 --> Undefined property: stdClass::$video_url
+in APPPATH\Controllers\Konfigurasi.php on line 666.
+ 1 APPPATH\Controllers\Konfigurasi.php(666): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$video_url', 'APPPATH\\Controllers\\Konfigurasi.php', 666)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:38:03 --> CSRF token verified.
+CRITICAL - 2023-04-02 13:38:03 --> Undefined property: stdClass::$video_url
+in APPPATH\Controllers\Konfigurasi.php on line 666.
+ 1 APPPATH\Controllers\Konfigurasi.php(666): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$video_url', 'APPPATH\\Controllers\\Konfigurasi.php', 666)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:39:05 --> CSRF token verified.
+INFO - 2023-04-02 06:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:40:23 --> CSRF token verified.
+INFO - 2023-04-02 06:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:41:43 --> CSRF token verified.
+INFO - 2023-04-02 06:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:42:37 --> CSRF token verified.
+ERROR - 2023-04-02 13:42:37 --> mysqli_sql_exception: Unknown column 'judul' in 'where clause' in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Konfigurasi.php(645): App\Models\ServerSideModel->limitRows('slider', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 13:42:37 --> Unknown column 'judul' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `slider`
+WHERE   (
+`judul` LIKE :judul: ESCAPE \'!\'
+OR  `no_urut` LIKE :no_urut: ESCAPE \'!\'
+ )
+ORDER BY `no_urut` ASC
+ LIMIT 25', [...], false)
+ 2 APPPATH\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Konfigurasi.php(645): App\Models\ServerSideModel->limitRows('slider', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:42:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:42:39 --> CSRF token verified.
+ERROR - 2023-04-02 13:42:39 --> mysqli_sql_exception: Unknown column 'judul' in 'where clause' in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Konfigurasi.php(645): App\Models\ServerSideModel->limitRows('slider', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 13:42:39 --> Unknown column 'judul' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `slider`
+WHERE   (
+`judul` LIKE :judul: ESCAPE \'!\'
+OR  `no_urut` LIKE :no_urut: ESCAPE \'!\'
+ )
+ORDER BY `no_urut` ASC
+ LIMIT 25', [...], false)
+ 2 APPPATH\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Konfigurasi.php(645): App\Models\ServerSideModel->limitRows('slider', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:43:13 --> CSRF token verified.
+ERROR - 2023-04-02 13:43:13 --> mysqli_sql_exception: Unknown column 'judul' in 'where clause' in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Konfigurasi.php(645): App\Models\ServerSideModel->limitRows('slider', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 13:43:13 --> Unknown column 'judul' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `slider`
+WHERE   (
+`judul` LIKE :judul: ESCAPE \'!\'
+OR  `no_urut` LIKE :no_urut: ESCAPE \'!\'
+ )
+ORDER BY `no_urut` ASC
+ LIMIT 25', [...], false)
+ 2 APPPATH\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Konfigurasi.php(645): App\Models\ServerSideModel->limitRows('slider', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:43:15 --> CSRF token verified.
+ERROR - 2023-04-02 13:43:15 --> mysqli_sql_exception: Unknown column 'judul' in 'where clause' in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Konfigurasi.php(645): App\Models\ServerSideModel->limitRows('slider', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 13:43:15 --> Unknown column 'judul' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `slider`
+WHERE   (
+`judul` LIKE :judul: ESCAPE \'!\'
+OR  `no_urut` LIKE :no_urut: ESCAPE \'!\'
+ )
+ORDER BY `photo_url` ASC
+ LIMIT 25', [...], false)
+ 2 APPPATH\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Konfigurasi.php(645): App\Models\ServerSideModel->limitRows('slider', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:43:29 --> CSRF token verified.
+INFO - 2023-04-02 06:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:43:31 --> CSRF token verified.
+CRITICAL - 2023-04-02 13:43:31 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in C:\xampp\htdocs\acta\app\Models\ServerSideModel.php on line 293
+in SYSTEMPATH\Database\BaseBuilder.php on line 1424.
+ 1 APPPATH\Models\ServerSideModel.php(293): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH\Models\ServerSideModel.php(246): App\Models\ServerSideModel->selectField('slider', '*', [...], [...], [...], null, null)
+ 3 APPPATH\Controllers\Konfigurasi.php(645): App\Models\ServerSideModel->limitRows('slider', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:43:33 --> CSRF token verified.
+CRITICAL - 2023-04-02 13:43:33 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in C:\xampp\htdocs\acta\app\Models\ServerSideModel.php on line 293
+in SYSTEMPATH\Database\BaseBuilder.php on line 1424.
+ 1 APPPATH\Models\ServerSideModel.php(293): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH\Models\ServerSideModel.php(246): App\Models\ServerSideModel->selectField('slider', '*', [...], [...], [...], null, null)
+ 3 APPPATH\Controllers\Konfigurasi.php(645): App\Models\ServerSideModel->limitRows('slider', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:45:04 --> CSRF token verified.
+INFO - 2023-04-02 06:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:45:05 --> CSRF token verified.
+INFO - 2023-04-02 06:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:45:06 --> CSRF token verified.
+CRITICAL - 2023-04-02 13:45:06 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in C:\xampp\htdocs\acta\app\Models\ServerSideModel.php on line 293
+in SYSTEMPATH\Database\BaseBuilder.php on line 1424.
+ 1 APPPATH\Models\ServerSideModel.php(293): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH\Models\ServerSideModel.php(246): App\Models\ServerSideModel->selectField('slider', '*', [...], [...], [...], null, null)
+ 3 APPPATH\Controllers\Konfigurasi.php(645): App\Models\ServerSideModel->limitRows('slider', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:45:12 --> CSRF token verified.
+CRITICAL - 2023-04-02 13:45:12 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in C:\xampp\htdocs\acta\app\Models\ServerSideModel.php on line 293
+in SYSTEMPATH\Database\BaseBuilder.php on line 1424.
+ 1 APPPATH\Models\ServerSideModel.php(293): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH\Models\ServerSideModel.php(246): App\Models\ServerSideModel->selectField('slider', '*', [...], [...], [...], null, null)
+ 3 APPPATH\Controllers\Konfigurasi.php(645): App\Models\ServerSideModel->limitRows('slider', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:46:28 --> CSRF token verified.
+INFO - 2023-04-02 06:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:46:30 --> CSRF token verified.
+INFO - 2023-04-02 06:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:46:31 --> CSRF token verified.
+INFO - 2023-04-02 06:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:46:34 --> CSRF token verified.
+INFO - 2023-04-02 06:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:46:35 --> CSRF token verified.
+INFO - 2023-04-02 06:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:46:37 --> CSRF token verified.
+ERROR - 2023-04-02 13:46:37 --> mysqli_sql_exception: Unknown column 'judul' in 'where clause' in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Konfigurasi.php(645): App\Models\ServerSideModel->limitRows('slider', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 13:46:37 --> Unknown column 'judul' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `slider`
+WHERE   (
+`judul` LIKE :judul: ESCAPE \'!\'
+OR  `no_urut` LIKE :no_urut: ESCAPE \'!\'
+ )
+ORDER BY `photo_url` DESC
+ LIMIT 25', [...], false)
+ 2 APPPATH\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Konfigurasi.php(645): App\Models\ServerSideModel->limitRows('slider', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:47:12 --> CSRF token verified.
+INFO - 2023-04-02 06:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:47:15 --> CSRF token verified.
+INFO - 2023-04-02 06:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:47:16 --> CSRF token verified.
+INFO - 2023-04-02 06:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:47:17 --> CSRF token verified.
+INFO - 2023-04-02 06:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:47:18 --> CSRF token verified.
+INFO - 2023-04-02 06:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:47:22 --> CSRF token verified.
+INFO - 2023-04-02 06:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:47:23 --> CSRF token verified.
+INFO - 2023-04-02 06:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:47:23 --> CSRF token verified.
+INFO - 2023-04-02 06:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:47:26 --> CSRF token verified.
+INFO - 2023-04-02 06:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:47:27 --> CSRF token verified.
+INFO - 2023-04-02 06:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:47:28 --> CSRF token verified.
+INFO - 2023-04-02 06:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-02 13:47:32 --> Undefined property: stdClass::$nama_cv
+in APPPATH\Views\cms\konfigurasi.php on line 39.
+ 1 APPPATH\Views\cms\konfigurasi.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_cv', 'APPPATH\\Views\\cms\\konfigurasi.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cms\\konfigurasi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('cms/konfigurasi', [], true)
+ 5 APPPATH\Views\template\template.php(4): view('cms/konfigurasi')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template/template', [], true)
+ 9 APPPATH\Controllers\Konfigurasi.php(33): view('template/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:47:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:47:37 --> CSRF token verified.
+INFO - 2023-04-02 06:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-02 13:47:38 --> Undefined property: stdClass::$nama_cv
+in APPPATH\Views\cms\konfigurasi.php on line 39.
+ 1 APPPATH\Views\cms\konfigurasi.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_cv', 'APPPATH\\Views\\cms\\konfigurasi.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cms\\konfigurasi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('cms/konfigurasi', [], true)
+ 5 APPPATH\Views\template\template.php(4): view('cms/konfigurasi')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template/template', [], true)
+ 9 APPPATH\Controllers\Konfigurasi.php(33): view('template/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-02 13:48:58 --> Undefined property: stdClass::$cover_testimoni
+in APPPATH\Views\cms\konfigurasi.php on line 117.
+ 1 APPPATH\Views\cms\konfigurasi.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$cover_testimoni', 'APPPATH\\Views\\cms\\konfigurasi.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cms\\konfigurasi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('cms/konfigurasi', [], true)
+ 5 APPPATH\Views\template\template.php(4): view('cms/konfigurasi')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template/template', [], true)
+ 9 APPPATH\Controllers\Konfigurasi.php(33): view('template/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 06:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:51:30 --> CSRF token verified.
+INFO - 2023-04-02 06:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 06:51:45 --> CSRF token verified.
+INFO - 2023-04-02 06:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:05:47 --> CSRF token verified.
+ERROR - 2023-04-02 14:05:47 --> mysqli_sql_exception: Table 'acta.visimisi' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Konfigurasi.php(45): App\Models\ServerSideModel->limitRows('visimisi', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Konfigurasi->visimisi_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-02 14:05:47 --> Table 'acta.visimisi' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visimisi`
+ORDER BY `kategori` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(252): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Konfigurasi.php(45): App\Models\ServerSideModel->limitRows('visimisi', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->visimisi_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 07:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:06:35 --> CSRF token verified.
+INFO - 2023-04-02 07:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-02 14:06:39 --> Undefined property: App\Controllers\Konfigurasi::$pluginsugins
+in APPPATH\Controllers\Konfigurasi.php on line 731.
+ 1 APPPATH\Controllers\Konfigurasi.php(731): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Konfigurasi::$pluginsugins', 'APPPATH\\Controllers\\Konfigurasi.php', 731)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 07:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:07:38 --> CSRF token verified.
+INFO - 2023-04-02 07:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:07:41 --> CSRF token verified.
+INFO - 2023-04-02 07:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:08:09 --> CSRF token verified.
+INFO - 2023-04-02 07:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:09:26 --> CSRF token verified.
+INFO - 2023-04-02 07:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:09:33 --> CSRF token verified.
+INFO - 2023-04-02 07:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:09:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:09:51 --> CSRF token verified.
+INFO - 2023-04-02 07:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:10:28 --> CSRF token verified.
+INFO - 2023-04-02 07:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:10:34 --> CSRF token verified.
+INFO - 2023-04-02 07:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:10:50 --> CSRF token verified.
+INFO - 2023-04-02 07:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:11:31 --> CSRF token verified.
+INFO - 2023-04-02 07:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:11:31 --> CSRF token verified.
+INFO - 2023-04-02 07:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:11:42 --> CSRF token verified.
+INFO - 2023-04-02 07:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:11:42 --> CSRF token verified.
+INFO - 2023-04-02 07:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:11:52 --> CSRF token verified.
+INFO - 2023-04-02 07:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:11:52 --> CSRF token verified.
+INFO - 2023-04-02 07:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:12:07 --> CSRF token verified.
+INFO - 2023-04-02 07:12:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:12:08 --> CSRF token verified.
+INFO - 2023-04-02 07:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:12:12 --> CSRF token verified.
+INFO - 2023-04-02 07:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:15:03 --> CSRF token verified.
+INFO - 2023-04-02 07:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:15:46 --> CSRF token verified.
+INFO - 2023-04-02 07:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 07:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-02 14:18:22 --> mysqli_sql_exception: Table 'acta.produk_value' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-04-02 14:18:22 --> Table 'acta.produk_value' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `produk_value`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-02 14:39:21 --> mysqli_sql_exception: Table 'acta.produk_value' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-04-02 14:39:21 --> Table 'acta.produk_value' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `produk_value`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-02 14:39:54 --> mysqli_sql_exception: Unknown column 'product_gallery.no_urut' in 'order clause' in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Controllers\Home.php(23): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-04-02 14:39:54 --> Unknown column 'product_gallery.no_urut' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_gallery`
+WHERE `status` = :status:
+ORDER BY `product_gallery`.`no_urut` ASC', [...], false)
+ 2 APPPATH\Controllers\Home.php(23): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-02 14:56:30 --> mysqli_sql_exception: Unknown column 'SET' in 'where clause' in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM k...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM k...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM k...')
+#3 C:\xampp\htdocs\acta\app\Models\KonfigurasiModel.php(72): CodeIgniter\Database\BaseConnection->query('SELECT * FROM k...')
+#4 C:\xampp\htdocs\acta\app\Views\template-front\header.php(5): App\Models\KonfigurasiModel->getData()
+#5 C:\xampp\htdocs\acta\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\acta\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\acta\system\Common.php(1177): CodeIgniter\View\View->render('template-front/...', Array, true)
+#8 C:\xampp\htdocs\acta\app\Views\template-front\template.php(3): view('template-front/...')
+#9 C:\xampp\htdocs\acta\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\acta\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\acta\system\Common.php(1177): CodeIgniter\View\View->render('template-front/...', Array, true)
+#12 C:\xampp\htdocs\acta\app\Controllers\Home.php(29): view('template-front/...', Array)
+#13 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#17 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#18 {main}
+CRITICAL - 2023-04-02 14:56:30 --> Unknown column 'SET' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\KonfigurasiModel.php(72): CodeIgniter\Database\BaseConnection->query('SELECT * FROM konfigurasi WHERE id=`SET`')
+ 2 APPPATH\Views\template-front\header.php(5): App\Models\KonfigurasiModel->getData()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\header.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/header.php', [], true)
+ 6 APPPATH\Views\template-front\template.php(3): view('template-front/header.php')
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\template.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/template', [], true)
+10 APPPATH\Controllers\Home.php(29): view('template-front/template', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-02 14:56:45 --> Undefined property: stdClass::$logo
+in APPPATH\Views\template-front\header.php on line 80.
+ 1 APPPATH\Views\template-front\header.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$logo', 'APPPATH\\Views\\template-front\\header.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/header.php', [], true)
+ 5 APPPATH\Views\template-front\template.php(3): view('template-front/header.php')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/template', [], true)
+ 9 APPPATH\Controllers\Home.php(29): view('template-front/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-02 18:02:36 --> Undefined property: stdClass::$nama_popuer
+in APPPATH\Views\home\index.php on line 40.
+ 1 APPPATH\Views\home\index.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_popuer', 'APPPATH\\Views\\home\\index.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('home/index', [], true)
+ 5 APPPATH\Views\template-front\template.php(4): view('home/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/template', [], true)
+ 9 APPPATH\Controllers\Home.php(29): view('template-front/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-02 18:02:50 --> Undefined property: stdClass::$nama_popuer
+in APPPATH\Views\home\index.php on line 40.
+ 1 APPPATH\Views\home\index.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_popuer', 'APPPATH\\Views\\home\\index.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('home/index', [], true)
+ 5 APPPATH\Views\template-front\template.php(4): view('home/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/template', [], true)
+ 9 APPPATH\Controllers\Home.php(29): view('template-front/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 14:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 14:49:38 --> CSRF token verified.
+INFO - 2023-04-02 14:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 14:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 14:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 14:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 14:49:43 --> CSRF token verified.
+INFO - 2023-04-02 14:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 14:50:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 14:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 14:51:09 --> CSRF token verified.
+INFO - 2023-04-02 14:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 14:51:09 --> CSRF token verified.
+INFO - 2023-04-02 14:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 14:51:39 --> CSRF token verified.
+INFO - 2023-04-02 14:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 14:51:39 --> CSRF token verified.
+INFO - 2023-04-02 14:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 14:52:31 --> CSRF token verified.
+INFO - 2023-04-02 14:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 14:52:32 --> CSRF token verified.
+INFO - 2023-04-02 15:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 15:08:13 --> CSRF token verified.
+INFO - 2023-04-02 15:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 15:08:14 --> CSRF token verified.
+INFO - 2023-04-02 15:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 15:19:03 --> CSRF token verified.
+INFO - 2023-04-02 15:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 15:19:04 --> CSRF token verified.
+INFO - 2023-04-02 15:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 15:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 15:19:24 --> CSRF token verified.
+INFO - 2023-04-02 15:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 15:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 16:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 16:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 16:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-02 23:45:45 --> Undefined variable $photo_url
+in APPPATH\Views\home\index.php on line 274.
+ 1 APPPATH\Views\home\index.php(274): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $photo_url', 'APPPATH\\Views\\home\\index.php', 274)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('home/index', [], true)
+ 5 APPPATH\Views\template-front\template.php(4): view('home/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/template', [], true)
+ 9 APPPATH\Controllers\Home.php(29): view('template-front/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-02 23:52:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'RAND() LIMIT 6' at line 1 in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM p...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 C:\xampp\htdocs\acta\app\Controllers\Home.php(24): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-02 23:52:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'RAND() LIMIT 6' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Controllers\Home.php(24): CodeIgniter\Database\BaseConnection->query('SELECT * FROM product WHERE status=1 AND flag="Promo" ORDER BY id RAND() LIMIT 6')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-02 23:52:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'RAND LIMIT 6' at line 1 in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM p...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 C:\xampp\htdocs\acta\app\Controllers\Home.php(24): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-02 23:52:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'RAND LIMIT 6' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Controllers\Home.php(24): CodeIgniter\Database\BaseConnection->query('SELECT * FROM product WHERE status=1 AND flag="Promo" ORDER BY id RAND LIMIT 6')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-02 23:52:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'RAND LIMIT 6' at line 1 in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM p...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 C:\xampp\htdocs\acta\app\Controllers\Home.php(24): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-02 23:52:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'RAND LIMIT 6' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Controllers\Home.php(24): CodeIgniter\Database\BaseConnection->query('SELECT * FROM product WHERE status=1 AND flag="Promo" ORDER BY id RAND LIMIT 6')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-02 17:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:07:10 --> CSRF token verified.
+INFO - 2023-04-02 17:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:07:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:07:21 --> CSRF token verified.
+INFO - 2023-04-02 17:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:07:57 --> CSRF token verified.
+INFO - 2023-04-02 17:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:07:58 --> CSRF token verified.
+INFO - 2023-04-02 17:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:08:27 --> CSRF token verified.
+INFO - 2023-04-02 17:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:08:35 --> CSRF token verified.
+INFO - 2023-04-02 17:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:08:35 --> CSRF token verified.
+INFO - 2023-04-02 17:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:11:17 --> CSRF token verified.
+INFO - 2023-04-02 17:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:11:51 --> CSRF token verified.
+INFO - 2023-04-02 17:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:11:51 --> CSRF token verified.
+INFO - 2023-04-02 17:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:13:25 --> CSRF token verified.
+INFO - 2023-04-02 17:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:13:25 --> CSRF token verified.
+INFO - 2023-04-02 17:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:22:39 --> CSRF token verified.
+INFO - 2023-04-02 17:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-02 17:22:54 --> CSRF token verified.

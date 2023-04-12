@@ -1,0 +1,50 @@
+CRITICAL - 2023-02-05 23:43:04 --> Class "App\Models\BeritaModel" not found
+in APPPATH\Libraries\Plugins.php on line 12.
+ 1 APPPATH\Controllers\BaseController.php(69): App\Libraries\Plugins->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-05 23:43:41 --> Invalid file: "error404.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('error404.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('error404', [], true)
+ 3 APPPATH\Config\Routes.php(49): view('error404')
+ 4 SYSTEMPATH\CodeIgniter.php(954): CodeIgniter\Router\RouteCollection::Config\{closure}('Can\'t find a route for \'get: auth\'.')
+ 5 SYSTEMPATH\CodeIgniter.php(387): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-05 23:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-05 23:49:00 --> "reCaptcha3" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 320.
+ 1 SYSTEMPATH\Validation\Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('reCaptcha3')
+ 2 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('recaptcha', 'recaptcha', '03AFY_a8Vdpt9l6hyS3De2ImRgyeX1aFEZB6HAnjqaiJbTgZgk2Vi181KirU5sBl5z1ublQdzehGWitL-PHziOZoRKVgNTfzm9fBZqgyz_mSsKT3HU9saYmLBPDSjaqIagL8wd4iEzcbwCYCDo3W38mo7mDzBu69FZvezAA2qu8YGTcmKhpBX3f8XdjDi3prKEktYmjFh7ety4PPYUIq5Egwwv4JxWCa0h1JJmjpPa03qf1zPfG5gdgd6HT2_W6kYOTtXCEaTf8XcTrdv-o0uOVfbr7pni7VethyXavviyrucmmBN5LwxKAGFE7k3Bxlmt5-FNmMsLAb_31kM5KBj91uKavpFIAGL-5D9sQOb2FRZtssBQTzpiQm8y0WzPJM_68VGetR2zoEpL6D7_yK-mO7gcwtpscZRUzV79PyvqkWE7QbQuLzalXkgBUUbdJvnoipr5ufCEiJPem5WdyIhiNtT7dtfsrZP-srvJHJRGqhB6lK6hMRvCxZY', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Auth.php(42): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->p()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-05 23:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-05 23:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

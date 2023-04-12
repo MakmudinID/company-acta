@@ -1,0 +1,87 @@
+INFO - 2023-02-08 17:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:04:57 --> CSRF token verified.
+INFO - 2023-02-08 17:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:05:00 --> CSRF token verified.
+INFO - 2023-02-08 17:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:05:11 --> CSRF token verified.
+INFO - 2023-02-08 17:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:06:54 --> CSRF token verified.
+INFO - 2023-02-08 17:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:08:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:10:13 --> CSRF token verified.
+INFO - 2023-02-08 17:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:10:39 --> CSRF token verified.
+INFO - 2023-02-08 17:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:23:05 --> CSRF token verified.
+ERROR - 2023-02-08 17:23:05 --> mysqli_sql_exception: Table 'cv-thi.pusdiklat_kategori' doesn't exist in C:\xampp\htdocs\tiarahalalindonesia\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tiarahalalindonesia\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `produk_...', 0)
+#1 C:\xampp\htdocs\tiarahalalindonesia\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `produk_...')
+#2 C:\xampp\htdocs\tiarahalalindonesia\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `produk_...')
+#3 C:\xampp\htdocs\tiarahalalindonesia\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `produk_...', Array, false)
+#4 C:\xampp\htdocs\tiarahalalindonesia\app\Models\ServerSideModel.php(79): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tiarahalalindonesia\app\Controllers\Cms.php(39): App\Models\ServerSideModel->limitRows('produk_unggulan', 'produk_unggulan...', Array, Array, Array, Array)
+#6 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(934): App\Controllers\Cms->produk_unggulan_()
+#7 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tiarahalalindonesia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\tiarahalalindonesia\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-08 17:23:05 --> Table 'cv-thi.pusdiklat_kategori' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `produk_unggulan`.*, `merek_dagang`.`nama` as `merek`
+FROM `produk_unggulan`
+JOIN `pusdiklat_kategori` ON `pusdiklat_kategori`.`id` = `pusdiklat`.`id_pusdiklat_kategori`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(79): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(39): App\Models\ServerSideModel->limitRows('produk_unggulan', 'produk_unggulan.*, merek_dagang.nama as merek', [...], [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_unggulan_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-08 17:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:23:46 --> CSRF token verified.
+INFO - 2023-02-08 17:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 17:25:19 --> CSRF token verified.
+INFO - 2023-02-08 23:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 23:26:46 --> CSRF token verified.
+INFO - 2023-02-08 23:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 23:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 23:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 23:26:53 --> CSRF token verified.
+INFO - 2023-02-08 23:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 23:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 23:30:04 --> CSRF token verified.
+INFO - 2023-02-08 23:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 23:31:02 --> CSRF token verified.
+INFO - 2023-02-08 23:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 23:34:34 --> CSRF token verified.
+INFO - 2023-02-08 23:34:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-08 23:34:54 --> CSRF token verified.
+INFO - 2023-02-08 23:49:14 --> CSRF token verified.
+INFO - 2023-02-08 23:49:30 --> CSRF token verified.
+INFO - 2023-02-08 23:50:08 --> CSRF token verified.
+INFO - 2023-02-08 23:50:26 --> CSRF token verified.
+INFO - 2023-02-08 23:50:36 --> CSRF token verified.
+INFO - 2023-02-08 23:57:20 --> CSRF token verified.
+INFO - 2023-02-08 23:57:40 --> CSRF token verified.
+INFO - 2023-02-08 23:59:22 --> CSRF token verified.
+INFO - 2023-02-08 23:59:34 --> CSRF token verified.
+INFO - 2023-02-08 23:59:34 --> CSRF token verified.

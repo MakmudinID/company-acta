@@ -1,0 +1,711 @@
+INFO - 2023-02-10 05:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-10 05:46:57 --> Call to a member function getName() on null
+in APPPATH\Controllers\Cms.php on line 484.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->create_blog()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 05:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:57:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 05:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:01:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-10 06:25:19 --> Class "App\Models\BeritaModel" not found
+in APPPATH\Libraries\Plugins.php on line 12.
+ 1 APPPATH\Controllers\BaseController.php(70): App\Libraries\Plugins->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 06:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-10 06:39:45 --> Undefined array key 4
+in APPPATH\Models\ServerSideModel.php on line 77.
+ 1 APPPATH\Models\ServerSideModel.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'APPPATH\\Models\\ServerSideModel.php', 77)
+ 2 APPPATH\Controllers\Cms.php(603): App\Models\ServerSideModel->deleteBlog('36')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->delete_blog('3d6f69a81d80d784ec64c1efcc5489cbe68b3c36cd608f52079efd96d9963e3745479db1a785bbde382a3534e737f126367f5b3237875b5e39c3e5d52a716db7d6d639fb5c8fed939d341a21815a8ea1071c')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 06:39:52 --> Undefined array key 4
+in APPPATH\Models\ServerSideModel.php on line 77.
+ 1 APPPATH\Models\ServerSideModel.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'APPPATH\\Models\\ServerSideModel.php', 77)
+ 2 APPPATH\Controllers\Cms.php(603): App\Models\ServerSideModel->deleteBlog('36')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->delete_blog('3d6f69a81d80d784ec64c1efcc5489cbe68b3c36cd608f52079efd96d9963e3745479db1a785bbde382a3534e737f126367f5b3237875b5e39c3e5d52a716db7d6d639fb5c8fed939d341a21815a8ea1071c')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 06:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-10 06:41:31 --> Undefined array key 4
+in APPPATH\Models\ServerSideModel.php on line 77.
+ 1 APPPATH\Models\ServerSideModel.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'APPPATH\\Models\\ServerSideModel.php', 77)
+ 2 APPPATH\Controllers\Cms.php(603): App\Models\ServerSideModel->deleteBlog('40')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->delete_blog('9bd46aa67f740d508e3829f6bd7362e113a2ef30f6c453e42fa358200836893c1e38af5c204373821e640d2662e7e6822ae7b23106cbfc5566ec6d4eb55c88b93b79eae5ec533bc2e20150823fb3fc577e76')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 06:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 07:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:02:05 --> CSRF token verified.
+INFO - 2023-02-10 07:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:02:17 --> CSRF token verified.
+INFO - 2023-02-10 00:02:57 --> CSRF token verified.
+INFO - 2023-02-10 07:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:02:57 --> CSRF token verified.
+INFO - 2023-02-10 07:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:03:05 --> CSRF token verified.
+INFO - 2023-02-10 07:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:03:24 --> CSRF token verified.
+INFO - 2023-02-10 07:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:04:03 --> CSRF token verified.
+INFO - 2023-02-10 07:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:04:24 --> CSRF token verified.
+INFO - 2023-02-10 07:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:06:42 --> CSRF token verified.
+INFO - 2023-02-10 07:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:09:06 --> CSRF token verified.
+INFO - 2023-02-10 07:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:09:14 --> CSRF token verified.
+INFO - 2023-02-10 00:09:32 --> CSRF token verified.
+INFO - 2023-02-10 07:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 07:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:11:54 --> CSRF token verified.
+INFO - 2023-02-10 00:12:03 --> CSRF token verified.
+INFO - 2023-02-10 07:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:12:04 --> CSRF token verified.
+INFO - 2023-02-10 00:12:20 --> CSRF token verified.
+INFO - 2023-02-10 07:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:12:20 --> CSRF token verified.
+INFO - 2023-02-10 00:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:12:44 --> CSRF token verified.
+INFO - 2023-02-10 00:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:13:40 --> CSRF token verified.
+INFO - 2023-02-10 00:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:13:58 --> CSRF token verified.
+INFO - 2023-02-10 00:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 07:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 07:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 07:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 07:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 07:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 07:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:33:01 --> CSRF token verified.
+INFO - 2023-02-10 00:33:15 --> CSRF token verified.
+INFO - 2023-02-10 07:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:33:16 --> CSRF token verified.
+INFO - 2023-02-10 07:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:33:48 --> CSRF token verified.
+INFO - 2023-02-10 00:33:53 --> CSRF token verified.
+INFO - 2023-02-10 07:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:33:53 --> CSRF token verified.
+INFO - 2023-02-10 07:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:35:10 --> CSRF token verified.
+INFO - 2023-02-10 00:35:14 --> CSRF token verified.
+CRITICAL - 2023-02-10 07:35:14 --> Decrypting: authentication failed.
+in SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php on line 137.
+ 1 SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php(137): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH\Controllers\Cms.php(352): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->update_produk_value()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 07:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:35:30 --> CSRF token verified.
+INFO - 2023-02-10 00:35:38 --> CSRF token verified.
+CRITICAL - 2023-02-10 07:35:38 --> Decrypting: authentication failed.
+in SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php on line 137.
+ 1 SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php(137): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH\Controllers\Cms.php(352): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->update_produk_value()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 07:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:36:14 --> CSRF token verified.
+INFO - 2023-02-10 00:36:19 --> CSRF token verified.
+INFO - 2023-02-10 07:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:36:19 --> CSRF token verified.
+INFO - 2023-02-10 00:36:26 --> CSRF token verified.
+INFO - 2023-02-10 07:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:36:26 --> CSRF token verified.
+INFO - 2023-02-10 00:36:31 --> CSRF token verified.
+INFO - 2023-02-10 07:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:37:10 --> CSRF token verified.
+INFO - 2023-02-10 00:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:37:12 --> CSRF token verified.
+INFO - 2023-02-10 00:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:39:11 --> CSRF token verified.
+INFO - 2023-02-10 00:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 00:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 07:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 07:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 07:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 07:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 07:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 08:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-10 08:00:14 --> Undefined property: stdClass::$telepon
+in APPPATH\Views\cms\konfigurasi.php on line 96.
+ 1 APPPATH\Views\cms\konfigurasi.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$telepon', 'APPPATH\\Views\\cms\\konfigurasi.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cms\\konfigurasi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('cms/konfigurasi', [], true)
+ 5 APPPATH\Views\template\template.php(4): view('cms/konfigurasi')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template/template', [], true)
+ 9 APPPATH\Controllers\Konfigurasi.php(32): view('template/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 08:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 08:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 08:01:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 08:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 08:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 08:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 08:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 08:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 08:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 08:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 08:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 08:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 01:07:15 --> CSRF token verified.
+INFO - 2023-02-10 08:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 08:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 01:07:27 --> CSRF token verified.
+INFO - 2023-02-10 08:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 08:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 01:18:57 --> CSRF token verified.
+INFO - 2023-02-10 08:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 02:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 02:10:17 --> CSRF token verified.
+INFO - 2023-02-10 09:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-10 09:10:23 --> Invalid file: "cms/profil/struktur-organisasi.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cms/profil/struktur-organisasi.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('cms/profil/struktur-organisasi', [], true)
+ 3 APPPATH\Views\template\template.php(4): view('cms/profil/struktur-organisasi')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\template.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template/template', [], true)
+ 7 APPPATH\Controllers\Konfigurasi.php(43): view('template/template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->struktur_organisasi()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 09:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 02:10:27 --> CSRF token verified.
+INFO - 2023-02-10 09:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-10 09:10:32 --> Invalid file: "cms/profil/struktur-organisasi.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cms/profil/struktur-organisasi.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('cms/profil/struktur-organisasi', [], true)
+ 3 APPPATH\Views\template\template.php(4): view('cms/profil/struktur-organisasi')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\template.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template/template', [], true)
+ 7 APPPATH\Controllers\Konfigurasi.php(43): view('template/template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->struktur_organisasi()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 09:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-10 09:10:40 --> Invalid file: "cms/profil/struktur-organisasi.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cms/profil/struktur-organisasi.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('cms/profil/struktur-organisasi', [], true)
+ 3 APPPATH\Views\template\template.php(4): view('cms/profil/struktur-organisasi')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\template.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template/template', [], true)
+ 7 APPPATH\Controllers\Konfigurasi.php(43): view('template/template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->struktur_organisasi()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 09:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 02:11:20 --> CSRF token verified.
+INFO - 2023-02-10 09:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 02:18:36 --> CSRF token verified.
+CRITICAL - 2023-02-10 09:23:33 --> Undefined variable $mymenu
+in APPPATH\Views\cms\profil\struktur-organisasi.php on line 5.
+ 1 APPPATH\Views\cms\profil\struktur-organisasi.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mymenu', 'APPPATH\\Views\\cms\\profil\\struktur-organisasi.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\cms\\profil\\struktur-organisasi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('cms/profil/struktur-organisasi', [], true)
+ 5 APPPATH\Views\template-front\template.php(4): view('cms/profil/struktur-organisasi')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/template', [], true)
+ 9 APPPATH\Controllers\Home.php(23): view('template-front/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 09:31:33 --> Undefined property: stdClass::$title
+in APPPATH\Views\home\index.php on line 17.
+ 1 APPPATH\Views\home\index.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$title', 'APPPATH\\Views\\home\\index.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('home/index', [], true)
+ 5 APPPATH\Views\template-front\template.php(4): view('home/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/template', [], true)
+ 9 APPPATH\Controllers\Home.php(23): view('template-front/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 09:32:09 --> Undefined variable $title
+in APPPATH\Views\home\index.php on line 19.
+ 1 APPPATH\Views\home\index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\home\\index.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('home/index', [], true)
+ 5 APPPATH\Views\template-front\template.php(4): view('home/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/template', [], true)
+ 9 APPPATH\Controllers\Home.php(23): view('template-front/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 09:32:10 --> Undefined variable $title
+in APPPATH\Views\home\index.php on line 19.
+ 1 APPPATH\Views\home\index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\home\\index.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('home/index', [], true)
+ 5 APPPATH\Views\template-front\template.php(4): view('home/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/template', [], true)
+ 9 APPPATH\Controllers\Home.php(23): view('template-front/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 02:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-10 09:34:53 --> Invalid file: "cms/profil/slider.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cms/profil/slider.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('cms/profil/slider', [], true)
+ 3 APPPATH\Views\template\template.php(4): view('cms/profil/slider')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\template.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template/template', [], true)
+ 7 APPPATH\Controllers\Konfigurasi.php(491): view('template/template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Konfigurasi->slider()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konfigurasi))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 09:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 02:35:09 --> CSRF token verified.
+CRITICAL - 2023-02-10 09:45:56 --> Undefined property: stdClass::$nama_produk
+in APPPATH\Views\home\index.php on line 71.
+ 1 APPPATH\Views\home\index.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_produk', 'APPPATH\\Views\\home\\index.php', 71)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('home/index', [], true)
+ 5 APPPATH\Views\template-front\template.php(4): view('home/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/template', [], true)
+ 9 APPPATH\Controllers\Home.php(23): view('template-front/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 13:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 13:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:28:42 --> CSRF token verified.
+CRITICAL - 2023-02-10 06:28:42 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('cms/produk_unggulan_', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 13:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:28:49 --> CSRF token verified.
+INFO - 2023-02-10 13:32:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:32:18 --> CSRF token verified.
+INFO - 2023-02-10 13:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:33:16 --> CSRF token verified.
+INFO - 2023-02-10 13:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:34:07 --> CSRF token verified.
+INFO - 2023-02-10 13:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:34:32 --> CSRF token verified.
+INFO - 2023-02-10 06:34:40 --> CSRF token verified.
+INFO - 2023-02-10 13:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 06:34:41 --> CSRF token verified.
+INFO - 2023-02-10 08:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 08:46:03 --> CSRF token verified.
+INFO - 2023-02-10 08:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 15:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 15:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 08:46:08 --> CSRF token verified.
+INFO - 2023-02-10 16:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:08:39 --> CSRF token verified.
+INFO - 2023-02-10 16:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:08:47 --> CSRF token verified.
+INFO - 2023-02-10 16:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:09:06 --> CSRF token verified.
+INFO - 2023-02-10 16:12:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:12:09 --> CSRF token verified.
+INFO - 2023-02-10 16:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:15:49 --> CSRF token verified.
+INFO - 2023-02-10 16:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:16:15 --> CSRF token verified.
+INFO - 2023-02-10 16:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:27:25 --> CSRF token verified.
+INFO - 2023-02-10 16:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:27:48 --> CSRF token verified.
+INFO - 2023-02-10 09:28:06 --> CSRF token verified.
+INFO - 2023-02-10 16:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:28:07 --> CSRF token verified.
+CRITICAL - 2023-02-10 16:28:07 --> Undefined property: stdClass::$nama
+in APPPATH\Controllers\Cms.php on line 60.
+ 1 APPPATH\Controllers\Cms.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama', 'APPPATH\\Controllers\\Cms.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->mitra_()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 09:28:33 --> CSRF token verified.
+INFO - 2023-02-10 16:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:28:33 --> CSRF token verified.
+CRITICAL - 2023-02-10 16:28:33 --> Undefined property: stdClass::$nama
+in APPPATH\Controllers\Cms.php on line 60.
+ 1 APPPATH\Controllers\Cms.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama', 'APPPATH\\Controllers\\Cms.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->mitra_()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 16:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:29:10 --> CSRF token verified.
+INFO - 2023-02-10 16:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:30:12 --> CSRF token verified.
+INFO - 2023-02-10 16:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:30:43 --> CSRF token verified.
+INFO - 2023-02-10 09:31:07 --> CSRF token verified.
+INFO - 2023-02-10 16:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-02-10 16:31:07 --> mysqli_sql_exception: Unknown column 'nama_mitra' in 'field list' in C:\xampp\htdocs\tiarahalalindonesia\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tiarahalalindonesia\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `produk_...', 0)
+#1 C:\xampp\htdocs\tiarahalalindonesia\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `produk_...')
+#2 C:\xampp\htdocs\tiarahalalindonesia\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `produk_...')
+#3 C:\xampp\htdocs\tiarahalalindonesia\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `produk_...', Array, false)
+#4 C:\xampp\htdocs\tiarahalalindonesia\app\Models\ServerSideModel.php(36): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\tiarahalalindonesia\app\Controllers\Cms.php(187): App\Models\ServerSideModel->updateRows('1', Array, 'produk_unggulan')
+#6 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(934): App\Controllers\Cms->update_mitra()
+#7 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tiarahalalindonesia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\tiarahalalindonesia\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-10 16:31:07 --> Unknown column 'nama_mitra' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `produk_unggulan` SET `nama_mitra` = :nama_mitra:, `status` = :status:, `edit_user` = :edit_user:, `edit_date` = :edit_date:, `photo_url` = :photo_url:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ServerSideModel.php(36): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Cms.php(187): App\Models\ServerSideModel->updateRows('1', [...], 'produk_unggulan')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->update_mitra()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 16:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:32:38 --> CSRF token verified.
+INFO - 2023-02-10 09:32:54 --> CSRF token verified.
+INFO - 2023-02-10 16:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:32:54 --> CSRF token verified.
+INFO - 2023-02-10 09:33:03 --> CSRF token verified.
+INFO - 2023-02-10 16:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:33:04 --> CSRF token verified.
+INFO - 2023-02-10 09:33:21 --> CSRF token verified.
+INFO - 2023-02-10 16:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:33:22 --> CSRF token verified.
+INFO - 2023-02-10 09:33:28 --> CSRF token verified.
+INFO - 2023-02-10 16:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:33:28 --> CSRF token verified.
+INFO - 2023-02-10 16:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:35:47 --> CSRF token verified.
+CRITICAL - 2023-02-10 16:37:26 --> Attempt to read property "photo_url" on string
+in APPPATH\Views\home\index.php on line 120.
+ 1 APPPATH\Views\home\index.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "photo_url" on string', 'APPPATH\\Views\\home\\index.php', 120)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('home/index', [], true)
+ 5 APPPATH\Views\template-front\template.php(4): view('home/index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/template', [], true)
+ 9 APPPATH\Controllers\Home.php(24): view('template-front/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 16:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:38:14 --> CSRF token verified.
+INFO - 2023-02-10 16:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:48:53 --> CSRF token verified.
+INFO - 2023-02-10 16:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 09:55:44 --> CSRF token verified.
+INFO - 2023-02-10 17:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 10:24:44 --> CSRF token verified.
+INFO - 2023-02-10 10:26:59 --> CSRF token verified.
+INFO - 2023-02-10 17:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 10:26:59 --> CSRF token verified.
+INFO - 2023-02-10 10:28:33 --> CSRF token verified.
+INFO - 2023-02-10 17:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 10:28:33 --> CSRF token verified.
+INFO - 2023-02-10 10:29:00 --> CSRF token verified.
+INFO - 2023-02-10 17:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 10:29:00 --> CSRF token verified.
+ERROR - 2023-02-10 18:00:14 --> mysqli_sql_exception: Unknown table 'cv-thi.blog' in C:\xampp\htdocs\tiarahalalindonesia\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tiarahalalindonesia\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT blog.* W...', 0)
+#1 C:\xampp\htdocs\tiarahalalindonesia\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT blog.* W...')
+#2 C:\xampp\htdocs\tiarahalalindonesia\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT blog.* W...')
+#3 C:\xampp\htdocs\tiarahalalindonesia\app\Models\ServerSideModel.php(24): CodeIgniter\Database\BaseConnection->query('SELECT blog.* W...', Array)
+#4 C:\xampp\htdocs\tiarahalalindonesia\app\Controllers\Home.php(30): App\Models\ServerSideModel->getBlogBy('my-little-garre...')
+#5 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(934): App\Controllers\Home->blog_detail('my-little-garre...')
+#6 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\tiarahalalindonesia\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\tiarahalalindonesia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\tiarahalalindonesia\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-10 18:00:14 --> Unknown table 'cv-thi.blog'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ServerSideModel.php(24): CodeIgniter\Database\BaseConnection->query('SELECT blog.* WHERE slug=? and status=?', [...])
+ 2 APPPATH\Controllers\Home.php(30): App\Models\ServerSideModel->getBlogBy('my-little-garret-repair-to-desire-he-esteem')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->blog_detail('my-little-garret-repair-to-desire-he-esteem')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 18:00:38 --> Undefined variable $konfigurasi
+in APPPATH\Views\template-front\footer.php on line 16.
+ 1 APPPATH\Views\template-front\footer.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $konfigurasi', 'APPPATH\\Views\\template-front\\footer.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\footer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/footer.php', [], true)
+ 5 APPPATH\Views\template-front\template.php(5): view('template-front/footer.php')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/template', [], true)
+ 9 APPPATH\Controllers\Home.php(32): view('template-front/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->blog_detail('my-little-garret-repair-to-desire-he-esteem')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 18:00:38 --> Undefined variable $konfigurasi
+in APPPATH\Views\template-front\footer.php on line 16.
+ 1 APPPATH\Views\template-front\footer.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $konfigurasi', 'APPPATH\\Views\\template-front\\footer.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\footer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/footer.php', [], true)
+ 5 APPPATH\Views\template-front\template.php(5): view('template-front/footer.php')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/template', [], true)
+ 9 APPPATH\Controllers\Home.php(32): view('template-front/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->blog_detail('FCPATH\\assets', 'img', '2440x1578.png')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 18:00:38 --> Undefined variable $konfigurasi
+in APPPATH\Views\template-front\footer.php on line 16.
+ 1 APPPATH\Views\template-front\footer.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $konfigurasi', 'APPPATH\\Views\\template-front\\footer.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\footer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/footer.php', [], true)
+ 5 APPPATH\Views\template-front\template.php(5): view('template-front/footer.php')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/template', [], true)
+ 9 APPPATH\Controllers\Home.php(32): view('template-front/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->blog_detail('FCPATH\\assets', 'img', '800x800.png')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-10 15:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 15:01:11 --> CSRF token verified.
+INFO - 2023-02-10 15:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 15:01:15 --> CSRF token verified.
+INFO - 2023-02-10 15:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 22:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 22:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 15:01:19 --> CSRF token verified.
+INFO - 2023-02-10 15:01:57 --> CSRF token verified.
+INFO - 2023-02-10 22:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 15:01:58 --> CSRF token verified.
+INFO - 2023-02-10 15:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 22:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 22:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 15:51:36 --> CSRF token verified.
+INFO - 2023-02-10 22:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 15:51:38 --> CSRF token verified.
+INFO - 2023-02-10 15:55:07 --> CSRF token verified.
+INFO - 2023-02-10 22:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 15:55:07 --> CSRF token verified.
+INFO - 2023-02-10 15:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 22:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 22:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 15:55:53 --> CSRF token verified.
+INFO - 2023-02-10 22:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 15:55:54 --> CSRF token verified.
+INFO - 2023-02-10 22:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 15:57:16 --> CSRF token verified.
+INFO - 2023-02-10 22:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 15:57:30 --> CSRF token verified.
+INFO - 2023-02-10 22:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 15:58:01 --> CSRF token verified.
+INFO - 2023-02-10 22:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 15:58:09 --> CSRF token verified.
+INFO - 2023-02-10 22:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 15:58:40 --> CSRF token verified.
+INFO - 2023-02-10 22:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 15:59:27 --> CSRF token verified.
+INFO - 2023-02-10 16:00:00 --> CSRF token verified.
+INFO - 2023-02-10 23:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:00:00 --> CSRF token verified.
+INFO - 2023-02-10 23:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:00:47 --> CSRF token verified.
+INFO - 2023-02-10 23:01:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:01:01 --> CSRF token verified.
+INFO - 2023-02-10 23:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:03:24 --> CSRF token verified.
+INFO - 2023-02-10 23:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:05:44 --> CSRF token verified.
+INFO - 2023-02-10 23:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:07:27 --> CSRF token verified.
+INFO - 2023-02-10 23:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:07:53 --> CSRF token verified.
+INFO - 2023-02-10 23:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:08:03 --> CSRF token verified.
+INFO - 2023-02-10 16:13:54 --> CSRF token verified.
+INFO - 2023-02-10 23:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:13:54 --> CSRF token verified.
+INFO - 2023-02-10 16:14:50 --> CSRF token verified.
+INFO - 2023-02-10 23:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:14:50 --> CSRF token verified.
+INFO - 2023-02-10 16:15:09 --> CSRF token verified.
+INFO - 2023-02-10 23:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:15:09 --> CSRF token verified.
+INFO - 2023-02-10 16:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 23:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 23:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:26:01 --> CSRF token verified.
+INFO - 2023-02-10 23:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:26:05 --> CSRF token verified.
+INFO - 2023-02-10 16:26:15 --> CSRF token verified.
+INFO - 2023-02-10 23:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:26:15 --> CSRF token verified.
+INFO - 2023-02-10 16:28:33 --> CSRF token verified.
+INFO - 2023-02-10 23:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:28:33 --> CSRF token verified.
+INFO - 2023-02-10 16:28:49 --> CSRF token verified.
+INFO - 2023-02-10 23:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:28:49 --> CSRF token verified.
+INFO - 2023-02-10 16:34:49 --> CSRF token verified.
+INFO - 2023-02-10 23:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:34:49 --> CSRF token verified.
+INFO - 2023-02-10 16:35:11 --> CSRF token verified.
+INFO - 2023-02-10 23:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-10 16:35:12 --> CSRF token verified.

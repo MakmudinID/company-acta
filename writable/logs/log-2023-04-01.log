@@ -1,0 +1,823 @@
+ERROR - 2023-04-01 14:15:40 --> mysqli_sql_exception: Table 'acta.produk_value' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-04-01 14:15:40 --> Table 'acta.produk_value' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `produk_value`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 07:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 07:16:00 --> CSRF token verified.
+INFO - 2023-04-01 07:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 07:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 07:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-01 16:22:01 --> mysqli_sql_exception: Table 'acta.produk_value' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-04-01 16:22:01 --> Table 'acta.produk_value' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `produk_value`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 09:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 09:22:10 --> CSRF token verified.
+INFO - 2023-04-01 09:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 09:22:13 --> CSRF token verified.
+INFO - 2023-04-01 09:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 09:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 09:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 09:22:45 --> CSRF token verified.
+INFO - 2023-04-01 09:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 09:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 09:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 09:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 09:22:54 --> CSRF token verified.
+ERROR - 2023-04-01 16:22:54 --> mysqli_sql_exception: Table 'acta.testimoni' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(46): App\Models\ServerSideModel->limitRows('testimoni', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->testimoni_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 16:22:54 --> Table 'acta.testimoni' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `testimoni`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(46): App\Models\ServerSideModel->limitRows('testimoni', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->testimoni_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 09:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 09:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 09:27:59 --> CSRF token verified.
+ERROR - 2023-04-01 16:27:59 --> mysqli_sql_exception: Unknown column 'no_urut' in 'order clause' in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `gallery...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `gallery...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `gallery...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(1259): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 16:27:59 --> Unknown column 'no_urut' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery`.*
+FROM `gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1259): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 09:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 09:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 09:34:45 --> CSRF token verified.
+INFO - 2023-04-01 09:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 09:35:52 --> CSRF token verified.
+INFO - 2023-04-01 09:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 09:35:53 --> CSRF token verified.
+INFO - 2023-04-01 09:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 09:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 09:37:07 --> CSRF token verified.
+ERROR - 2023-04-01 16:37:07 --> mysqli_sql_exception: Table 'acta.testimoni' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(46): App\Models\ServerSideModel->limitRows('testimoni', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->testimoni_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 16:37:07 --> Table 'acta.testimoni' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `testimoni`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(46): App\Models\ServerSideModel->limitRows('testimoni', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->testimoni_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 10:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-01 17:13:28 --> mysqli_sql_exception: Table 'acta.produk_value' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-04-01 17:13:28 --> Table 'acta.produk_value' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `produk_value`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-01 17:14:10 --> mysqli_sql_exception: Table 'acta.produk_value' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-04-01 17:14:10 --> Table 'acta.produk_value' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `produk_value`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-01 17:14:34 --> mysqli_sql_exception: Table 'acta.produk_value' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-04-01 17:14:34 --> Table 'acta.produk_value' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1735): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `produk_value`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Controllers\Home.php(22): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 10:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 10:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 10:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 10:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-01 17:15:20 --> Invalid file: "cms/data/potfolio.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cms/data/potfolio.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('cms/data/potfolio', [], true)
+ 3 APPPATH\Views\template\template.php(4): view('cms/data/potfolio')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\template.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template/template', [], true)
+ 7 APPPATH\Controllers\Cms.php(33): view('template/template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->portfolio()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 10:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 10:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 10:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 10:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 10:22:14 --> CSRF token verified.
+ERROR - 2023-04-01 17:22:14 --> mysqli_sql_exception: Table 'acta.testimoni' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(46): App\Models\ServerSideModel->limitRows('testimoni', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->testimoni_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 17:22:14 --> Table 'acta.testimoni' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `testimoni`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(46): App\Models\ServerSideModel->limitRows('testimoni', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->testimoni_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 11:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 11:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 11:37:45 --> CSRF token verified.
+ERROR - 2023-04-01 18:37:45 --> mysqli_sql_exception: Table 'acta.testimoni' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(218): App\Models\ServerSideModel->limitRows('testimoni', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->testimoni_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 18:37:45 --> Table 'acta.testimoni' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `testimoni`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(176): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(218): App\Models\ServerSideModel->limitRows('testimoni', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->testimoni_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 15:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:20:14 --> CSRF token verified.
+INFO - 2023-04-01 15:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:20:20 --> CSRF token verified.
+INFO - 2023-04-01 15:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:20:55 --> CSRF token verified.
+INFO - 2023-04-01 15:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:21:48 --> CSRF token verified.
+INFO - 2023-04-01 15:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:48:54 --> CSRF token verified.
+INFO - 2023-04-01 15:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:49:22 --> CSRF token verified.
+INFO - 2023-04-01 15:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:49:22 --> CSRF token verified.
+INFO - 2023-04-01 15:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:49:42 --> CSRF token verified.
+INFO - 2023-04-01 15:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:50:07 --> CSRF token verified.
+INFO - 2023-04-01 15:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:50:07 --> CSRF token verified.
+INFO - 2023-04-01 15:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:54:59 --> CSRF token verified.
+INFO - 2023-04-01 15:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:57:12 --> CSRF token verified.
+ERROR - 2023-04-01 22:57:12 --> mysqli_sql_exception: Table 'acta.gallery' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `gallery...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `gallery...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `gallery...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 22:57:12 --> Table 'acta.gallery' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery`.*
+FROM `gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 15:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:58:22 --> CSRF token verified.
+ERROR - 2023-04-01 22:58:22 --> mysqli_sql_exception: Table 'acta.gallery' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `gallery...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `gallery...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `gallery...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 22:58:22 --> Table 'acta.gallery' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery`.*
+FROM `gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 15:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:58:28 --> CSRF token verified.
+ERROR - 2023-04-01 22:58:29 --> mysqli_sql_exception: Table 'acta.gallery' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `gallery...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `gallery...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `gallery...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 22:58:29 --> Table 'acta.gallery' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery`.*
+FROM `gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 15:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:59:00 --> CSRF token verified.
+ERROR - 2023-04-01 22:59:00 --> mysqli_sql_exception: Table 'acta.gallery' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `gallery...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `gallery...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `gallery...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 22:59:00 --> Table 'acta.gallery' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery`.*
+FROM `gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 15:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 15:59:26 --> CSRF token verified.
+ERROR - 2023-04-01 22:59:26 --> mysqli_sql_exception: Table 'acta.gallery' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `gallery...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `gallery...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `gallery...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 22:59:26 --> Table 'acta.gallery' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery`.*
+FROM `gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 16:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:03:44 --> CSRF token verified.
+ERROR - 2023-04-01 23:03:44 --> mysqli_sql_exception: Table 'acta.gallery' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `gallery...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `gallery...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `gallery...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 23:03:44 --> Table 'acta.gallery' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery`.*
+FROM `gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 16:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:04:12 --> CSRF token verified.
+ERROR - 2023-04-01 23:04:12 --> mysqli_sql_exception: Table 'acta.gallery' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `gallery...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `gallery...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `gallery...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 23:04:12 --> Table 'acta.gallery' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery`.*
+FROM `gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 16:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:06:55 --> CSRF token verified.
+ERROR - 2023-04-01 23:06:55 --> mysqli_sql_exception: Table 'acta.gallery' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `gallery...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `gallery...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `gallery...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 23:06:55 --> Table 'acta.gallery' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery`.*
+FROM `gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 16:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:07:46 --> CSRF token verified.
+ERROR - 2023-04-01 23:07:46 --> mysqli_sql_exception: Table 'acta.testimoni' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(218): App\Models\ServerSideModel->limitRows('testimoni', '*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->testimoni_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 23:07:46 --> Table 'acta.testimoni' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `testimoni`
+ORDER BY `nama` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(218): App\Models\ServerSideModel->limitRows('testimoni', '*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->testimoni_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 16:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:09:58 --> CSRF token verified.
+ERROR - 2023-04-01 23:09:58 --> mysqli_sql_exception: Table 'acta.gallery' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `gallery...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `gallery...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `gallery...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 23:09:58 --> Table 'acta.gallery' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery`.*
+FROM `gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 16:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:10:17 --> CSRF token verified.
+ERROR - 2023-04-01 23:10:17 --> mysqli_sql_exception: Table 'acta.gallery' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `gallery...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `gallery...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `gallery...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 23:10:17 --> Table 'acta.gallery' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery`.*
+FROM `gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 16:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:21:57 --> CSRF token verified.
+ERROR - 2023-04-01 23:21:57 --> mysqli_sql_exception: Table 'acta.gallery' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `gallery...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `gallery...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `gallery...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 23:21:57 --> Table 'acta.gallery' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery`.*
+FROM `gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 16:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:22:33 --> CSRF token verified.
+ERROR - 2023-04-01 23:22:33 --> mysqli_sql_exception: Table 'acta.gallery' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `gallery...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `gallery...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `gallery...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 23:22:33 --> Table 'acta.gallery' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery`.*
+FROM `gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 16:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:22:48 --> CSRF token verified.
+ERROR - 2023-04-01 23:22:48 --> mysqli_sql_exception: Table 'acta.gallery' doesn't exist in C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `gallery...', 0)
+#1 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `gallery...')
+#2 C:\xampp\htdocs\acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `gallery...')
+#3 C:\xampp\htdocs\acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery...', Array, false)
+#4 C:\xampp\htdocs\acta\app\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\acta\app\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', Array, Array, Array)
+#6 C:\xampp\htdocs\acta\system\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+#7 C:\xampp\htdocs\acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+#8 C:\xampp\htdocs\acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\acta\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-01 23:22:48 --> Table 'acta.gallery' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `gallery`.*
+FROM `gallery`
+ORDER BY `no_urut` ASC
+ LIMIT 25', [], false)
+ 2 APPPATH\Models\ServerSideModel.php(188): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cms.php(1443): App\Models\ServerSideModel->limitRows('gallery', 'gallery.*', [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Cms->produk_gallery_()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cms))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-01 16:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:32:21 --> CSRF token verified.
+INFO - 2023-04-01 16:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:40:40 --> CSRF token verified.
+INFO - 2023-04-01 16:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:53:53 --> CSRF token verified.
+INFO - 2023-04-01 16:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 16:55:05 --> CSRF token verified.
+INFO - 2023-04-01 17:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:08:08 --> CSRF token verified.
+INFO - 2023-04-01 17:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:13:45 --> CSRF token verified.
+INFO - 2023-04-01 17:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:15:49 --> CSRF token verified.
+INFO - 2023-04-01 17:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:16:00 --> CSRF token verified.
+INFO - 2023-04-01 17:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:16:38 --> CSRF token verified.
+INFO - 2023-04-01 17:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:17:00 --> CSRF token verified.
+INFO - 2023-04-01 17:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:20:20 --> CSRF token verified.
+INFO - 2023-04-01 17:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:31:16 --> CSRF token verified.
+INFO - 2023-04-01 17:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:31:38 --> CSRF token verified.
+INFO - 2023-04-01 17:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:31:39 --> CSRF token verified.
+INFO - 2023-04-01 17:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:40:31 --> CSRF token verified.
+INFO - 2023-04-01 17:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:41:40 --> CSRF token verified.
+INFO - 2023-04-01 17:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:42:52 --> CSRF token verified.
+INFO - 2023-04-01 17:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:43:04 --> CSRF token verified.
+INFO - 2023-04-01 17:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:43:36 --> CSRF token verified.
+INFO - 2023-04-01 17:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-01 17:44:06 --> CSRF token verified.
