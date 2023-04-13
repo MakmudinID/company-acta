@@ -85,7 +85,7 @@
 body {
 	font-family: 'Nunito Sans', sans-serif;
 	font-size:14px;
-	color:#777777;
+	/* color:#777777; */
 	line-height:1.7em;
 	font-weight:400;
 	background:#ffffff;
@@ -307,7 +307,7 @@ img{
 .btn-style-one{
 	position: relative;
 	display: inline-block;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 30px;
 	color: #ffffff;
 	padding: 11px 30px;
@@ -1216,7 +1216,7 @@ img{
 	padding:0px 0px;
 	background:#ffffff;
 	z-index:0;
-	border-bottom:1px solid #e8f1f7;
+	border-bottom:2px solid #e8f1f7;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
@@ -1265,7 +1265,7 @@ img{
 	opacity:1;
 	font-weight:500;
 	padding:33px 0px;
-	font-size:14px;
+	font-size:15px;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
@@ -4425,8 +4425,8 @@ img{
 .banner-section .slide{
 	position:relative;
 	overflow:hidden;
-	padding-top:200px;
-	padding-bottom:100px;
+	padding-top:220px;
+	padding-bottom:120px;
 	background-position: center;
     background-repeat: no-repeat;
 	background-size:cover;
@@ -5092,11 +5092,11 @@ img{
 .services-section-two{
 	position:relative;
 	overflow:hidden;
-	padding-bottom:70px;
+	/* padding-bottom:50px; */
 }
 
 .services-section-two.margin-top{
-	margin-top:-170px;
+	margin-top:40px;
 }
 
 .services-section-two .upper-box{
@@ -5105,7 +5105,7 @@ img{
 	border-radius:15px;
 	margin-left:-115px;
 	margin-right:-115px;
-	padding:100px 20px 180px;
+	padding:50px 8px 185px;
 	background-color:#0060ff;
 }
 
@@ -5151,9 +5151,10 @@ img{
 .service-block-two .inner-box{
 	position:relative;
 	overflow:hidden;
-	padding:45px 45px;
+	padding:30px 30px;
 	border-radius:6px;
-	background-color:#f5f5f5;
+	background-color:#ffffff;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
 }
 
 .service-block-two .inner-box .shape-one{
@@ -5216,7 +5217,7 @@ img{
 	width:100%;
 	height:50%;
 	opacity:0;
-	background-color:#141d38;
+	/* background-color:#141d38; */
 	-webkit-transition:all 600ms ease;
 	-ms-transition:all 600ms ease;
 	-o-transition:all 600ms ease;
@@ -5289,7 +5290,7 @@ img{
 .service-block-two .inner-box:hover .icon-box,
 .service-block-two .inner-box:hover h5 a,
 .service-block-two .inner-box:hover .text{
-	color:#ffffff;
+	color:#222222;
 }
 
 /***
@@ -5665,11 +5666,7 @@ img{
 
 .testimonial-section{
 	position:relative;
-	padding:110px 0px 100px;
-}
-
-.testimonial-section .sec-title .text{
-	margin-top:40px;
+	padding:75px 0px 10px;
 }
 
 .testimonial-section .owl-carousel .owl-stage-outer{
@@ -5743,7 +5740,8 @@ img{
 	background-position:right top;
 	background-repeat:no-repeat;
 	background-color:#ffffff;
-	box-shadow:0px 0px 20px rgba(0,0,0,0.07);
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+	/* box-shadow:0px 0px 20px rgba(0,0,0,0.07); */
 }
 
 .testimonial-block .inner-box:before{
@@ -5767,6 +5765,7 @@ img{
 	position:absolute;
 	left:0px;
 	top:0px;
+	width:100px;
 }
 
 .testimonial-block .inner-box .upper-box h4{
@@ -8239,7 +8238,6 @@ img{
 .services-section-three{
 	position:relative;
 	overflow:hidden;
-	padding-bottom:70px;
 }
 
 .services-section-three.margin-top{
@@ -8684,6 +8682,7 @@ img{
 .call-to-action-section-two{
 	position:relative;
 	overflow:hidden;
+	margin-top:40px;
 }
 
 .call-to-action-section-two .inner-container{
@@ -8924,7 +8923,7 @@ img{
 
 .pricing-section{
 	position:relative;
-	padding:110px 0px 60px;
+	padding:50px 0px 50px;
 }
 
 .price-block{
@@ -9346,7 +9345,7 @@ img{
 	position:relative;
 	text-align:center;
 	overflow:hidden;
-	padding:110px 0px 110px;
+	padding:60px 0px 60px;
 	background-color:#141d38;
 }
 
@@ -10449,7 +10448,6 @@ img{
 .gallery-section .filters .filter.active,
 .gallery-section .filters .filter:hover{
     color:#0060ff;
-	text-decoration:line-through;
 }
 
 .gallery-section .btn-box{

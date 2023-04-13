@@ -11,6 +11,7 @@ use Psr\Log\LoggerInterface;
 
 use App\Models\ServerSideModel;
 use App\Models\KonfigurasiModel;
+use App\Models\ProdukModel;
 use App\Libraries\Plugins;
 
 /**
@@ -55,6 +56,7 @@ abstract class BaseController extends Controller
     protected $plugins;
     protected $konfigurasi;
     protected $berita;
+    protected $produkModel;
 
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
@@ -68,5 +70,6 @@ abstract class BaseController extends Controller
         $this->serverside = new ServerSideModel();
         $this->konfigurasi = new KonfigurasiModel();
         $this->plugins = new Plugins();
+        $this->produkModel = new ProdukModel();
     }
 }

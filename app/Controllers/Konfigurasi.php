@@ -171,19 +171,39 @@ class Konfigurasi extends BaseController
                 $id = 'SET';
 
                 $logo = $this->request->getFile('logo_url');
+                $profil_url = $this->request->getFile('profil_url');
 
                 if ($logo->isValid()) {
                     $src = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow()->logo_url;
-                    $file_name = '.' . str_replace(base_url('/'), '', $src); // striping host to get relative path
-                    $a = explode("/", $file_name);
-            
-                    if (file_exists('./assets-cms/img/konfigurasi/' . end($a))) {
-                        unlink('./assets-cms/img/konfigurasi/' . end($a));
+                    
+                    if ($src != '') {
+                        $file_name = '.' . str_replace(base_url('/'), '', $src); // striping host to get relative path
+                        $a = explode("/", $file_name);
+    
+                        if (file_exists('./assets-cms/img/konfigurasi/' . end($a))) {
+                            unlink('./assets-cms/img/konfigurasi/' . end($a));
+                        }
                     }
 
                     $logo->move(WRITEPATH . '../public/assets-cms/img/konfigurasi/');
                     $file = $logo->getName();
                     $data['logo_url'] = base_url('/assets-cms/img/konfigurasi/' . $file);
+                }
+
+                if ($profil_url->isValid()) {
+                    $src = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow()->profil_url;
+                    if ($src != '') {
+                        $file_name = '.' . str_replace(base_url('/'), '', $src); // striping host to get relative path
+                        $a = explode("/", $file_name);
+    
+                        if (file_exists('./assets-cms/img/konfigurasi/' . end($a))) {
+                            unlink('./assets-cms/img/konfigurasi/' . end($a));
+                        }
+                    }
+
+                    $profil_url->move(WRITEPATH . '../public/assets-cms/img/konfigurasi/');
+                    $file = $profil_url->getName();
+                    $data['profil_url'] = base_url('/assets-cms/img/konfigurasi/' . $file);
                 }
 
                 $data['create_user'] = session()->get('admin_name');
@@ -346,11 +366,11 @@ class Konfigurasi extends BaseController
             $path = $image->getName();
             $ext = pathinfo($path, PATHINFO_EXTENSION);
             if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg' || $ext == 'svg' || $ext == 'gif') {
-                
+
                 $src = $this->db->table('pengurus')->getWhere(['id' => $id])->getRow()->foto;
                 $file_name = '.' . str_replace(base_url('/'), '', $src); // striping host to get relative path
                 $a = explode("/", $file_name);
-        
+
                 if (file_exists('./assets-cms/img/user/' . end($a))) {
                     unlink('./assets-cms/img/user/' . end($a));
                 }
@@ -847,7 +867,7 @@ class Konfigurasi extends BaseController
                 $src = $this->db->table('slider')->getWhere(['id' => $id])->getRow()->photo_url;
                 $file_name = '.' . str_replace(base_url('/'), '', $src); // striping host to get relative path
                 $a = explode("/", $file_name);
-        
+
                 if (file_exists('./assets-cms/img/slider/' . end($a))) {
                     unlink('./assets-cms/img/slider/' . end($a));
                 }

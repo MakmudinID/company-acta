@@ -115,9 +115,15 @@ $this->role = \Config\Services::role();
 						</a>
 					</div>
 					<div class="menu-item <?= ($mysubmenu == 'GALERI PRODUK') ? 'active' : '' ?>">
-						<a href="<?php echo base_url(); ?>/cms/produk-gallery" class="menu-link">
+						<a href="<?php echo base_url(); ?>/cms/product-gallery" class="menu-link">
 							<span class="menu-icon"><i class="far fa-images"></i></span>
 							<span class="menu-text">Galeri Produk</span>
+						</a>
+					</div>
+					<div class="menu-item <?= ($mysubmenu == 'PILIHAN HARGA') ? 'active' : '' ?>">
+						<a href="<?php echo base_url(); ?>/cms/product-price" class="menu-link">
+							<span class="menu-icon"><i class="fas fa-list-ol"></i></span>
+							<span class="menu-text">Pilihan Harga</span>
 						</a>
 					</div>
 					<div class="menu-divider"></div>

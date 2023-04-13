@@ -22,8 +22,8 @@ class Home extends BaseController
         $data['slider'] = $this->konfigurasi->getSlider();
         $data['testimoni'] = $this->db->table('testimoni')->getWhere(['status' => 1])->getResult();
         $data['gallery'] = $this->db->table('product_gallery')->orderBy('product_gallery.title', 'ASC')->getWhere(['status' => 1])->getResult();
-        $data['produk_promo'] = $this->db->query('SELECT * FROM product WHERE status=1 AND flag="Promo" ORDER BY RAND() LIMIT 6')->getResult();
-        $data['produk_highlight'] = $this->db->query('SELECT * FROM product WHERE status=1 AND flag="Highlight" ORDER BY RAND() LIMIT 4')->getResult();
+        $data['product_price'] = $this->db->table('price_product')->orderBy('harga')->get()->getResult();
+        $data['produk_pilihan'] = $this->db->query('SELECT * FROM product WHERE status=1 AND flag="Highlight" ORDER BY RAND() LIMIT 6')->getResult();
         $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
         $data['mitra'] = $this->db->table('mitra')->getWhere(['status' => 1])->getResult();
         $data['blog'] = $this->db->query('SELECT * FROM blog WHERE status=1 ORDER BY id desc LIMIT 3')->getResult();
@@ -37,6 +37,8 @@ class Home extends BaseController
         $data['title'] = 'Profil';
         $data['main_content'] = 'home/about';
         $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
+        $data['mitra'] = $this->db->table('mitra')->getWhere(['status' => '1'])->getResult();
+        $data['team'] = $this->db->table('pengurus')->get()->getResult();
         $data['js'] = array("blog/detail.js?r=" . uniqid(), "produk/detail.js?r=" . uniqid());
         return view('template-front/template', $data);
     }

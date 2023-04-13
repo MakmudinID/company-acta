@@ -102,9 +102,7 @@
 								<li class="dropdown <?= ($title=='Profil') ? 'current' : '';?>"><a href="#">Profil</a>
 									<ul>
 										<li><a href="<?php echo base_url('/tentang-kami') ?>">Tentang Kami</a></li>
-										<li><a href="<?php echo base_url('/gudang') ?>">Gudang</a></li>
 										<li><a href="<?php echo base_url('/galeri-produk') ?>">Galeri Produk</a></li>
-										<li><a href="<?php echo base_url('/proses-produksi') ?>">Proses Produksi</a></li>
 									</ul>
 								</li>
 								<li class="dropdown <?= ($title=='Produk') ? 'current' : '';?>"><a href="#">Produk</a>

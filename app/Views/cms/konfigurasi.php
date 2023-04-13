@@ -46,24 +46,32 @@
                                             </div>
                                         </div>
                                         <div class="form-group row mb-3">
-                                            <label class="col-sm-2 col-form-label">Tagline</label>
+                                            <label class="col-sm-2 col-form-label">Profil Singkat</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" name="tagline" required value="<?php echo $data->tagline ?>">
+                                                <textarea class="form-control" name="tagline" required rows="5"><?php echo $data->tagline ?></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group row mb-3">
                                             <label class="col-sm-2 col-form-label">Profil Perusahaan</label>
                                             <div class="col-sm-10">
                                                 <textarea class="summernote" name="deskripsi" required><?php echo $data->deskripsi ?></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row mb-3">
-                                            <label class="col-sm-2 col-form-label">Logo Perusahaan</label>
-                                            <div class="col-sm-10 custom-file">
-                                                <input type="file" class="form-control" name="logo_url" id="logo_url" accept="image/*" onchange="preview_logo(event)" />
-                                                <hr>
-                                                <label class="form-label"><b>Preview Logo</b></label><br>
-                                                <img id="output_image" src="<?= $data->logo_url ?>" class="img-thumbnail" width="200" />
+                                                <div class="row">
+                                                    <div class="col-md-6 form-group">
+                                                        <label class="col-form-label">Logo Perusahaan</label>
+                                                        <input type="file" class="form-control" name="logo_url" id="logo_url" accept="image/*" onchange="preview_logo(event)" />
+                                                        <hr>
+                                                        <label class="form-label"><b>Preview Logo</b></label><br>
+                                                        <img id="output_image" src="<?= $data->logo_url ?>" class="img-thumbnail" width="200" />
+                                                    </div>
+                                                    <div class="col-md-6 form-group">
+                                                        <label class="col-form-label">Image Profil Perusahaan</label>
+                                                        <input type="file" class="form-control" name="profil_url" id="profil_url" accept="image/*" onchange="preview_profil(event)" />
+                                                        <hr>
+                                                        <label class="form-label"><b>Preview Profil</b></label><br>
+                                                        <img id="output_image_profil" src="<?= $data->profil_url ?>" class="img-thumbnail" width="200" />
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
                                         <div class="form-group row mb-3">
@@ -112,7 +120,7 @@
                                             </div>
                                         </div>
                                         <div class="row justify-content-center">
-                                            <div class="form-group col-md-6 mb-3"> 
+                                            <div class="form-group col-md-6 mb-3">
                                                 <label class="col-form-label">URL Instagram</label>
                                                 <input type="text" class="form-control" name="instagram" value="<?= $data->instagram ?>">
                                             </div>

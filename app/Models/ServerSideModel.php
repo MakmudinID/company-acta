@@ -92,6 +92,18 @@ class ServerSideModel extends Model
         }
     }
 
+    public function deleteRowsBy($field, $id, $table){
+        $id_ = htmlspecialchars($id, ENT_QUOTES);
+        $up = $this->db->table($table);
+        $up->delete([$field => $id_]);
+
+        if ($this->db->affectedRows() > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public function deleteBlog($id){
         $id_ = htmlspecialchars($id, ENT_QUOTES);
 

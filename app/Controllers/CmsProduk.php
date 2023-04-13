@@ -17,6 +17,88 @@ class CmsProduk extends BaseController
     }
 
     //PRODUK
+    public function product_price()
+    {
+        $data['mymenu'] = "PRODUK";
+        $data['mysubmenu'] = "PILIHAN HARGA";
+        $data['vendorcss'] = $this->plugins->cssDataTables();
+        $data['vendorjs'] = $this->plugins->jsDataTables();
+        $data['product_price'] = $this->db->table('price_product')->orderBy('harga')->get()->getResult();
+        $data['main_content']  = 'cms/produk/product_price';
+        $data['js'] = array("produk/product_price.js?r=" . uniqid());
+        echo view('template/template', $data);
+    }
+
+    public function fetch_modal_fitur()
+    {
+        $hashids = new Hashids('53qURe_produk_price', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789');
+        $id_produk = $hashids->decode($this->request->getPost('id'))[0];
+
+        if ($id_produk != '') {
+            $data['produk'] = $this->db->table('price_product')->getWhere(['id' => $id_produk])->getRow();
+            $data['fitur'] = $this->db->table('price_feature')->getWhere(['id_product_price' => $id_produk])->getResult();
+            echo view('cms/produk/modal', $data);
+        } else {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        }
+    }
+
+    public function update_product_price()
+    {
+        $val = $this->validate(
+            [
+                'judul' => 'required',
+                'ringkasan' => 'required',
+                'harga' => 'required',
+            ],
+        );
+
+        if (!$val) {
+            $r['result'] = false;
+            $r['title'] = 'Gagal!';
+            $r['icon'] = 'error';
+            $r['status'] = \Config\Services::validation()->listErrors();
+            echo json_encode($r);
+            return;
+        } else {
+            $hashids = new Hashids('53qURe_produk_price', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789');
+
+            $id = $hashids->decode($this->request->getPost('id'))[0];
+
+            $data['judul']   = htmlspecialchars($this->request->getPost('judul'), ENT_QUOTES);
+            $data['keterangan']   = htmlspecialchars($this->request->getPost('ringkasan'), ENT_QUOTES);
+            $data['harga']   = $this->request->getPost('harga');
+            $data['edit_user'] = session()->get('admin_name');
+            $data['edit_date'] = date('Y-m-d H:i:s');
+
+            $r['result'] = true;
+            $table = 'price_product';
+            $result = $this->serverside->updateRows($id, $data, $table);
+
+            if (!$result) {
+                $r['result'] = false;
+                $r['title'] = 'Maaf Gagal Menyimpan!';
+                $r['icon'] = 'error';
+                $r['status'] = '<br><b>Tidak dapat di Simpan! <br> Silakan hubungi Administrator.</b>';
+            }else{
+                $this->serverside->deleteRowsBy('id_product_price', $id, 'price_feature');
+
+                $fitur = $this->request->getPost('fitur');
+                foreach ($fitur as $key => $val) {
+                    $fitur_['id_product_price'] = $id;
+                    $fitur_['no_urut'] = $key + 1;
+                    $fitur_['deskripsi'] = $val;
+                    $fitur_["create_user"] = session()->get('admin_name');
+                    $fitur_['create_date'] = date('Y-m-d H:i:s');
+        
+                    $this->serverside->createRows($fitur_, 'price_feature');
+                }
+            }
+            echo json_encode($r);
+            return;
+        }
+    }
+
     public function product()
     {
         $data['mymenu'] = "PRODUK";
@@ -438,7 +520,7 @@ class CmsProduk extends BaseController
                 $src = $this->db->table('product_category')->getWhere(['id' => $id])->getRow()->photo_url;
                 $file_name = '.' . str_replace(base_url('/'), '', $src); // striping host to get relative path
                 $a = explode("/", $file_name);
-        
+
                 if (file_exists('./assets-cms/img/product_category/' . end($a))) {
                     unlink('./assets-cms/img/product_category/' . end($a));
                 }
@@ -677,11 +759,11 @@ class CmsProduk extends BaseController
             $path = $photo->getName();
             $ext = pathinfo($path, PATHINFO_EXTENSION);
             if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg' || $ext == 'svg' || $ext == 'gif') {
-                
+
                 $src = $this->db->table('product_gallery')->getWhere(['id' => $id])->getRow()->photo_url;
                 $file_name = '.' . str_replace(base_url('/'), '', $src); // striping host to get relative path
                 $a = explode("/", $file_name);
-        
+
                 if (file_exists('./assets-cms/img/gallery/' . end($a))) {
                     unlink('./assets-cms/img/gallery/' . end($a));
                 }

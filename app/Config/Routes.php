@@ -55,11 +55,17 @@ $routes->post('/cms/create_product_category', 'CmsProduk::create_product_categor
 $routes->post('/cms/update_product_category', 'CmsProduk::update_product_category', ['filter' => 'auth']);
 $routes->get('/cms/delete_product_category/(:any)', 'CmsProduk::delete_product_category/$1', ['filter' => 'auth']);
 
-$routes->get('/cms/produk-gallery', 'CmsProduk::produk_gallery', ['filter' => 'auth']);
+$routes->get('/cms/product-gallery', 'CmsProduk::produk_gallery', ['filter' => 'auth']);
 $routes->post('/cms/produk_gallery_', 'CmsProduk::produk_gallery_', ['filter' => 'auth']);
 $routes->post('/cms/create_produk_gallery', 'CmsProduk::create_produk_gallery', ['filter' => 'auth']);
 $routes->post('/cms/update_produk_gallery', 'CmsProduk::update_produk_gallery', ['filter' => 'auth']);
 $routes->get('/cms/delete_produk_gallery/(:any)', 'CmsProduk::delete_produk_gallery/$1', ['filter' => 'auth']);  
+
+$routes->get('/cms/product-price', 'CmsProduk::product_price', ['filter' => 'auth']);
+$routes->post('/cms/product_price_', 'CmsProduk::product_price_', ['filter' => 'auth']);
+$routes->post('/cms/update_produk_price', 'CmsProduk::update_product_price', ['filter' => 'auth']);
+$routes->post('/cms/fetch-modal-fitur', 'CmsProduk::fetch_modal_fitur', ['filter' => 'auth']);
+
 
 //DATA
 $routes->get('/cms/blog', 'CmsData::blog', ['filter' => 'auth']);
