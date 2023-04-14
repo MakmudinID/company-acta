@@ -7,9 +7,9 @@ $hashids = new Hashids('53qURe_produk', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
 <section class="page-title">
     <div class="pattern-layer-one" style="background-image: url(<?= base_url('/assets/images/background/pattern-16.png') ?>)"></div>
     <div class="auto-container">
-        <h2><?= $kategori_row->nama;?></h2>
+        <h2>Produk</h2>
         <ul class="page-breadcrumb">
-            <li><a href="<?= base_url('/') ?>">Produk</a></li>
+            <li><a href="<?= base_url('/') ?>">Kategori</a></li>
             <li><?= $kategori_row->nama;?></li>
         </ul>
     </div>

@@ -56,6 +56,16 @@ class Plugins
     public function program_kami(){
         return $this->db->query("SELECT id, nama, url, banner_image, banner_judul, banner_deskripsi FROM program WHERE status=1")->getResult();
     }
+    
+    public function getTag($id_portfolio){
+        $result = $this->db->query("SELECT nama FROM portfolio_tag WHERE id_portfolio=?", array($id_portfolio))->getResult();
+        $tag = '';
+        foreach($result as $r){
+            $tag .= $r->nama.' ';
+        }
+        
+        return $tag;
+    }
 
     public function format_tanggal($Tgal,$jam="yes",$idBahasa = 'id'){
 		if($Tgal == ""){

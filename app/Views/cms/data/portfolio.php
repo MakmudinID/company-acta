@@ -16,6 +16,7 @@
                             <thead>
                                 <th width="5%">No</th>
                                 <th width="15%">Photo</th>
+                                <th>Client</th>
                                 <th>Judul</th>
                                 <th>Keterangan</th>
                                 <th width="10%">Status</th>
@@ -31,7 +32,7 @@
     </div>
 </div>
 <div class="modal modal-cover fade" id="mdl-portfolio">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">Tambah Portfolio</h4>
@@ -40,22 +41,42 @@
             </div>
             <form role="form" id="form">
                 <div class="modal-body">
-                    <div class="form-group mb-3">
-                        <label for="title">Title <span class="text-danger">*</span></label>
-                        <input class="form-control" id="title" name="title">
-                        <input type="hidden" id="id" name="id">
+                    <div class="row">
+                        <div class="form-group col-md-6 mb-3">
+                            <label for="title">Title <span class="text-danger">*</span></label>
+                            <input class="form-control" id="title" name="title">
+                            <input type="hidden" id="id" name="id">
+                        </div>
+                        <div class="form-group col-md-6 mb-3" id="create">
+                            <label for="tag">Tag</label>
+                            <input type="text" class="some_class_name" id="tag" name="tag" placeholder="write some tags">
+                        </div>
+                        <div class="form-group col-md-6 mb-3" id="edit" style="display:none">
+                            <label for="tags">Tag</label>
+                            <input type="text" class="some_class_name" id="tags" name="tags" placeholder="write some tags">
+                        </div>
                     </div>
                     <div class="form-group mb-3">
-                        <label for="caption">Caption</label>
-                        <textarea class="form-control" id="caption" name="caption"></textarea>
+                        <label for="keterangan">Keterangan</label>
+                        <textarea class="form-control" id="keterangan" name="keterangan"></textarea>
                     </div>
-                    <div class="form-group mb-3" id="create">
-                        <label for="tag">Tag</label>
-                        <input type="text" class="some_class_name" id="tag" name="tag" placeholder="write some tags">
+                    <div class="form-group mb-3">
+                        <label for="deskripsi">Deskripsi</label>
+                        <textarea class="form-control summernote" id="deskripsi" name="deskripsi"></textarea>
                     </div>
-                    <div class="form-group mb-3" id="edit" style="display:none">
-                        <label for="tags">Tag</label>
-                        <input type="text" class="some_class_name" id="tags" name="tags" placeholder="write some tags">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="client">Client <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="client" name="client" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="location_project">Lokasi Client <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="location_project" name="location_project" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="date_project">Tanggal Projek <span class="text-danger">*</span></label>
+                            <input type="date" class="form-control" id="date_project" name="date_project" required>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">

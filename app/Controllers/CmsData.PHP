@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+
 use Hashids\Hashids;
 
 class CmsData extends BaseController
@@ -15,7 +16,7 @@ class CmsData extends BaseController
         $this->db = db_connect();
     }
 
-        public function blog()
+    public function blog()
     {
         $data['mymenu'] = "DATA";
         $data['mysubmenu'] = "BLOG";
@@ -167,11 +168,11 @@ class CmsData extends BaseController
             if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg' || $ext == 'svg' || $ext == 'gif') {
                 $src = $this->db->table('blog')->getWhere(['id' => $id])->getRow()->photo_url;
 
-                $file_name = '.'.str_replace(base_url('/'), '', $src); // striping host to get relative path
+                $file_name = '.' . str_replace(base_url('/'), '', $src); // striping host to get relative path
                 $a = explode("/", $file_name);
-        
-                if(file_exists('./assets-cms/img/blog/'.end($a))){
-                    unlink('./assets-cms/img/blog/'.end($a));
+
+                if (file_exists('./assets-cms/img/blog/' . end($a))) {
+                    unlink('./assets-cms/img/blog/' . end($a));
                 }
 
                 $photo->move(WRITEPATH . '../public/assets-cms/img/blog/');
@@ -384,7 +385,7 @@ class CmsData extends BaseController
                 $src = $this->db->table('mitra')->getWhere(['id' => $id])->getRow()->photo_url;
                 $file_name = '.' . str_replace(base_url('/'), '', $src); // striping host to get relative path
                 $a = explode("/", $file_name);
-        
+
                 if (file_exists('./assets-cms/img/mitra/' . end($a))) {
                     unlink('./assets-cms/img/mitra/' . end($a));
                 }
@@ -461,8 +462,8 @@ class CmsData extends BaseController
     public function portfolio_()
     {
         $encrypter = \Config\Services::encrypter();
-        $column_order = array(NULL, NULL, 'title', 'caption', 'status', NULL);
-        $column_search = array('title', 'caption');
+        $column_order = array(NULL, 'photo_url', 'client', 'title', 'keterangan', 'status', NULL);
+        $column_search = array('client', 'title', 'keterangan');
         $order = array('title' => 'asc');
 
         $table = 'portfolio';
@@ -480,15 +481,19 @@ class CmsData extends BaseController
 
             $row[]  = $no;
             $row[]  = '<img src="' . $field->photo_url . '" class="img-thumbnail" width="150">';
+            $row[]  = $field->client;
             $row[]  = $field->title;
-            $row[]  = $field->caption;
+            $row[]  = $field->keterangan;
             $row[]  = ($field->status == 1) ? '<span class="badge bg-success-transparent-2 text-success px-2 pt-5px pb-5px rounded fs-12px d-inline-flex align-items-center"><i class="fa fa-circle fs-9px fa-fw me-5px"></i> Publish</span>' : '<span class="badge bg-warning-transparent-2 text-warning px-2 pt-5px pb-5px rounded fs-12px d-inline-flex align-items-center"><i class="fa fa-circle fs-9px fa-fw me-5px"></i> Draft</span>';
             $row[]  = '<div class="d-flex justify-content-center align-items-center">
                         <span class="badge bg-info-transparent-2 ms-2 text-info px-2 pt-5px pb-5px rounded fs-12px d-inline-flex align-items-center edit" 
                             data-id="' . $id_encrypt . '" 
                             data-title="' . $field->title . '"
-                            data-caption="' . $field->caption . '"
+                            data-keterangan="' . $field->keterangan . '"
                             data-status="' . $field->status . '"
+                            data-client="' . $field->client . '"
+                            data-location_project="' . $field->location_project . '"
+                            data-date_project="' . $field->date_project . '"
                             data-photo_url="' . $field->photo_url . '"
                             data-tag="' . $selected_tag . '"
                             role="button">Edit</span>
@@ -535,7 +540,11 @@ class CmsData extends BaseController
                 return;
             } else {
                 $data['title']   = htmlspecialchars($this->request->getPost('title'), ENT_QUOTES);
-                $data['caption']   = htmlspecialchars($this->request->getPost('caption'), ENT_QUOTES);
+                $data['keterangan'] = htmlspecialchars($this->request->getPost('keterangan'), ENT_QUOTES);
+                $data['deskripsi']  = $this->request->getPost('deskripsi');
+                $data['client'] = htmlspecialchars($this->request->getPost('client'), ENT_QUOTES);
+                $data['location_project'] = htmlspecialchars($this->request->getPost('location_project'), ENT_QUOTES);
+                $data['date_project'] = htmlspecialchars($this->request->getPost('date_project'), ENT_QUOTES);
                 $data['status'] = htmlspecialchars($this->request->getPost('status'), ENT_QUOTES);
                 $data['create_user'] = session()->get('admin_name');
                 $data['create_date'] = date('Y-m-d H:i:s');
@@ -598,7 +607,11 @@ class CmsData extends BaseController
         $id = $encrypter->decrypt(hex2bin($id_));
 
         $data['title']   = htmlspecialchars($this->request->getPost('title'), ENT_QUOTES);
-        $data['caption']   = htmlspecialchars($this->request->getPost('caption'), ENT_QUOTES);
+        $data['keterangan']   = htmlspecialchars($this->request->getPost('keterangan'), ENT_QUOTES);
+        $data['deskripsi']  = $this->request->getPost('deskripsi');
+        $data['client'] = htmlspecialchars($this->request->getPost('client'), ENT_QUOTES);
+        $data['location_project'] = htmlspecialchars($this->request->getPost('location_project'), ENT_QUOTES);
+        $data['date_project'] = htmlspecialchars($this->request->getPost('date_project'), ENT_QUOTES);
         $data['status'] = htmlspecialchars($this->request->getPost('status'), ENT_QUOTES);
         $data['edit_user'] = session()->get('admin_name');
         $data['edit_date'] = date('Y-m-d H:i:s');
@@ -613,7 +626,7 @@ class CmsData extends BaseController
                 $src = $this->db->table('portfolio')->getWhere(['id' => $id])->getRow()->photo_url;
                 $file_name = '.' . str_replace(base_url('/'), '', $src); // striping host to get relative path
                 $a = explode("/", $file_name);
-        
+
                 if (file_exists('./assets-cms/img/portfolio/' . end($a))) {
                     unlink('./assets-cms/img/portfolio/' . end($a));
                 }
@@ -629,6 +642,8 @@ class CmsData extends BaseController
                 return;
             }
         }
+
+        $this->serverside->deleteRowsBy('id_portfolio', $id, 'portfolio_tag');
 
         if (!empty($_POST['tags'])) {
             $im_tag = implode(', ', array_column(json_decode($_POST['tags']), 'value'));
@@ -709,13 +724,13 @@ class CmsData extends BaseController
             $no++;
             $row = array();
 
-            if($field->youtube_url != ''){
-                $deskripsi = 
-                        '<p>'.$field->deskripsi.'</p>
+            if ($field->youtube_url != '') {
+                $deskripsi =
+                    '<p>' . $field->deskripsi . '</p>
                         <div class="d-flex">
-                            <a href="'.$field->youtube_url.'" target="blank_" class="btn btn-default btn-sm"><i class="fab fa-youtube"></i> Video Testimoni</a>
+                            <a href="' . $field->youtube_url . '" target="blank_" class="btn btn-default btn-sm"><i class="fab fa-youtube"></i> Video Testimoni</a>
                         </div>';
-            }else{
+            } else {
                 $deskripsi = $field->deskripsi;
             }
 
@@ -848,11 +863,11 @@ class CmsData extends BaseController
                 $src = $this->db->table('testimoni')->getWhere(['id' => $id])->getRow()->photo_url;
                 $file_name = '.' . str_replace(base_url('/'), '', $src); // striping host to get relative path
                 $a = explode("/", $file_name);
-        
+
                 if (file_exists('./assets-cms/img/testimoni/' . end($a))) {
                     unlink('./assets-cms/img/testimoni/' . end($a));
                 }
-                
+
                 $photo->move(WRITEPATH . '../public/assets-cms/img/testimoni/');
                 $data['photo_url'] = base_url('/assets-cms/img/testimoni/' . $path);
             } else {
@@ -908,6 +923,4 @@ class CmsData extends BaseController
         }
         echo json_encode($r);
     }
-
-
 }

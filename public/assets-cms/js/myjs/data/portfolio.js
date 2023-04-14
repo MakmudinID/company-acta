@@ -143,6 +143,8 @@ jQuery(document).ready(function() {
         document.getElementById("edit").style.display = "none";
         document.getElementById("create").style.display = "block";
 
+        $('[name="deskripsi"]').summernote("code", '');
+
         $("#form")[0].reset();
         $("#mdl-portfolio").modal("show");
         $(".modal-title").text("Tambah Portfolio");
@@ -163,12 +165,14 @@ jQuery(document).ready(function() {
 
         $(".modal-title").text("Edit portfolio");
         $('[name="id"]').val($(this).data("id"));
-        $('[name="nama"]').val($(this).data("nama"));
         $('[name="title"]').val($(this).data("title"));
-        $('[name="deskripsi"]').val($(this).data("deskripsi"));
-        $('[name="youtube_url"]').val($(this).data("youtube_url"));
+        $('[name="keterangan"]').val($(this).data("keterangan"));
+        $('[name="deskripsi"]').summernote("code", $(this).data("deskripsi"));
         $('[name="photo_url"]').val($(this).data("photo_url"));
         $('[name="status"]').val($(this).data("status"));
+        $('[name="client"]').val($(this).data("client"));
+        $('[name="location_project"]').val($(this).data("location_project"));
+        $('[name="date_project"]').val($(this).data("date_project"));
     });
 
     $(document).on("click", ".delete", function() {
@@ -207,6 +211,52 @@ jQuery(document).ready(function() {
             }
         });
     });
+
+    $(".summernote").summernote({
+        callbacks: {
+            onImageUpload: function(image) {
+                uploadImage(image[0]);
+            },
+            onMediaDelete: function(target) {
+                deleteImage(target[0].src);
+            },
+        },
+    });
+
+    function uploadImage(image) {
+        var data = new FormData();
+        data.append("image", image);
+        data.append(csrfName, csrfHash);
+        $.ajax({
+            url: base_url + "/cms/upload_image_content",
+            cache: false,
+            contentType: false,
+            processData: false,
+            data: data,
+            type: "POST",
+            success: function(url) {
+                $(".summernote").summernote("insertImage", url);
+            },
+            error: function(data) {
+                console.log(data);
+            },
+        });
+    }
+
+    function deleteImage(src) {
+        $.ajax({
+            data: {
+                src: src,
+                csrfName: csrfHash,
+            },
+            type: "POST",
+            url: base_url + "/cms/delete_image_content/", // replace with your url
+            cache: false,
+            success: function(resp) {
+                console.log(resp);
+            },
+        });
+    }
 });
 
 function preview_image(event) {

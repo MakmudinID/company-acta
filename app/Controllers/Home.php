@@ -39,6 +39,8 @@ class Home extends BaseController
         $data['main_content'] = 'home/about';
         $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
         $data['mitra'] = $this->db->table('mitra')->getWhere(['status' => '1'])->getResult();
+        $data['visi'] = $this->db->table('visimisi')->getWhere(['kategori' => 'VISI', 'status' => 1])->getResult();
+        $data['misi'] = $this->db->table('visimisi')->getWhere(['kategori' => 'MISI', 'status' => 1])->getResult();
         $data['team'] = $this->db->table('pengurus')->get()->getResult();
         $data['js'] = array("blog/detail.js?r=" . uniqid(), "produk/detail.js?r=" . uniqid());
         return view('template-front/template', $data);
@@ -68,16 +70,22 @@ class Home extends BaseController
     {
         $data['title'] = 'Portfolio';
         $data['main_content'] = 'home/portfolio';
+        $data['tag'] = $this->db->table('portfolio_tag')->groupBy('nama')->get()->getResult();
+        $data['portfolio'] = $this->db->table('portfolio')->getWhere(['status' => '1'])->getResult();
         $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
         $data['js'] = array("blog/detail.js?r=" . uniqid(), "produk/detail.js?r=" . uniqid());
         return view('template-front/template', $data);
     }
 
-    public function portfolio_detail()
+    public function portfolio_detail($id_portfolio)
     {
+        $hashids = new Hashids('53qURe_portfolio', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789');
+        $id = $hashids->decode($id_portfolio)[0];
+
         $data['title'] = 'Portfolio';
         $data['main_content'] = 'home/portfolio_detail';
         $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
+        $data['portfolio'] = $this->db->table('portfolio')->getWhere(['id' => $id])->getRow();
         $data['js'] = array("blog/detail.js?r=" . uniqid(), "produk/detail.js?r=" . uniqid());
         return view('template-front/template', $data);
     }

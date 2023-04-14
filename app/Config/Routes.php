@@ -37,7 +37,7 @@ $routes->get('/blog-detail', 'Home::blog_detail');
 $routes->get('/tentang-kami', 'Home::tentang_kami');
 $routes->get('/galeri-produk', 'Home::galeri_produk');
 $routes->get('/portfolio', 'Home::portfolio');
-$routes->get('/portfolio-detail', 'Home::portfolio_detail');
+$routes->get('/portfolio-detail/(:any)', 'Home::portfolio_detail/$1');
 $routes->get('/gudang', 'Home::gudang');
 $routes->get('/produk-kategori/(:any)', 'Home::produk_kategori/$1');
 $routes->get('/produk/(:any)', 'Home::produk/$1');

@@ -28,8 +28,23 @@
         </div>
         <?php if ($konfigurasi->deskripsi != '') : ?>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <?= $konfigurasi->deskripsi; ?>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <h4 class="text-center font-weight-bold">VISI</h4>
+                    <ul class="list-group">
+                        <?php foreach ($visi as $v) : ?>
+                            <li class="list-group-item"><?= $v->deskripsi; ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                    <br>
+                    <h4 class="text-center font-weight-bold">MISI</h4>
+                    <ul class="list-group">
+                        <?php foreach ($misi as $m) : ?>
+                            <li class="list-group-item"><?= $m->deskripsi; ?></li>
+                        <?php endforeach; ?>
+                    </ul>
                 </div>
             </div>
         <?php endif; ?>
