@@ -39,7 +39,9 @@ $routes->get('/galeri-produk', 'Home::galeri_produk');
 $routes->get('/portfolio', 'Home::portfolio');
 $routes->get('/portfolio-detail', 'Home::portfolio_detail');
 $routes->get('/gudang', 'Home::gudang');
-$routes->get('/produk', 'Home::produk');
+$routes->get('/produk-kategori/(:any)', 'Home::produk_kategori/$1');
+$routes->get('/produk/(:any)', 'Home::produk/$1');
+
 $routes->get('/profil', 'Home::profil');
 
 //PRODUK

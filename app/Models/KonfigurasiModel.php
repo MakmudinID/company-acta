@@ -68,6 +68,34 @@ class KonfigurasiModel extends Model
         return $this->db->query('SELECT * FROM slider WHERE `status`=1 ORDER BY no_urut ASC')->getResult();
     }
 
+    public function getKategoriProduk(){
+        return $this->db->query('SELECT * FROM product_category WHERE `status`=1 ORDER BY nama ASC')->getResult();
+    }
+
+    public function getProduk(){
+        $result = $this->db->query('SELECT product.*, product_category.kode, product_category.nama as kategori
+                        FROM product 
+                        JOIN product_category ON product_category.id = product.id_product_category
+                        WHERE product.status=1 ORDER BY id_product_category ASC')->getResult();
+        return $result;            
+    }
+
+    public function getProdukById($id_product){
+        $result = $this->db->query('SELECT product.*, product_category.kode, product_category.nama as kategori
+                        FROM product 
+                        JOIN product_category ON product_category.id = product.id_product_category
+                        WHERE product.status=1 AND product.id=? ORDER BY id_product_category ASC', array($id_product))->getRow();
+        return $result;            
+    }
+
+    public function getProdukBy($kode_kategori){
+        return $this->db->query('SELECT product.*, product_category.kode, product_category.nama as kategori
+        FROM product 
+        JOIN product_category ON product_category.id = product.id_product_category
+        WHERE product.status=1
+        AND product_category.kode=? ORDER BY id_product_category ASC', array($kode_kategori))->getResult();
+    }
+
     public function getData(){
         return $this->db->query('SELECT * FROM konfigurasi WHERE id="SET" ')->getRow();
     }

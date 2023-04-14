@@ -2,10 +2,9 @@
 <section class="page-title">
     <div class="pattern-layer-one" style="background-image: url(assets/images/background/pattern-16.png)"></div>
     <div class="auto-container">
-        <h2>Galeri Produk</h2>
+        <h2>PORTFOLIO</h2>
         <ul class="page-breadcrumb">
-            <li><a href="<?= base_url('/') ?>">Profil</a></li>
-            <li>Galeri Produk</li>
+            <li>Hasil Karya Terbaik Kami <br> Semoga menjadi inspirasi dan referensi untuk kita dapat bekerja sama</li>
         </ul>
     </div>
 </section>

@@ -80,7 +80,7 @@ class CmsProduk extends BaseController
                 $r['title'] = 'Maaf Gagal Menyimpan!';
                 $r['icon'] = 'error';
                 $r['status'] = '<br><b>Tidak dapat di Simpan! <br> Silakan hubungi Administrator.</b>';
-            }else{
+            } else {
                 $this->serverside->deleteRowsBy('id_product_price', $id, 'price_feature');
 
                 $fitur = $this->request->getPost('fitur');
@@ -90,7 +90,7 @@ class CmsProduk extends BaseController
                     $fitur_['deskripsi'] = $val;
                     $fitur_["create_user"] = session()->get('admin_name');
                     $fitur_['create_date'] = date('Y-m-d H:i:s');
-        
+
                     $this->serverside->createRows($fitur_, 'price_feature');
                 }
             }
@@ -138,8 +138,8 @@ class CmsProduk extends BaseController
 
             $row[]  = $no;
             $row[]  = '<img src="' . $field->photo_url . '" class="img-thumbnail" width="150">';
-            $row[]  = $field->nama;
-            $row[]  = $field->merek;
+            $row[]  = '<h5>' . $field->nama . '</h5>Kategori: ' . $field->merek . '<br><b>Rp ' . number_format($field->harga_jasa, 0, ',', '.') . '</b>';
+            $row[]  = $field->ringkasan;
             $row[]  = ($field->status == 1) ? '<span class="badge bg-success-transparent-2 text-success px-2 pt-5px pb-5px rounded fs-12px d-inline-flex align-items-center"><i class="fa fa-circle fs-9px fa-fw me-5px"></i> Active</span>' : '<span class="badge bg-danger-transparent-2 text-danger px-2 pt-5px pb-5px rounded fs-12px d-inline-flex align-items-center"><i class="fa fa-circle fs-9px fa-fw me-5px"></i> Inactive</span>';
             $row[]  = '<div class="d-flex justify-content-center align-items-center">
                             <span class="badge bg-info-transparent-2 ms-2 text-info px-2 pt-5px pb-5px rounded fs-12px d-inline-flex align-items-center edit" role="button" 
@@ -690,7 +690,7 @@ class CmsProduk extends BaseController
             } else {
                 $hashids = new Hashids('53qURe_gallery', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789');
 
-                $data['id_product']   = $hashids->decode($this->request->getPost('product'))[0];
+                $data['id_product']   = $hashids->decode($this->request->getPost('produk'))[0];
                 $data['title'] = htmlspecialchars($this->request->getPost('title'), ENT_QUOTES);
                 $data['caption'] = htmlspecialchars($this->request->getPost('caption'), ENT_QUOTES);
                 $data['status'] = htmlspecialchars($this->request->getPost('status'), ENT_QUOTES);
@@ -743,11 +743,13 @@ class CmsProduk extends BaseController
 
     public function update_produk_gallery()
     {
+        $hashids = new Hashids('53qURe_gallery', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789');
         $id_ = htmlspecialchars($this->request->getPost('id'), ENT_QUOTES);
-        $encrypter = \Config\Services::encrypter();
-        $id = $encrypter->decrypt(hex2bin($id_));
+        $id = $hashids->decode($id_)[0];
 
-        $data['no_urut']   = htmlspecialchars($this->request->getPost('no_urut'), ENT_QUOTES);
+        $data['id_product']   = $hashids->decode($this->request->getPost('produk'))[0];
+        $data['title'] = htmlspecialchars($this->request->getPost('title'), ENT_QUOTES);
+        $data['caption'] = htmlspecialchars($this->request->getPost('caption'), ENT_QUOTES);
         $data['status'] = htmlspecialchars($this->request->getPost('status'), ENT_QUOTES);
         $data['edit_user'] = session()->get('admin_name');
         $data['edit_date'] = date('Y-m-d H:i:s');

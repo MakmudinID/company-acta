@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Controllers;
+
 use App\Models\BlogModel;
 use App\Models\ProdukModel;
-
+use Hashids\Hashids;
 class Home extends BaseController
 {
     protected $db;
@@ -57,6 +58,8 @@ class Home extends BaseController
         $data['title'] = 'Profil';
         $data['main_content'] = 'home/galeri_produk';
         $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
+        $data['produk'] = $this->konfigurasi->getProduk();
+        $data['kategori'] = $this->db->table('product_category')->getWhere(['status' => '1'])->getResult();
         $data['js'] = array("blog/detail.js?r=" . uniqid(), "produk/detail.js?r=" . uniqid());
         return view('template-front/template', $data);
     }
@@ -112,16 +115,28 @@ class Home extends BaseController
         // return view('home/profil', $data);
     }
 
-    public function produk()
+    public function produk($id_produk)
     {
-        // $produk = new ProdukModel();
+        $data['title'] = 'Produk';
+        $hashids = new Hashids('53qURe_produk', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789');
+        $id = $hashids->decode($id_produk)[0];
 
-        // $data['produk_unggulan'] = $this->db->table('produk_unggulan')->Select('produk_unggulan.*, merek_dagang.nama as nama_merek')->Join('merek_dagang', 'merek_dagang.id = produk_unggulan.id_merek_dagang')->Where('produk_unggulan.status', 1)->orderBy('produk_unggulan.id', 'DESC')->get()->getResult();
-        // $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
-        // $data['list_produk'] = $produk->Select('produk_unggulan.*, merek_dagang.nama as nama_merek')->Join('merek_dagang', 'merek_dagang.id = produk_unggulan.id_merek_dagang')->Where('produk_unggulan.status', 1)->orderBy('produk_unggulan.id', 'DESC')->paginate(12, 'blog');
-        // $data['pager'] = $produk->pager;
-        // $data['js'] = array("produk/detail.js?r=" . uniqid());
-        // return view('home/produk', $data);
+        $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
+        $data['produk'] = $this->konfigurasi->getProdukById($id);
+        $data['galery_produk'] = $this->db->table('product_gallery')->getWhere(['id_product' => $id])->getResult();
+        $data['main_content'] = 'home/produk';
+        return view('template-front/template', $data);
+    }
+
+    public function produk_kategori($kode_kategori)
+    {
+        $data['title'] = 'Produk';
+        $data['kategori_row'] = $this->db->table('product_category')->getWhere(['kode' => $kode_kategori])->getRow();
+        $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
+        $data['kategori'] = $this->konfigurasi->getKategoriProduk();
+        $data['list_produk'] = $this->konfigurasi->getProdukBy($kode_kategori);
+        $data['main_content'] = 'home/produk_kategori';
+        return view('template-front/template', $data);
     }
 
     public function struktur_organisasi()
@@ -131,12 +146,12 @@ class Home extends BaseController
         $data['struktur'] = $this->db->table('pengurus')->get()->getResult();
         return view('home/struktur', $data);
     }
-    
+
     // public function blog_()
     // {
     //     // $data['get'] = $this->serverside->getBlogBy($slug);
     //     // $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
-	// 	// echo view('home/blog_detail', $data);
+    // 	// echo view('home/blog_detail', $data);
 
     //     $produk = new ProdukModel();
     //     // echo $slug;

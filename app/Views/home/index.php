@@ -42,10 +42,8 @@ $this->produkModel = new ProdukModel();
                 <div class="service-block-three col-lg-4 col-md-6 col-sm-12 mt-3">
                     <div class="inner-box wow fadeInLeft animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInLeft;">
                         <div class="content">
-                            <div class="service-number">01</div>
                             <h4><a href="services-detail.html">Warranty Management IT</a></h4>
                             <div class="text">Entrust full-cycle implementation of your software product to our experienced BAs, UI/UX designers, developers.</div>
-                            <a href="services-detail.html" class="more-detail">More Detail</a>
                         </div>
                     </div>
                 </div>
@@ -54,10 +52,8 @@ $this->produkModel = new ProdukModel();
                 <div class="service-block-three col-lg-4 col-md-6 col-sm-12 mt-3">
                     <div class="inner-box wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
                         <div class="content">
-                            <div class="service-number">02</div>
                             <h4><a href="services-detail.html">Product Control Service</a></h4>
                             <div class="text">Entrust full-cycle implementation of your software product to our experienced BAs, UI/UX designers, developers.</div>
-                            <a href="services-detail.html" class="more-detail">More Detail</a>
                         </div>
                     </div>
                 </div>
@@ -66,10 +62,8 @@ $this->produkModel = new ProdukModel();
                 <div class="service-block-three col-lg-4 col-md-6 col-sm-12 mt-3">
                     <div class="inner-box wow fadeInRight animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInRight;">
                         <div class="content">
-                            <div class="service-number">03</div>
                             <h4><a href="services-detail.html">Quality Control System</a></h4>
                             <div class="text">Entrust full-cycle implementation of your software product to our experienced BAs, UI/UX designers, developers.</div>
-                            <a href="services-detail.html" class="more-detail">More Detail</a>
                         </div>
                     </div>
                 </div>
@@ -83,14 +77,14 @@ $this->produkModel = new ProdukModel();
 <section class="about-section">
     <div class="auto-container">
         <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mb-3">
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
                 <div class="sec-title">
                     <div class="title">PROFIL <?= $konfigurasi->nama_populer; ?></div>
                 </div>
                 <h2 style="display:black;"><?= $konfigurasi->nama_company; ?></h2>
                 <div class="text"><?= $konfigurasi->tagline;?></div>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center">
                 <img src="<?= $konfigurasi->profil_url ?>" alt="">
             </div>
         </div>
@@ -104,10 +98,9 @@ $this->produkModel = new ProdukModel();
             <div class="icon-one" style="background-image: url(assets/images/icons/icon-1.png)"></div>
             <div class="icon-two" style="background-image: url(assets/images/icons/icon-2.png)"></div>
             <div class="icon-three" style="background-image: url(assets/images/icons/icon-3.png)"></div>
-            <!-- Sec Title -->
             <div class="sec-title light centered">
                 <div class="title">Produk Pilihan</div>
-                <h2>Berbagai jenis produk yang dapat anda pilih <br>untuk mengembangkan bisnis anda</h2>
+                <h3 class="text-white"><b>Berbagai jenis produk yang dapat anda pilih <br>untuk mengembangkan bisnis anda</b></h3>
             </div>
         </div>
         <div class="inner-container">
@@ -133,14 +126,11 @@ $this->produkModel = new ProdukModel();
 
 <section class="pricing-section margin-top">
     <div class="auto-container">
-        <!-- Sec Title -->
         <div class="sec-title centered">
             <div class="title">PILIHAN HARGA</div>
-            <h2>Harga terbaik yang kami hadirkan untuk anda</h2>
+            <h3><b>Harga terbaik yang kami hadirkan untuk anda</b></h3>
         </div>
-
         <div class="row clearfix mt-5">
-
             <?php foreach($product_price as $p): ?>
                 <div class="price-block col-lg-4 col-md-6 col-sm-12 mb-2">
                     <div class="inner-box">
@@ -158,9 +148,7 @@ $this->produkModel = new ProdukModel();
                     </div>
                 </div>
             <?php endforeach; ?>
-
         </div>
-
     </div>
 </section>
 
@@ -176,17 +164,14 @@ $this->produkModel = new ProdukModel();
     </div>
 </section>
 
-
-
 <!-- Testimonial Section -->
 <section class="testimonial-section">
     <div class="auto-container">
-        <!-- Sec Title -->
         <div class="sec-title">
             <div class="clearfix">
                 <div class="pull-left align-self-center">
                     <div class="title">TESTIMONI</div>
-                    <h2>Pendapat Pelanggan Kami</h2>
+                    <h3><b>Pendapat Pelanggan Kami</b></h3>
                 </div>
                 <div class="pull-right">
                     <div class="text">Keinginan dan kepuasan anda adalah menjadi prioritas kami <br> dengan memberikan dukungan teknis terbaik</div>

@@ -69,7 +69,7 @@ jQuery(document).ready(function() {
             orderable: false,
             className: 'text-center'
         }, {
-            targets: [2, 3],
+            targets: [3],
             orderable: false,
             className: 'text-center'
         }],

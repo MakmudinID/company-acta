@@ -84,7 +84,7 @@
 
 body {
 	font-family: 'Nunito Sans', sans-serif;
-	font-size:14px;
+	font-size:15px;
 	/* color:#777777; */
 	line-height:1.7em;
 	font-weight:400;
@@ -2482,8 +2482,7 @@ img{
 
 .shop-single-section{
 	position:relative;
-	padding-top: 100px;
-	padding-bottom:90px;
+	padding-top: 50px;
 	z-index: 9;
 	background-color: #ffffff;
 }
@@ -2531,8 +2530,9 @@ img{
 }
 
 .product-details .image-column .thumbs-carousel li img{
-	width:100%;
+	height:100px;
 	display:inline-block;
+	object-fit:cover;
 }
 
 .product-details .image-column .owl-dots,
@@ -5366,6 +5366,7 @@ img{
 	position:relative;
 	width:100%;
 	display:block;
+	border-radius:10px;
 }
 
 .case-block .inner-box .image .overlay-box{
@@ -5374,7 +5375,6 @@ img{
 	top:0px;
 	right:0px;
 	bottom:0px;
-
 	transition: -webkit-transform 0.4s ease;
 	transition: transform 0.4s ease;
 	transition: transform 0.4s ease, -webkit-transform 0.4s ease;
@@ -5402,6 +5402,7 @@ img{
 	top:0px;
 	right:0px;
 	bottom:0px;
+	border-radius:10px;
 	z-index:1;
 	background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, #1C2C52 100%);
 	background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, #1C2C52 100%);
@@ -5484,6 +5485,8 @@ img{
 	font-size:22px;
 	text-align:center;
 	line-height:60px;
+	border-top-left-radius:10px;
+	border-bottom-right-radius:10px;
 	background-color:#0060ff;
 }
 
@@ -6216,7 +6219,7 @@ img{
 
 .main-footer{
 	position:relative;
-	padding:100px 0px 0px;
+	padding:50px 0px 0px;
 	background: -webkit-radial-gradient(circle farthest-corner at center center, #0246b7 0%, #131E3C 100%);
 	background: -moz-radial-gradient(circle farthest-corner at center center, #0246b7 0%, #131E3C 100%);
 	background: radial-gradient(circle farthest-corner at center center, #0246b7 0%, #131E3C 100%);
@@ -6275,7 +6278,7 @@ img{
 
 .main-footer .widgets-section{
 	position:relative;
-	padding-bottom:40px;
+	padding-bottom:0px;
 }
 
 .main-footer .footer-widget h5{
@@ -7528,7 +7531,7 @@ img{
 
 .team-section-two{
 	position:relative;
-	padding:50px 0px 50px;
+	padding:10px 0px 50px;
 }
 
 .team-section-two .sec-title .text{
@@ -10052,7 +10055,7 @@ img{
 
 .sidebar-page-container{
 	position:relative;
-	padding:90px 0px 80px;
+	padding:50px 0px 0px;
 }
 
 .sidebar-page-container .content-side,
@@ -10062,13 +10065,13 @@ img{
 
 .sidebar-page-container .sidebar-side .sidebar-inner{
 	position:relative;
-	padding:45px 30px;
+	padding:30px 30px;
 	box-shadow:0px 0px 20px rgba(0,0,0,0.15);
 }
 
-.sidebar-widget{
-	margin-bottom:55px;
-}
+/* .sidebar-widget{
+	margin-bottom:20px;
+} */
 
 /* Service List */
 

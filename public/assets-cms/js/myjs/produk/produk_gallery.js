@@ -130,9 +130,11 @@ jQuery(document).ready(function() {
         document.getElementById("row-display").style.display = "block";
         document.getElementById("output_image").src = $(this).data('photo_url');
 
-        $('.modal-title').text('Edit Merek Dagang');
+        $('.modal-title').text('Edit Galeri Produk');
         $('[name="id"]').val($(this).data('id'));
-        $('[name="no_urut"]').val($(this).data('no_urut'));
+        $('[name="produk"]').val($(this).data('id_produk'));
+        $('[name="title"]').val($(this).data('title'));
+        $('[name="caption"]').val($(this).data('caption'));
         $('[name="photo_url"]').val($(this).data('photo_url'));
         $('[name="status"]').val($(this).data('status'));
     })

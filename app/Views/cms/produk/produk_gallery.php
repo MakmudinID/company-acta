@@ -74,6 +74,7 @@ $hashids = new Hashids('53qURe_gallery', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ012345678
                         <label for="photo">Photo <span class="text-danger">*</span></label>
                         <input type="file" class="form-control" name="photo" onchange="preview_image(event)" id="photo">
                         <input type="hidden" class="form-control" name="photo_url" id="photo_url">
+                        <input type="hidden" class="form-control" name="id" id="id">
                     </div>
                     <div class="form-group row mb-3" id="row-display" style="display:none">
                         <div class="col-sm-6">

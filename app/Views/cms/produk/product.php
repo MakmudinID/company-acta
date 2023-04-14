@@ -23,7 +23,7 @@ $hashids = new Hashids('53qURe_produk', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
                                 <th width="5%">No</th>
                                 <th width="15%">Photo</th>
                                 <th>Nama Produk</th>
-                                <th>Kategori</th>
+                                <th>Keterangan</th>
                                 <th width="10%">Status</th>
                                 <th width="12%"></th>
                             </thead>
@@ -62,7 +62,7 @@ $hashids = new Hashids('53qURe_produk', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
                             <input type="hidden" class="form-control" id="id" name="id">
                         </div>
                         <div class="col-md-6 form-group mb-3">
-                            <label for="harga_jasa">Harga Jasa <span class="text-danger">*</span></label>
+                            <label for="harga_jasa">Harga Produk <span class="text-danger">*</span></label>
                             <input type="text" class="form-control" id="harga_jasa" name="harga_jasa">
                         </div>
                     </div>
@@ -77,12 +77,11 @@ $hashids = new Hashids('53qURe_produk', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-group mb-3">
-                                <label for="flag">Flag <span class="text-danger">*</span></label>
+                                <label for="flag">Tandai Produk Pilihan <span class="text-danger">*</span></label>
                                 <select class="form-control" name="flag" id="flag">
                                     <option></option>
-                                    <option value="Highlight">Highlight</option>
-                                    <option value="Promo">Promo</option>
-                                    <option value="Random">Random</option>
+                                    <option value="Highlight">Ya</option>
+                                    <option value="No">Tidak</option>
                                 </select>
                             </div>
                         </div>
