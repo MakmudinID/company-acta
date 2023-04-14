@@ -38,35 +38,38 @@ $this->produkModel = new ProdukModel();
         <div class="inner-container">
             <div class="row clearfix justify-content-center">
 
-                <!-- Service Block Three -->
+                <?php if($konfigurasi->j_service_1 != '' && $konfigurasi->k_service_1 != ''): ?>
                 <div class="service-block-three col-lg-4 col-md-6 col-sm-12 mt-3">
                     <div class="inner-box wow fadeInLeft animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInLeft;">
                         <div class="content">
-                            <h4><a href="services-detail.html">Warranty Management IT</a></h4>
-                            <div class="text">Entrust full-cycle implementation of your software product to our experienced BAs, UI/UX designers, developers.</div>
+                            <h4><?= $konfigurasi->j_service_1; ?></h4>
+                            <div class="text"><?= $konfigurasi->k_service_1; ?></div>
                         </div>
                     </div>
                 </div>
+                <?php endif; ?>
 
-                <!-- Service Block Three -->
+                <?php if($konfigurasi->j_service_2 != '' && $konfigurasi->k_service_2 != ''): ?>
                 <div class="service-block-three col-lg-4 col-md-6 col-sm-12 mt-3">
                     <div class="inner-box wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
                         <div class="content">
-                            <h4><a href="services-detail.html">Product Control Service</a></h4>
-                            <div class="text">Entrust full-cycle implementation of your software product to our experienced BAs, UI/UX designers, developers.</div>
+                            <h4><?= $konfigurasi->j_service_2; ?></h4>
+                            <div class="text"><?= $konfigurasi->k_service_2; ?></div>
                         </div>
                     </div>
                 </div>
+                <?php endif; ?>
 
-                <!-- Service Block Three -->
+                <?php if($konfigurasi->j_service_3 != '' && $konfigurasi->k_service_3 != ''): ?>
                 <div class="service-block-three col-lg-4 col-md-6 col-sm-12 mt-3">
                     <div class="inner-box wow fadeInRight animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInRight;">
                         <div class="content">
-                            <h4><a href="services-detail.html">Quality Control System</a></h4>
-                            <div class="text">Entrust full-cycle implementation of your software product to our experienced BAs, UI/UX designers, developers.</div>
+                            <h4><?= $konfigurasi->j_service_3; ?></h4>
+                            <div class="text"><?= $konfigurasi->k_service_3; ?></div>
                         </div>
                     </div>
                 </div>
+                <?php endif; ?>
 
             </div>
         </div>
@@ -82,7 +85,7 @@ $this->produkModel = new ProdukModel();
                     <div class="title">PROFIL <?= $konfigurasi->nama_populer; ?></div>
                 </div>
                 <h2 style="display:black;"><?= $konfigurasi->nama_company; ?></h2>
-                <div class="text"><?= $konfigurasi->tagline;?></div>
+                <div class="text"><?= $konfigurasi->tagline; ?></div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 align-self-center">
                 <img src="<?= $konfigurasi->profil_url ?>" alt="">
@@ -131,15 +134,15 @@ $this->produkModel = new ProdukModel();
             <h3><b>Harga terbaik yang kami hadirkan untuk anda</b></h3>
         </div>
         <div class="row clearfix mt-5">
-            <?php foreach($product_price as $p): ?>
+            <?php foreach ($product_price as $p) : ?>
                 <div class="price-block col-lg-4 col-md-6 col-sm-12 mb-2">
                     <div class="inner-box">
-                        <h3><?= $p->judul;?></h3>
-                        <div class="text"><?= $p->keterangan;?></div>
-                        <div class="price"><span>Mulai Dari</span> Rp <?= number_format($p->harga, 0, ',', '.');?> </div>
+                        <h3><?= $p->judul; ?></h3>
+                        <div class="text"><?= $p->keterangan; ?></div>
+                        <div class="price"><span>Mulai Dari</span> Rp <?= number_format($p->harga, 0, ',', '.'); ?> </div>
                         <ul class="price-list">
-                            <?php foreach($this->produkModel->fitur_produk($p->id) as $list): ?>
-                                <li><?= $list->deskripsi;?></li>
+                            <?php foreach ($this->produkModel->fitur_produk($p->id) as $list) : ?>
+                                <li><?= $list->deskripsi; ?></li>
                             <?php endforeach; ?>
                         </ul>
                         <div class="btn-box">

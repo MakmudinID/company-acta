@@ -153,7 +153,6 @@ class Konfigurasi extends BaseController
                     'email' => 'required',
                     'telephone' => 'required',
                     'whatsapp' => 'required',
-                    'status_blog' => 'required',
                 ]
             );
 
@@ -223,6 +222,14 @@ class Konfigurasi extends BaseController
                 $data['facebook'] = htmlspecialchars($this->request->getPost('facebook'), ENT_QUOTES);
                 $data['youtube'] = htmlspecialchars($this->request->getPost('youtube'), ENT_QUOTES);
                 $data['linkedin'] = htmlspecialchars($this->request->getPost('linkedin'), ENT_QUOTES);
+
+                $data['j_service_1'] = htmlspecialchars($this->request->getPost('j_service_1'), ENT_QUOTES);
+                $data['j_service_2'] = htmlspecialchars($this->request->getPost('j_service_2'), ENT_QUOTES);
+                $data['j_service_3'] = htmlspecialchars($this->request->getPost('j_service_3'), ENT_QUOTES);
+
+                $data['k_service_1'] = htmlspecialchars($this->request->getPost('k_service_1'), ENT_QUOTES);
+                $data['k_service_2'] = htmlspecialchars($this->request->getPost('k_service_2'), ENT_QUOTES);
+                $data['k_service_3'] = htmlspecialchars($this->request->getPost('k_service_3'), ENT_QUOTES);
 
                 $result = $this->serverside->updateRows($id, $data, $table);
 

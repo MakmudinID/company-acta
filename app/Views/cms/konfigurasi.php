@@ -138,13 +138,13 @@
                                     <div class="form-group row mb-3">
                                         <label class="col-sm-2 col-form-label">Judul</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="nama_company" required value="<?php echo $data->nama_company ?>">
+                                            <input type="text" class="form-control" name="j_service_1" required value="<?php echo $data->j_service_1 ?>">
                                         </div>
                                     </div>
                                     <div class="form-group row mb-3">
                                         <label class="col-sm-2 col-form-label">Keterangan</label>
                                         <div class="col-sm-10">
-                                            <textarea class="form-control" name="nama_company" required><?php echo $data->nama_company ?></textarea>
+                                            <textarea class="form-control" name="k_service_1" required><?php echo $data->k_service_1 ?></textarea>
                                         </div>
                                     </div>
                                     <hr>
@@ -152,13 +152,13 @@
                                     <div class="form-group row mb-3">
                                         <label class="col-sm-2 col-form-label">Judul</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="nama_company" required value="<?php echo $data->nama_company ?>">
+                                            <input type="text" class="form-control" name="j_service_2" required value="<?php echo $data->j_service_2 ?>">
                                         </div>
                                     </div>
                                     <div class="form-group row mb-3">
                                         <label class="col-sm-2 col-form-label">Keterangan</label>
                                         <div class="col-sm-10">
-                                            <textarea class="form-control" name="nama_company" required><?php echo $data->nama_company ?></textarea>
+                                            <textarea class="form-control" name="k_service_2" required><?php echo $data->k_service_2 ?></textarea>
                                         </div>
                                     </div>
                                     <hr>
@@ -166,13 +166,13 @@
                                     <div class="form-group row mb-3">
                                         <label class="col-sm-2 col-form-label">Judul</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="nama_company" required value="<?php echo $data->nama_company ?>">
+                                            <input type="text" class="form-control" name="j_service_3" required value="<?php echo $data->j_service_3 ?>">
                                         </div>
                                     </div>
                                     <div class="form-group row mb-3">
                                         <label class="col-sm-2 col-form-label">Keterangan</label>
                                         <div class="col-sm-10">
-                                            <textarea class="form-control" name="nama_company" required><?php echo $data->nama_company ?></textarea>
+                                            <textarea class="form-control" name="k_service_3" required><?php echo $data->k_service_3 ?></textarea>
                                         </div>
                                     </div>
                                 </div>
