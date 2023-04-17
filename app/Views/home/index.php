@@ -162,7 +162,7 @@ $this->produkModel = new ProdukModel();
                 <img src="<?= base_url('/assets/images/thumb-success.jpg') ?>" alt="">
             </div>
             <h3>Awali kesuksesan bisnis Anda <br> bersama ACTA!</h3>
-            <a href="services.html" class="theme-btn btn-style-two"><span class="txt">More Services</span></a>
+            <a href="https://wa.me/<?=$konfigurasi->whatsapp?>?text=Saya%20ingin%20konsultasi%20dengan%20ACTA" class="theme-btn btn-style-two"><span class="txt">Hubungi Kami</span></a>
         </div>
     </div>
 </section>

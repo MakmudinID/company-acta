@@ -1,5 +1,7 @@
 <?php
 use Hashids\Hashids;
+use App\Libraries\Plugins;
+$this->pl = new Plugins();
 $hashids = new Hashids('53qURe_blog', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789');
 ?>
 
@@ -30,7 +32,7 @@ $hashids = new Hashids('53qURe_blog', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789')
 						</div>
 						<div class="image">
 							<img src="<?= $blog->photo_url ?>" alt="">
-							<div class="post-date">22 <span>DEC 2022</span></div>
+							<div class="post-date"><?= $this->pl->format_tanggal($blog->create_date, 'no'); ?></span></div>
 						</div>
 
 						<div class="lower-content">

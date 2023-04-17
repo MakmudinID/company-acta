@@ -135,7 +135,7 @@ $kategori_produk = $this->konfigurasi->getKategoriProduk();
 
 							<!-- Quote Btn -->
 							<div class="btn-box">
-								<a href="<?php echo base_url() ?>/assets/contact.html" class="theme-btn btn-style-one"><span class="txt">Kontak Kami</span></a>
+								<a href="https://wa.me/<?=$template->whatsapp?>?text=Saya%20ingin%20konsultasi%20dengan%20ACTA" class="theme-btn btn-style-one"><span class="txt">Kontak Kami</span></a>
 							</div>
 
 						</div>
@@ -204,7 +204,7 @@ $kategori_produk = $this->konfigurasi->getKategoriProduk();
 								<div class="content-box">
 									<h2>Tentang Kami</h2>
 									<p class="text"><?= $template->tagline;?></p>
-									<a href="#" class="theme-btn btn-style-two"><span class="txt">Konsultasi</span></a>
+									<a href="https://wa.me/<?=$template->whatsapp?>?text=Saya%20ingin%20konsultasi%20dengan%20ACTA" class="theme-btn btn-style-two"><span class="txt">Konsultasi</span></a>
 								</div>
 							</div>
 						</div>
