@@ -6,6 +6,7 @@ deployment:
     - /bin/cp -r system $DEPLOYPATH
     - /bin/cp -r tests $DEPLOYPATH
     - /bin/cp -r vendor $DEPLOYPATH
+    - /bin/cp -r writable $DEPLOYPATH
     - /bin/cp composer.json $DEPLOYPATH
     - /bin/cp composer.lock $DEPLOYPATH
     - /bin/cp phpunit.xml.dist $DEPLOYPATH
