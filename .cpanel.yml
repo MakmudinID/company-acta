@@ -9,3 +9,7 @@ deployment:
     - /bin/cp -r vendor $DEPLOYPATH
     - /bin/cp composer.json $DEPLOYPATH
     - /bin/cp composer.lock $DEPLOYPATH
+    - /bin/cp phpunit.xml.dist $DEPLOYPATH
+    - /bin/cp preload.php $DEPLOYPATH
+    - /bin/cp README.md $DEPLOYPATH
+    - /bin/cp spark $DEPLOYPATH
