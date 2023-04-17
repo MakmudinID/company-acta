@@ -1,0 +1,11 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/acta8688/public_html/acta.co.id/
+    - /bin/cp -r app $DEPLOYPATH
+    - /bin/cp -r public $DEPLOYPATH
+    - /bin/cp -r system $DEPLOYPATH
+    - /bin/cp -r tests $DEPLOYPATH
+    - /bin/cp -r vendor $DEPLOYPATH
+    - /bin/cp composer.json $DEPLOYPATH
+    - /bin/cp composer.lock $DEPLOYPATH
