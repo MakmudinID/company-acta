@@ -19,7 +19,7 @@ $kategori_produk = $this->konfigurasi->getKategoriProduk();
 	<link href="<?php echo base_url() ?>/assets/css/style.css" rel="stylesheet">
 	<link href="<?php echo base_url() ?>/assets/css/responsive.css" rel="stylesheet">
 
-	<link href="<?php echo base_url() ?>/assets/https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;600;700;800;900&display=swap" rel="stylesheet">
 
 	<!-- Color Switcher Mockup -->
 	<link href="<?php echo base_url() ?>/assets/css/color-switcher-design.css" rel="stylesheet">

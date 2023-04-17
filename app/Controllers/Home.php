@@ -29,7 +29,6 @@ class Home extends BaseController
         $data['mitra'] = $this->db->table('mitra')->getWhere(['status' => 1])->getResult();
         $data['blog'] = $this->db->query('SELECT * FROM blog WHERE status=1 ORDER BY id desc LIMIT 3')->getResult();
         $data['main_content'] = 'home/index';
-        $data['js'] = array("blog/detail.js?r=" . uniqid(), "produk/detail.js?r=" . uniqid());
         return view('template-front/template', $data);
     }
 
