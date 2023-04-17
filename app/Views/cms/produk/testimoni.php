@@ -54,10 +54,6 @@
                         <label for="deskripsi">Deskripsi</label>
                         <textarea class="form-control" id="deskripsi" name="deskripsi"></textarea>
                     </div>
-                    <div class="form-group mb-3">
-                        <label for="deskripsi">URL Video Youtube</label>
-                        <textarea class="form-control" id="youtube_url" name="youtube_url"></textarea>
-                    </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group mb-3">

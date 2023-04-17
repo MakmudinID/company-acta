@@ -724,15 +724,7 @@ class CmsData extends BaseController
             $no++;
             $row = array();
 
-            if ($field->youtube_url != '') {
-                $deskripsi =
-                    '<p>' . $field->deskripsi . '</p>
-                        <div class="d-flex">
-                            <a href="' . $field->youtube_url . '" target="blank_" class="btn btn-default btn-sm"><i class="fab fa-youtube"></i> Video Testimoni</a>
-                        </div>';
-            } else {
-                $deskripsi = $field->deskripsi;
-            }
+            $deskripsi = $field->deskripsi;
 
             $row[]  = $no;
             $row[]  = '<img src="' . $field->photo_url . '" class="img-thumbnail" width="150">';
@@ -764,7 +756,6 @@ class CmsData extends BaseController
                     'nama' => 'required',
                     'title' => 'required',
                     'deskripsi' => 'required',
-                    'youtube_url' => 'required',
                     'status' => 'required',
                     'photo' => [
                         'mime_in[photo,image/jpg,image/jpeg,image/png]',
@@ -790,7 +781,6 @@ class CmsData extends BaseController
                 $data['nama']   = htmlspecialchars($this->request->getPost('nama'), ENT_QUOTES);
                 $data['title']   = htmlspecialchars($this->request->getPost('title'), ENT_QUOTES);
                 $data['deskripsi']   = htmlspecialchars($this->request->getPost('deskripsi'), ENT_QUOTES);
-                $data['youtube_url']   = htmlspecialchars($this->request->getPost('youtube_url'), ENT_QUOTES);
                 $data['status'] = htmlspecialchars($this->request->getPost('status'), ENT_QUOTES);
                 $data['create_user'] = session()->get('admin_name');
                 $data['create_date'] = date('Y-m-d H:i:s');
@@ -848,7 +838,6 @@ class CmsData extends BaseController
         $data['nama']   = htmlspecialchars($this->request->getPost('nama'), ENT_QUOTES);
         $data['title']   = htmlspecialchars($this->request->getPost('title'), ENT_QUOTES);
         $data['deskripsi']   = htmlspecialchars($this->request->getPost('deskripsi'), ENT_QUOTES);
-        $data['youtube_url']   = htmlspecialchars($this->request->getPost('youtube_url'), ENT_QUOTES);
         $data['status'] = htmlspecialchars($this->request->getPost('status'), ENT_QUOTES);
         $data['edit_user'] = session()->get('admin_name');
         $data['edit_date'] = date('Y-m-d H:i:s');
