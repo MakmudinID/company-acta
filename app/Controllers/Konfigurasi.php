@@ -512,7 +512,7 @@ class Konfigurasi extends BaseController
                 }
 
                 if ($gambar->isValid()) {
-                    $gambar->move(WRITEPATH . './public_html/assets-cms/img/user/');
+                    $gambar->move(WRITEPATH . '/public_html/assets-cms/img/user/');
                     $file = $gambar->getName();
                     $photo_url = base_url('/assets-cms/img/user/' . $file);
 
@@ -694,7 +694,7 @@ class Konfigurasi extends BaseController
                     unlink('./assets-cms/img/user/' . end($a));
                 }
                 
-                $gambar->move(WRITEPATH . './public_html/assets-cms/img/user/');
+                $gambar->move(WRITEPATH . '/public_html/assets-cms/img/user/');
 
                 $data['photo_url'] = base_url('/assets-cms/img/user/' . $path);
             } else {
