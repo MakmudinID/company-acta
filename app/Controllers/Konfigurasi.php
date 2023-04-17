@@ -512,7 +512,7 @@ class Konfigurasi extends BaseController
                 }
 
                 if ($gambar->isValid()) {
-                    $gambar->move('/assets-cms/img/user/');
+                    $gambar->move('assets-cms/img/user/');
                     $file = $gambar->getName();
                     $photo_url = base_url('/assets-cms/img/user/' . $file);
 
