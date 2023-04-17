@@ -111,7 +111,7 @@ class CmsData extends BaseController
             $path = $photo->getName();
             $ext = pathinfo($path, PATHINFO_EXTENSION);
             if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg' || $ext == 'svg' || $ext == 'gif') {
-                $photo->move(WRITEPATH . '../public/assets-cms/img/blog/');
+                $photo->move('assets-cms/img/blog/');
                 $blog['photo_url'] = base_url('/assets-cms/img/blog/' . $path);
             } else {
                 $r['result'] = false;
@@ -175,7 +175,7 @@ class CmsData extends BaseController
                     unlink('./assets-cms/img/blog/' . end($a));
                 }
 
-                $photo->move(WRITEPATH . '../public/assets-cms/img/blog/');
+                $photo->move('assets-cms/img/blog/');
                 $blog['photo_url'] = base_url('/assets-cms/img/blog/' . $path);
             } else {
                 $r['result'] = false;
@@ -326,7 +326,7 @@ class CmsData extends BaseController
                     $path = $photo->getName();
                     $ext = pathinfo($path, PATHINFO_EXTENSION);
                     if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg' || $ext == 'svg' || $ext == 'gif') {
-                        $photo->move(WRITEPATH . '../public/assets-cms/img/mitra/');
+                        $photo->move('assets-cms/img/mitra/');
                         $data['photo_url'] = base_url('/assets-cms/img/mitra/' . $path);
                     } else {
                         $r['result'] = false;
@@ -390,7 +390,7 @@ class CmsData extends BaseController
                     unlink('./assets-cms/img/mitra/' . end($a));
                 }
 
-                $photo->move(WRITEPATH . '../public/assets-cms/img/mitra/');
+                $photo->move('assets-cms/img/mitra/');
                 $data['photo_url'] = base_url('/assets-cms/img/mitra/' . $path);
             } else {
                 $r['result'] = false;
@@ -555,7 +555,7 @@ class CmsData extends BaseController
                     $path = $photo->getName();
                     $ext = pathinfo($path, PATHINFO_EXTENSION);
                     if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg' || $ext == 'svg' || $ext == 'gif') {
-                        $photo->move(WRITEPATH . '../public/assets-cms/img/portfolio/');
+                        $photo->move('assets-cms/img/portfolio/');
                         $data['photo_url'] = base_url('/assets-cms/img/portfolio/' . $path);
                     } else {
                         $r['result'] = false;
@@ -631,7 +631,7 @@ class CmsData extends BaseController
                     unlink('./assets-cms/img/portfolio/' . end($a));
                 }
 
-                $photo->move(WRITEPATH . '../public/assets-cms/img/portfolio/');
+                $photo->move('assets-cms/img/portfolio/');
                 $data['photo_url'] = base_url('/assets-cms/img/portfolio/' . $path);
             } else {
                 $r['result'] = false;
@@ -801,7 +801,7 @@ class CmsData extends BaseController
                     $path = $photo->getName();
                     $ext = pathinfo($path, PATHINFO_EXTENSION);
                     if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg' || $ext == 'svg' || $ext == 'gif') {
-                        $photo->move(WRITEPATH . '../public/assets-cms/img/testimoni/');
+                        $photo->move('assets-cms/img/testimoni/');
                         $data['photo_url'] = base_url('/assets-cms/img/testimoni/' . $path);
                     } else {
                         $r['result'] = false;
@@ -868,7 +868,7 @@ class CmsData extends BaseController
                     unlink('./assets-cms/img/testimoni/' . end($a));
                 }
 
-                $photo->move(WRITEPATH . '../public/assets-cms/img/testimoni/');
+                $photo->move('assets-cms/img/testimoni/');
                 $data['photo_url'] = base_url('/assets-cms/img/testimoni/' . $path);
             } else {
                 $r['result'] = false;

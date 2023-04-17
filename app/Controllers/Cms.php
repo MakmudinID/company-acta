@@ -28,7 +28,7 @@ class Cms extends BaseController
         if ($gambar->isValid()) {
             $file = $gambar->getTempName();
             $path = $gambar->getName();
-            $gambar->move(WRITEPATH . '../public/assets-cms/img/blog/');
+            $gambar->move('assets-cms/img/blog/');
             echo base_url('/assets-cms/img/blog/' . $path);
         }
     }

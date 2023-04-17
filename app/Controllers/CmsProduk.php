@@ -219,7 +219,7 @@ class CmsProduk extends BaseController
                     $path = $photo->getName();
                     $ext = pathinfo($path, PATHINFO_EXTENSION);
                     if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg' || $ext == 'svg' || $ext == 'gif') {
-                        $photo->move(WRITEPATH . '../public/assets-cms/img/product/');
+                        $photo->move('assets-cms/img/product/');
                         $data['photo_url'] = base_url('/assets-cms/img/product/' . $path);
                     } else {
                         $r['result'] = false;
@@ -303,7 +303,7 @@ class CmsProduk extends BaseController
                             unlink('./assets-cms/img/product/' . end($a));
                         }
 
-                        $photo->move(WRITEPATH . '../public/assets-cms/img/product/');
+                        $photo->move('assets-cms/img/product/');
                         $data['photo_url'] = base_url('/assets-cms/img/product/' . $path);
                     } else {
                         $r['result'] = false;
@@ -451,7 +451,7 @@ class CmsProduk extends BaseController
                     $path = $photo->getName();
                     $ext = pathinfo($path, PATHINFO_EXTENSION);
                     if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg' || $ext == 'svg' || $ext == 'gif') {
-                        $photo->move(WRITEPATH . '../public/assets-cms/img/product_category/');
+                        $photo->move('assets-cms/img/product_category/');
                         $data['photo_url'] = base_url('/assets-cms/img/product_category/' . $path);
                     } else {
                         $r['result'] = false;
@@ -525,7 +525,7 @@ class CmsProduk extends BaseController
                     unlink('./assets-cms/img/product_category/' . end($a));
                 }
 
-                $photo->move(WRITEPATH . '../public/assets-cms/img/product_category/');
+                $photo->move('assets-cms/img/product_category/');
                 $data['photo_url'] = base_url('/assets-cms/img/product_category/' . $path);
             } else {
                 $r['result'] = false;
@@ -703,7 +703,7 @@ class CmsProduk extends BaseController
                     $path = $photo->getName();
                     $ext = pathinfo($path, PATHINFO_EXTENSION);
                     if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg' || $ext == 'svg' || $ext == 'gif') {
-                        $photo->move(WRITEPATH . '../public/assets-cms/img/gallery/');
+                        $photo->move('assets-cms/img/gallery/');
                         $data['photo_url'] = base_url('/assets-cms/img/gallery/' . $path);
                     } else {
                         $r['result'] = false;
@@ -770,7 +770,7 @@ class CmsProduk extends BaseController
                     unlink('./assets-cms/img/gallery/' . end($a));
                 }
 
-                $photo->move(WRITEPATH . '../public/assets-cms/img/gallery/');
+                $photo->move('assets-cms/img/gallery/');
                 $data['photo_url'] = base_url('/assets-cms/img/gallery/' . $path);
             } else {
                 $r['result'] = false;

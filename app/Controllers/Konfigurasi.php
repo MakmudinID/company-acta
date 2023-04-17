@@ -184,7 +184,7 @@ class Konfigurasi extends BaseController
                         }
                     }
 
-                    $logo->move('../public/assets-cms/img/konfigurasi/');
+                    $logo->move('assets-cms/img/konfigurasi/');
                     $file = $logo->getName();
                     $data['logo_url'] = base_url('/assets-cms/img/konfigurasi/' . $file);
                 }
@@ -200,7 +200,7 @@ class Konfigurasi extends BaseController
                         }
                     }
 
-                    $profil_url->move('../public/assets-cms/img/konfigurasi/');
+                    $profil_url->move('assets-cms/img/konfigurasi/');
                     $file = $profil_url->getName();
                     $data['profil_url'] = base_url('/assets-cms/img/konfigurasi/' . $file);
                 }
@@ -324,7 +324,7 @@ class Konfigurasi extends BaseController
             $path = $gambar->getName();
             $ext = pathinfo($path, PATHINFO_EXTENSION);
             if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg' || $ext == 'svg' || $ext == 'gif') {
-                $gambar->move('../public/assets-cms/img/user/');
+                $gambar->move('assets-cms/img/user/');
                 $data['foto'] = base_url('/assets-cms/img/user/' . $path);
             } else {
 
@@ -382,7 +382,7 @@ class Konfigurasi extends BaseController
                     unlink('./assets-cms/img/user/' . end($a));
                 }
 
-                $image->move('../public/assets-cms/img/user/');
+                $image->move('assets-cms/img/user/');
                 $data['foto'] = base_url('/assets-cms/img/user/' . $path);
             } else {
                 $r['result'] = false;
@@ -826,7 +826,7 @@ class Konfigurasi extends BaseController
             $path = $gambar->getName();
             $ext = pathinfo($path, PATHINFO_EXTENSION);
             if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg' || $ext == 'svg' || $ext == 'gif') {
-                $gambar->move('../public/assets-cms/slider/');
+                $gambar->move('assets-cms/slider/');
                 $data['photo_url'] = base_url('/assets-cms/slider/' . $path);
             } else {
                 $r['result'] = false;
@@ -880,7 +880,7 @@ class Konfigurasi extends BaseController
                     unlink('./assets-cms/img/slider/' . end($a));
                 }
 
-                $gambar->move('../public/assets-cms/slider/');
+                $gambar->move('assets-cms/slider/');
                 $data['photo_url'] = base_url('/assets-cms/slider/' . $path);
             } else {
                 $r['result'] = false;
