@@ -637,7 +637,7 @@ class Konfigurasi extends BaseController
                 $path = $gambar->getName();
                 $ext = pathinfo($path, PATHINFO_EXTENSION);
                 if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg' || $ext == 'svg' || $ext == 'gif') {
-                    $gambar->move('/assets-cms/img/user/');
+                    $gambar->move('assets-cms/img/user/');
                     $data['photo_url'] = base_url('/assets-cms/img/user/' . $path);
                 } else {
                     $r['result'] = false;
@@ -694,7 +694,7 @@ class Konfigurasi extends BaseController
                     unlink('./assets-cms/img/user/' . end($a));
                 }
                 
-                $gambar->move('/public_html/assets-cms/img/user/');
+                $gambar->move('assets-cms/img/user/');
 
                 $data['photo_url'] = base_url('/assets-cms/img/user/' . $path);
             } else {
