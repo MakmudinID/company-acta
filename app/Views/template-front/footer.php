@@ -78,7 +78,7 @@
 			<div class="row clearfix">
 				<!-- Column -->
 				<div class="column col-lg-12 col-md-12 col-sm-12">
-					<div class="copyright">Copyright &copy; <?= date('Y')?> by ArrasyidTech. All Rights Reserved.</div>
+					<div class="copyright">Copyright &copy; <?= date('Y')?> by wehoot.id All Rights Reserved.</div>
 				</div>
 			</div>
 		</div>

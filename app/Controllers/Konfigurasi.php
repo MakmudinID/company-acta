@@ -731,7 +731,7 @@ class Konfigurasi extends BaseController
         $id_dec = $encrypter->decrypt(hex2bin($id_));
         $table = 'user';
 
-        $src = $this->db->table('user')->getWhere(['id' => $id])->getRow()->photo_url;
+        $src = $this->db->table('user')->getWhere(['id' => $id_dec])->getRow()->photo_url;
         $file_name = '.' . str_replace(base_url('/'), '', $src); // striping host to get relative path
         $a = explode("/", $file_name);
 
