@@ -184,7 +184,7 @@ class Konfigurasi extends BaseController
                         }
                     }
 
-                    $logo->move(WRITEPATH . '../public/assets-cms/img/konfigurasi/');
+                    $logo->move('../public/assets-cms/img/konfigurasi/');
                     $file = $logo->getName();
                     $data['logo_url'] = base_url('/assets-cms/img/konfigurasi/' . $file);
                 }
@@ -200,7 +200,7 @@ class Konfigurasi extends BaseController
                         }
                     }
 
-                    $profil_url->move(WRITEPATH . '../public/assets-cms/img/konfigurasi/');
+                    $profil_url->move('../public/assets-cms/img/konfigurasi/');
                     $file = $profil_url->getName();
                     $data['profil_url'] = base_url('/assets-cms/img/konfigurasi/' . $file);
                 }
@@ -324,7 +324,7 @@ class Konfigurasi extends BaseController
             $path = $gambar->getName();
             $ext = pathinfo($path, PATHINFO_EXTENSION);
             if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg' || $ext == 'svg' || $ext == 'gif') {
-                $gambar->move(WRITEPATH . '../public/assets-cms/img/user/');
+                $gambar->move('../public/assets-cms/img/user/');
                 $data['foto'] = base_url('/assets-cms/img/user/' . $path);
             } else {
 
@@ -382,7 +382,7 @@ class Konfigurasi extends BaseController
                     unlink('./assets-cms/img/user/' . end($a));
                 }
 
-                $image->move(WRITEPATH . '../public/assets-cms/img/user/');
+                $image->move('../public/assets-cms/img/user/');
                 $data['foto'] = base_url('/assets-cms/img/user/' . $path);
             } else {
                 $r['result'] = false;
@@ -512,7 +512,7 @@ class Konfigurasi extends BaseController
                 }
 
                 if ($gambar->isValid()) {
-                    $gambar->move(WRITEPATH . '/public_html/assets-cms/img/user/');
+                    $gambar->move('/assets-cms/img/user/');
                     $file = $gambar->getName();
                     $photo_url = base_url('/assets-cms/img/user/' . $file);
 
@@ -637,7 +637,7 @@ class Konfigurasi extends BaseController
                 $path = $gambar->getName();
                 $ext = pathinfo($path, PATHINFO_EXTENSION);
                 if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg' || $ext == 'svg' || $ext == 'gif') {
-                    $gambar->move(WRITEPATH . '../public/assets-cms/img/user/');
+                    $gambar->move('/assets-cms/img/user/');
                     $data['photo_url'] = base_url('/assets-cms/img/user/' . $path);
                 } else {
                     $r['result'] = false;
@@ -694,7 +694,7 @@ class Konfigurasi extends BaseController
                     unlink('./assets-cms/img/user/' . end($a));
                 }
                 
-                $gambar->move(WRITEPATH . '/public_html/assets-cms/img/user/');
+                $gambar->move('/public_html/assets-cms/img/user/');
 
                 $data['photo_url'] = base_url('/assets-cms/img/user/' . $path);
             } else {
@@ -826,7 +826,7 @@ class Konfigurasi extends BaseController
             $path = $gambar->getName();
             $ext = pathinfo($path, PATHINFO_EXTENSION);
             if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg' || $ext == 'svg' || $ext == 'gif') {
-                $gambar->move(WRITEPATH . '../public/assets-cms/slider/');
+                $gambar->move('../public/assets-cms/slider/');
                 $data['photo_url'] = base_url('/assets-cms/slider/' . $path);
             } else {
                 $r['result'] = false;
@@ -880,7 +880,7 @@ class Konfigurasi extends BaseController
                     unlink('./assets-cms/img/slider/' . end($a));
                 }
 
-                $gambar->move(WRITEPATH . '../public/assets-cms/slider/');
+                $gambar->move('../public/assets-cms/slider/');
                 $data['photo_url'] = base_url('/assets-cms/slider/' . $path);
             } else {
                 $r['result'] = false;
