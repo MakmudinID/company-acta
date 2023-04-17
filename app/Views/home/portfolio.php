@@ -44,7 +44,7 @@ $hashids = new Hashids('53qURe_portfolio', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456
 										<a href="<?=base_url('/portfolio-detail/'.$hashids->encode($p->id))?>"  class="search-icon"><span class="icon flaticon-search"></span></a>
 										<div class="content">
 											<h4><a href="<?=base_url('/portfolio-detail/'.$hashids->encode($p->id))?>"><?= $p->title;?></a></h4>
-											<div class="category"><?= $p->keterangan;?></div>
+											<div class="category"><?= $p->client;?></div>
 										</div>
 										<a href="<?=base_url('/portfolio-detail')?>" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
 									</div>

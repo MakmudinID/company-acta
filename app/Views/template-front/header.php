@@ -111,7 +111,7 @@ $kategori_produk = $this->konfigurasi->getKategoriProduk();
 											<li><a href="<?php echo base_url('/galeri-produk') ?>">Galeri Produk</a></li>
 										</ul>
 									</li>
-									<li class="dropdown <?= ($title == 'Produk') ? 'current' : ''; ?>"><a href="#">Produk</a>
+									<li class="dropdown <?= ($title == 'Produk') ? 'current' : ''; ?>"><a href="<?php echo base_url('produk')?>">Produk</a>
 										<ul>
 											<?php foreach ($kategori_produk as $k) : ?>
 												<li>

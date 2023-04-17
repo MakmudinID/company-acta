@@ -9,7 +9,7 @@ class BlogModel extends Model
     protected $table      = 'blog';
     protected $primaryKey = 'id';
     protected $returnType     = 'object';
-    protected $allowedFields = ['id', 'photo_url', 'judul', 'slug', 'ringkasan', 'konten', 'create_date'];
+    protected $allowedFields = ['id', 'photo_url', 'judul', 'slug', 'ringkasan', 'konten', 'create_date', 'create_user'];
     protected $useTimestamps = true;
 
     public function fetchTag($blog_id){

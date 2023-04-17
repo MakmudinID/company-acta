@@ -33,14 +33,18 @@ $routes->get('/', 'Home::index');
 
 $routes->get('/struktur-organisasi', 'Home::struktur_organisasi');
 $routes->get('/blog', 'Home::blog');
-$routes->get('/blog-detail', 'Home::blog_detail');
+$routes->get('/blog-tag/(:any)', 'Home::blog_tag/$1');
+$routes->get('/blog-detail/(:any)', 'Home::blog_detail/$1');
+$routes->get('/blog-search', 'Home::blog_search');
+$routes->get('/produk-search', 'Home::produk_search');
 $routes->get('/tentang-kami', 'Home::tentang_kami');
 $routes->get('/galeri-produk', 'Home::galeri_produk');
 $routes->get('/portfolio', 'Home::portfolio');
 $routes->get('/portfolio-detail/(:any)', 'Home::portfolio_detail/$1');
 $routes->get('/gudang', 'Home::gudang');
 $routes->get('/produk-kategori/(:any)', 'Home::produk_kategori/$1');
-$routes->get('/produk/(:any)', 'Home::produk/$1');
+$routes->get('/produk/(:any)', 'Home::produk_by/$1');
+$routes->get('/produk', 'Home::produk');
 
 $routes->get('/profil', 'Home::profil');
 

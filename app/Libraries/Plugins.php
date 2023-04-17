@@ -67,6 +67,52 @@ class Plugins
         return $tag;
     }
 
+    public function getTags($id_portfolio){
+        $result = $this->db->query("SELECT nama FROM portfolio_tag WHERE id_portfolio=?", array($id_portfolio))->getResult();
+        $tag = '';
+        foreach($result as $r){
+            $tag .= $r->nama.', ';
+        }
+        
+        return rtrim($tag, ', ');
+    }
+
+    public function getPrevPortfolio($id_portfolio){
+        $result = $this->db->query("SELECT id FROM portfolio WHERE id < ? ORDER BY id DESC LIMIT 1", array($id_portfolio))->getRow();
+        if(!empty($result->id)){
+            return $result->id;
+        }else{
+            return false;
+        }
+    }
+
+    public function getNextPortfolio($id_portfolio){
+        $result = $this->db->query("SELECT id FROM portfolio WHERE id > ? ORDER BY id ASC LIMIT 1", array($id_portfolio))->getRow();
+        if(!empty($result->id)){
+            return $result->id;
+        }else{
+            return false;
+        }
+    }
+
+    public function getPrevProduk($id_produk){
+        $result = $this->db->query("SELECT id FROM product WHERE id < ? ORDER BY id DESC LIMIT 1", array($id_produk))->getRow();
+        if(!empty($result->id)){
+            return $result->id;
+        }else{
+            return false;
+        }
+    }
+
+    public function getNextProduk($id_produk){
+        $result = $this->db->query("SELECT id FROM product WHERE id > ? ORDER BY id ASC LIMIT 1", array($id_produk))->getRow();
+        if(!empty($result->id)){
+            return $result->id;
+        }else{
+            return false;
+        }
+    }
+
     public function format_tanggal($Tgal,$jam="yes",$idBahasa = 'id'){
 		if($Tgal == ""){
 			return;
@@ -78,12 +124,12 @@ class Plugins
 		
 		if($idBahasa == "id"){
 	
-		    if($mBul=='01'){$isBulan='Januari';}elseif($mBul=='02'){$isBulan='Februari';}
-		    elseif($mBul=='03'){$isBulan='Maret';}elseif($mBul=='04'){$isBulan='April';}
-		    elseif($mBul=='05'){$isBulan='Mei';}elseif($mBul=='06'){$isBulan='Juni';}
-		    elseif($mBul=='07'){$isBulan='Juli';}elseif($mBul=='08'){$isBulan='Agustus';}
-		    elseif($mBul=='09'){$isBulan='September';}elseif($mBul=='10'){$isBulan='Oktober';}
-		    elseif($mBul=='11'){$isBulan='Nopember';}elseif($mBul=='12'){$isBulan='Desember';}
+		    if($mBul=='01'){$isBulan='Jan';}elseif($mBul=='02'){$isBulan='Feb';}
+		    elseif($mBul=='03'){$isBulan='Mar';}elseif($mBul=='04'){$isBulan='Apr';}
+		    elseif($mBul=='05'){$isBulan='Mei';}elseif($mBul=='06'){$isBulan='Jun';}
+		    elseif($mBul=='07'){$isBulan='Jul';}elseif($mBul=='08'){$isBulan='Agu';}
+		    elseif($mBul=='09'){$isBulan='Sep';}elseif($mBul=='10'){$isBulan='Okt';}
+		    elseif($mBul=='11'){$isBulan='Nop';}elseif($mBul=='12'){$isBulan='Des';}
 		    elseif($mBul=='00'){$isBulan='00';}
 		    
 		    $hasil = $mdy[2].' '.$isBulan.' '.$mdy[0];
@@ -91,7 +137,7 @@ class Plugins
                 if($jam == "yes"){
                     $hasil = $mdy[2].' '.$isBulan.' '.$mdy[0]. ', '. substr($tanggal[1],0,5).' WIB';
                 }else{
-                    $hasil = $mdy[2].' <span>'.$isBulan.', '.$mdy[0].'</span>';
+                    $hasil = $mdy[2].' <span>'.$isBulan.' '.$mdy[0].'</span>';
                 }
 		    }
 		    

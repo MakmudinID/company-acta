@@ -10066,6 +10066,7 @@ img{
 .sidebar-page-container .sidebar-side .sidebar-inner{
 	position:relative;
 	padding:30px 30px;
+	border-radius:10px;
 	box-shadow:0px 0px 20px rgba(0,0,0,0.15);
 }
 
@@ -10507,6 +10508,7 @@ img{
 	margin-right:30px;
 	background-color:#ffffff;
 	border-bottom:12px solid #141d38;
+	border-radius:10px;
 	box-shadow:0px 0px 15px rgba(0,0,0,0.15);
 }
 
@@ -10518,6 +10520,7 @@ img{
 	width:320px;
 	height:400px;
 	z-index:-1;
+	border-radius:10px;
 	background:url(../images/background/pattern-18.png) no-repeat;
 }
 
@@ -10582,7 +10585,7 @@ img{
 	color:#555555;
 	font-size:16px;
 	line-height:1.8em;
-	font-weight:600;
+	font-weight:500;
 }
 
 .project-detail-section .lower-section .buttons-box{
@@ -11192,15 +11195,20 @@ img{
 	position:relative;
 	background-color:#ffffff;
 	box-shadow:0px 0px 20px rgba(0,0,0,0.15);
+	border-radius:10px;
 }
 
 .news-block-five .inner-box .image{
 	position:relative;
 	overflow:hidden;
 	background-color:#427cff;
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
 }
 
 .news-block-five .inner-box .image img{
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
 	position:relative;
 	width:100%;
 	display:block;
@@ -11224,14 +11232,15 @@ img{
 .news-block-five .inner-box .lower-content .post-date{
 	position:absolute;
 	right:20px;
-	top:-20px;
+	top:-35px;
 	color: #ffffff;
     width: 50px;
-    height: 50px;
+    /* height: 50px; */
     font-size: 20px;
     text-align: center;
     font-weight: 800;
     z-index: 1;
+	border-radius:10px;
 	line-height:1.1em;
     padding-top: 5px;
     background-color: #0060ff;
@@ -11320,7 +11329,8 @@ img{
 
 .news-detail .inner-box{
 	position:relative;
-	box-shadow:0px 0px 20px rgba(0,0,0,0.10);
+	border-radius:10px;
+	box-shadow:0px 0px 20px rgba(0,0,0,0.15);
 }
 
 .news-detail .inner-box .upper-box{
@@ -11372,10 +11382,10 @@ img{
 .news-detail .inner-box .image .post-date{
 	position:absolute;
 	right:20px;
-	top:-20px;
+	top:-35px;
 	color: #ffffff;
     width: 50px;
-    height: 50px;
+	border-radius:10px;
     font-size: 20px;
     text-align: center;
     font-weight: 800;

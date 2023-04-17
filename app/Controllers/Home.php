@@ -95,35 +95,85 @@ class Home extends BaseController
         $data['title'] = 'Artikel';
         $blog = new BlogModel();
         $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
-        $data['list_blog'] = $blog->Where('status', 1)->orderBy('id', 'DESC')->paginate(12, 'blog');
+        $data['list_blog'] = $blog->Where('status', 1)->orderBy('id', 'DESC')->paginate(10, 'blog');
         $data['pager'] = $blog->pager;
-        $data['js'] = array("blog/detail.js?r=" . uniqid());
+        $data['tag'] = $this->db->table('blog_tag')->groupBy('name')->get()->getResult();
         $data['main_content'] = 'home/blog';
         return view('template-front/template', $data);
     }
 
-    public function blog_detail()
+    public function blog_tag($id_tag)
     {
+        $hashids = new Hashids('53qURe_blog', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789');
+        $id = $hashids->decode($id_tag)[0];
+        $tag_nama = $this->db->table('blog_tag')->getWhere(['tag_id' => $id])->getRow()->name;
+
         $data['title'] = 'Artikel';
         $blog = new BlogModel();
+        $data['tag_name'] = $tag_nama;
         $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
-        $data['list_blog'] = $blog->Where('status', 1)->orderBy('id', 'DESC')->paginate(12, 'blog');
+        $data['list_blog'] = $blog->Join('blog_tag','blog_tag.blog_id = blog.id')->Where('status', 1)->Where('blog_tag.name', $tag_nama)->orderBy('id', 'DESC')->paginate(10, 'blog');
         $data['pager'] = $blog->pager;
+        $data['tag'] = $this->db->table('blog_tag')->groupBy('name')->get()->getResult();
+        $data['main_content'] = 'home/blog';
+        return view('template-front/template', $data);
+    }
+
+    public function blog_detail($id_blog)
+    {
+        $hashids = new Hashids('53qURe_blog', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789');
+        $id = $hashids->decode($id_blog)[0];
+
+        $data['title'] = 'Artikel';
+        $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
+        $data['blog'] = $this->db->table('blog')->getWhere(['id' => $id])->getRow();
+        $data['tag_by'] = $this->db->table('blog_tag')->getWhere(['blog_id' => $id])->getResult();
+        $data['tag'] = $this->db->table('blog_tag')->groupBy('name')->get()->getResult();
         $data['js'] = array("blog/blog_detail.js?r=" . uniqid());
         $data['main_content'] = 'home/blog_detail';
         return view('template-front/template', $data);
     }
 
-    public function profil()
+    public function blog_search()
     {
-        // $data['produk_unggulan'] = $this->db->table('produk_unggulan')->Select('produk_unggulan.*, merek_dagang.nama as nama_merek')->Join('merek_dagang', 'merek_dagang.id = produk_unggulan.id_merek_dagang')->Where('produk_unggulan.status', 1)->orderBy('produk_unggulan.id', 'DESC')->get()->getResult();
-        // $data['blog'] = $this->db->query('SELECT * FROM blog WHERE status=1 ORDER BY id desc LIMIT 3')->getResult();
-        // $data['main_content'] = 'home/index';
-        // $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
-        // return view('home/profil', $data);
+        $q = htmlspecialchars($this->request->getGet('q'), ENT_QUOTES);
+
+        $data['title'] = 'Artikel';
+        $blog = new BlogModel();
+        $data['key'] = $q;
+
+        $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
+        $data['list_blog'] = $blog->Join('blog_tag','blog_tag.blog_id = blog.id')->Where('status', 1)->Like('blog.judul', $q)->orLike('blog.ringkasan', $q)->orderBy('id', 'DESC')->paginate(10, 'blog');
+        $data['pager'] = $blog->pager;
+        $data['tag'] = $this->db->table('blog_tag')->groupBy('name')->get()->getResult();
+        $data['main_content'] = 'home/blog';
+        return view('template-front/template', $data);
     }
 
-    public function produk($id_produk)
+    public function produk()
+    {
+        $data['title'] = 'Produk';
+        $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
+        $data['kategori'] = $this->konfigurasi->getKategoriProduk();
+        $data['list_produk'] = $this->db->table('product')->getWhere(['status' => 1])->getResult();
+        $data['main_content'] = 'home/produk_kategori';
+        return view('template-front/template', $data);
+    }
+
+    public function produk_search()
+    {
+        $data['title'] = 'Produk';
+        $q = htmlspecialchars($this->request->getGet('q'), ENT_QUOTES);
+
+        $data['key'] = $q;
+        $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
+        $data['kategori'] = $this->konfigurasi->getKategoriProduk();
+        $data['list_produk'] = $this->db->table('product')->where('status', 1)->like('nama', $q)->get()->getResult();
+        $data['main_content'] = 'home/produk_kategori';
+        return view('template-front/template', $data);
+    }
+
+    public function produk_by($id_produk)
     {
         $data['title'] = 'Produk';
         $hashids = new Hashids('53qURe_produk', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789');
@@ -154,19 +204,4 @@ class Home extends BaseController
         $data['struktur'] = $this->db->table('pengurus')->get()->getResult();
         return view('home/struktur', $data);
     }
-
-    // public function blog_()
-    // {
-    //     // $data['get'] = $this->serverside->getBlogBy($slug);
-    //     // $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
-    // 	// echo view('home/blog_detail', $data);
-
-    //     $produk = new ProdukModel();
-    //     // echo $slug;
-    //     $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
-    //     $data['list_produk'] = $produk->Select('produk_unggulan.*, merek_dagang.nama as nama_merek')->Join('merek_dagang', 'merek_dagang.id = produk_unggulan.id_merek_dagang')->Where('produk_unggulan.status', 1)->orderBy('produk_unggulan.id', 'DESC')->paginate(12, 'blog');
-    //     $data['pager'] = $produk->pager;
-    //     $data['js'] = array("blog/detail.js?r=" . uniqid());
-    //     return view('home/produk', $data);
-    // }
 }
