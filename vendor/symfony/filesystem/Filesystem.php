@@ -161,12 +161,12 @@ class Filesystem
                 }
             } elseif (is_dir($file)) {
                 if (!$isRecursive) {
-                    $tmpName = \dirname(realpath($file)).'/.'.strrev(strtr(base64_encode(random_bytes(2)), '/=', '-.'));
+                    $tmpName = \dirname(realpath($file)).'/.'.strrev(strtr(base64_encode(random_bytes(2)), '/=', '-_'));
 
                     if (file_exists($tmpName)) {
                         try {
                             self::doRemove([$tmpName], true);
-                        } catch (IOException $e) {
+                        } catch (IOException) {
                         }
                     }
 
@@ -178,8 +178,8 @@ class Filesystem
                     }
                 }
 
-                $files = new \FilesystemIterator($file, \FilesystemIterator::CURRENT_AS_PATHNAME | \FilesystemIterator::SKIP_DOTS);
-                self::doRemove(iterator_to_array($files, true), true);
+                $filesystemIterator = new \FilesystemIterator($file, \FilesystemIterator::CURRENT_AS_PATHNAME | \FilesystemIterator::SKIP_DOTS);
+                self::doRemove(iterator_to_array($filesystemIterator, true), true);
 
                 if (!self::box('rmdir', $file) && file_exists($file) && !$isRecursive) {
                     $lastError = self::$lastError;

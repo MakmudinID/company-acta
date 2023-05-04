@@ -2,9 +2,12 @@
 
 use App\Libraries\Plugins;
 use App\Models\ProdukModel;
+use Hashids\Hashids;
 
 $this->pl = new Plugins();
 $this->produkModel = new ProdukModel();
+$hashids = new Hashids('53qURe_produk', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789');
+
 ?>
 
 <!-- Banner Section -->
@@ -116,7 +119,7 @@ $this->produkModel = new ProdukModel();
                             <div class="icon-box">
                                 <img src="<?= $ph->photo_url ?>" class="img-fluid rounded"></img>
                             </div>
-                            <h5><a href="services-detail.html"><?= $ph->nama; ?></a></h5>
+                            <h5><a href="<?= base_url('produk/' . $hashids->encode($ph->id)) ?>"><?= $ph->nama; ?></a></h5>
                             <div class="text"><?= $ph->ringkasan; ?></div>
                         </div>
                     </div>
