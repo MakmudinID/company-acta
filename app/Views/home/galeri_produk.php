@@ -1,3 +1,11 @@
+<?php
+
+use Hashids\Hashids;
+
+$hashids = new Hashids('53qURe_produk', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789');
+
+?>
+
 <!--Page Title-->
 <section class="page-title">
     <div class="pattern-layer-one" style="background-image: url(assets/images/background/pattern-16.png)"></div>
@@ -33,14 +41,14 @@
 					<div class="case-block mix all <?=$p->kode?> col-lg-4 col-md-6 col-sm-12" style="display: inline-block;">
 						<div class="inner-box">
 							<div class="image">
-								<img src="<?=$p->photo_url?>" alt="">
+								<img src="<?=$p->gallery?>" alt="">
 								<div class="overlay-box">
-									<a href="<?=$p->photo_url?>" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+									<a href="<?=$p->gallery?>" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
 									<div class="content">
-										<h4><a href="projects-detail.html"><?= $p->nama;?></a></h4>
+										<h4><a href="<?= base_url('produk/' . $hashids->encode($p->id)) ?>"><?= $p->nama;?></a></h4>
 										<div class="category"><?= $p->kategori;?></div>
 									</div>
-									<a href="projects-detail.html" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+									<a href="<?= base_url('produk/' . $hashids->encode($p->id)) ?>" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
 								</div>
 							</div>
 						</div>

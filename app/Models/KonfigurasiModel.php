@@ -80,6 +80,15 @@ class KonfigurasiModel extends Model
         return $result;            
     }
 
+    public function getGaleriProduk(){
+        $result = $this->db->query('SELECT product.*, product_category.kode, product_category.nama as kategori, product_gallery.photo_url as gallery
+                        FROM product 
+                        JOIN product_category ON product_category.id = product.id_product_category
+                        JOIN product_gallery ON product_gallery.id_product = product.id
+                        WHERE product.status=1 ORDER BY id_product_category ASC')->getResult();
+        return $result;            
+    }
+
     public function getProdukById($id_product){
         $result = $this->db->query('SELECT product.*, product_category.kode, product_category.nama as kategori
                         FROM product 

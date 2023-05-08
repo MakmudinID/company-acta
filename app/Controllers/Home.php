@@ -59,9 +59,8 @@ class Home extends BaseController
         $data['title'] = 'Profil';
         $data['main_content'] = 'home/galeri_produk';
         $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
-        $data['produk'] = $this->konfigurasi->getProduk();
+        $data['produk'] = $this->konfigurasi->getGaleriProduk();
         $data['kategori'] = $this->db->table('product_category')->getWhere(['status' => '1'])->getResult();
-        $data['js'] = array("blog/detail.js?r=" . uniqid(), "produk/detail.js?r=" . uniqid());
         return view('template-front/template', $data);
     }
 
@@ -72,7 +71,6 @@ class Home extends BaseController
         $data['tag'] = $this->db->table('portfolio_tag')->groupBy('nama')->get()->getResult();
         $data['portfolio'] = $this->db->table('portfolio')->getWhere(['status' => '1'])->getResult();
         $data['konfigurasi'] = $this->db->table('konfigurasi')->getWhere(['id' => 'SET'])->getRow();
-        $data['js'] = array("blog/detail.js?r=" . uniqid(), "produk/detail.js?r=" . uniqid());
         return view('template-front/template', $data);
     }
 

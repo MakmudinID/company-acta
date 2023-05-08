@@ -1,0 +1,308 @@
+ERROR - 2023-05-08 13:43:51 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in D:\project\company-acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\project\company-acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\company-acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\company-acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\company-acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\company-acta\app\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\company-acta\system\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+#6 D:\project\company-acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\project\company-acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\company-acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\project\company-acta\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\comp...')
+#10 {main}
+CRITICAL - 2023-05-08 13:43:51 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `portfolio_tag`
+GROUP BY `nama`', [], false)
+ 2 APPPATH\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-08 13:54:04 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in D:\project\company-acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\project\company-acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\company-acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\company-acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\company-acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\company-acta\app\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\company-acta\system\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+#6 D:\project\company-acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\project\company-acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\company-acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\project\company-acta\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\comp...')
+#10 {main}
+CRITICAL - 2023-05-08 13:54:04 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `portfolio_tag`
+GROUP BY `nama`', [], false)
+ 2 APPPATH\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-08 13:54:52 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in D:\project\company-acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\project\company-acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\company-acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\company-acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\company-acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\company-acta\app\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\company-acta\system\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+#6 D:\project\company-acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\project\company-acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\company-acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\project\company-acta\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\comp...')
+#10 {main}
+CRITICAL - 2023-05-08 13:54:52 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `portfolio_tag`
+GROUP BY `nama`', [], false)
+ 2 APPPATH\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 13:55:26 --> Undefined variable $tag
+in APPPATH\Views\home\portfolio.php on line 30.
+ 1 APPPATH\Views\home\portfolio.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tag', 'APPPATH\\Views\\home\\portfolio.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\portfolio.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('home/portfolio', [], true)
+ 5 APPPATH\Views\template-front\template.php(4): view('home/portfolio')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template-front\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('template-front/template', [], true)
+ 9 APPPATH\Controllers\Home.php(79): view('template-front/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-08 13:56:15 --> mysqli_sql_exception: Unknown column 'name' in 'group statement' in D:\project\company-acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\project\company-acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\company-acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\company-acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\company-acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\company-acta\app\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\company-acta\system\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+#6 D:\project\company-acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\project\company-acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\company-acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\project\company-acta\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\comp...')
+#10 {main}
+CRITICAL - 2023-05-08 13:56:15 --> Unknown column 'name' in 'group statement'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `portfolio_tag`
+GROUP BY `name`', [], false)
+ 2 APPPATH\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-08 13:56:26 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in D:\project\company-acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\project\company-acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\company-acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\company-acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\company-acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\company-acta\app\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\company-acta\system\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+#6 D:\project\company-acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\project\company-acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\company-acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\project\company-acta\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\comp...')
+#10 {main}
+CRITICAL - 2023-05-08 13:56:26 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `portfolio_tag`
+GROUP BY `nama`', [], false)
+ 2 APPPATH\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-08 13:57:29 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in D:\project\company-acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\project\company-acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM p...', 0)
+#1 D:\project\company-acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 D:\project\company-acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 D:\project\company-acta\app\Controllers\Home.php(72): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 D:\project\company-acta\system\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+#5 D:\project\company-acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\project\company-acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\project\company-acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 D:\project\company-acta\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\comp...')
+#9 {main}
+CRITICAL - 2023-05-08 13:57:29 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Controllers\Home.php(72): CodeIgniter\Database\BaseConnection->query('SELECT * FROM portfolio_tag GROUP BY nama')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-08 13:57:33 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in D:\project\company-acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\project\company-acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM p...', 0)
+#1 D:\project\company-acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 D:\project\company-acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 D:\project\company-acta\app\Controllers\Home.php(72): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 D:\project\company-acta\system\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+#5 D:\project\company-acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\project\company-acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\project\company-acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 D:\project\company-acta\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\comp...')
+#9 {main}
+CRITICAL - 2023-05-08 13:57:33 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Controllers\Home.php(72): CodeIgniter\Database\BaseConnection->query('SELECT * FROM portfolio_tag GROUP BY nama')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-08 13:58:08 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in D:\project\company-acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\project\company-acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM p...', 0)
+#1 D:\project\company-acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 D:\project\company-acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 D:\project\company-acta\app\Controllers\Home.php(72): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 D:\project\company-acta\system\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+#5 D:\project\company-acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\project\company-acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\project\company-acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 D:\project\company-acta\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\comp...')
+#9 {main}
+CRITICAL - 2023-05-08 13:58:08 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Controllers\Home.php(72): CodeIgniter\Database\BaseConnection->query('SELECT * FROM portfolio_tag GROUP BY nama')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-08 13:58:25 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in D:\project\company-acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\project\company-acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\company-acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\company-acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\company-acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\company-acta\app\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\company-acta\system\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+#6 D:\project\company-acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\project\company-acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\company-acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\project\company-acta\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\comp...')
+#10 {main}
+CRITICAL - 2023-05-08 13:58:25 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `portfolio_tag`
+GROUP BY `nama`', [], false)
+ 2 APPPATH\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-08 13:58:28 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in D:\project\company-acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\project\company-acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\company-acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\company-acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\company-acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\company-acta\app\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\company-acta\system\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+#6 D:\project\company-acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\project\company-acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\company-acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\project\company-acta\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\comp...')
+#10 {main}
+CRITICAL - 2023-05-08 13:58:28 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `portfolio_tag`
+GROUP BY `nama`', [], false)
+ 2 APPPATH\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-08 13:59:30 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in D:\project\company-acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\project\company-acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\company-acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\company-acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\company-acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\company-acta\app\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\company-acta\system\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+#6 D:\project\company-acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\project\company-acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\company-acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\project\company-acta\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\comp...')
+#10 {main}
+CRITICAL - 2023-05-08 13:59:30 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `portfolio_tag`
+GROUP BY `nama`', [], false)
+ 2 APPPATH\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-05-08 13:59:31 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in D:\project\company-acta\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\project\company-acta\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\project\company-acta\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\project\company-acta\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\project\company-acta\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\company-acta\app\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\company-acta\system\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+#6 D:\project\company-acta\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\project\company-acta\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\company-acta\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\project\company-acta\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\comp...')
+#10 {main}
+CRITICAL - 2023-05-08 13:59:31 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'acta.portfolio_tag.tag_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `portfolio_tag`
+GROUP BY `nama`', [], false)
+ 2 APPPATH\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 14:10:29 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 177.
+ 1 APPPATH\Controllers\Home.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 177)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->produk_by('images', 'background', 'pattern-7.png')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-08 14:10:30 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 177.
+ 1 APPPATH\Controllers\Home.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 177)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->produk_by('images', 'background', 'pattern-8.png')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
