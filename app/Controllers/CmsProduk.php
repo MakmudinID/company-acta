@@ -801,9 +801,9 @@ class CmsProduk extends BaseController
 
     function delete_produk_gallery($id)
     {
+        $hashids = new Hashids('53qURe_gallery', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789');
         $id_ = htmlspecialchars($id, ENT_QUOTES);
-        $encrypter = \Config\Services::encrypter();
-        $id_dec = $encrypter->decrypt(hex2bin($id_));
+        $id_dec = $hashids->decode($id_)[0];
 
         $src = $this->db->table('product_gallery')->getWhere(['id' => $id_dec])->getRow()->photo_url;
         $file_name = '.' . str_replace(base_url('/'), '', $src); // striping host to get relative path
