@@ -142,7 +142,7 @@ $hashids = new Hashids('53qURe_produk', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
                     <div class="inner-box">
                         <h3><?= $p->judul; ?></h3>
                         <div class="text"><?= $p->keterangan; ?></div>
-                        <div class="price"><span>Mulai Dari</span> Rp <?= number_format($p->harga, 0, ',', '.'); ?> </div>
+                        <!-- <div class="price"><span>Mulai Dari</span> Rp <?= number_format($p->harga, 0, ',', '.'); ?> </div> -->
                         <ul class="price-list">
                             <?php foreach ($this->produkModel->fitur_produk($p->id) as $list) : ?>
                                 <li><?= $list->deskripsi; ?></li>

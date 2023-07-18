@@ -65,8 +65,8 @@ $hashids = new Hashids('53qURe_produk', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
                         <div class="inner-column">
                             <h4><?= $produk->nama; ?></h4>
                             <hr>
-                            <div style="font-size: 25px; font-weight:500">Rp <?= number_format($produk->harga_jasa, 0, ',', '.'); ?></div>
-                            <hr>
+                            <!-- <div style="font-size: 25px; font-weight:500">Rp <?= number_format($produk->harga_jasa, 0, ',', '.'); ?></div>
+                            <hr> -->
                             <div class="text"><?= $produk->ringkasan; ?></div>
                             <div class="d-flex">
                                 <div><i class="icon fa fa-bookmark-o"></i> <strong>Kategori: </strong></div>

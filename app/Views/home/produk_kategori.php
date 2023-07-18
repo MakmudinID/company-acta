@@ -46,7 +46,7 @@ $hashids = new Hashids('53qURe_produk', 5, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
                                             <h3 class="title text-center">
                                                 <a href="<?= base_url('produk/' . $hashids->encode($p->id)) ?>"><?= $p->nama ?></a>
                                             </h3>
-                                            <span class="price"><span class="amount"><span class="">Rp </span><?= number_format($p->harga_jasa, 0, ',', '.'); ?></span></span>
+                                            <!-- <span class="price"><span class="amount"><span class="">Rp </span><?= number_format($p->harga_jasa, 0, ',', '.'); ?></span></span> -->
                                         </div>
                                     </div>
                                 </div>
