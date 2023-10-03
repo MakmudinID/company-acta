@@ -88,9 +88,6 @@ jQuery(document).ready(function() {
             deskripsi: {
                 required: true
             },
-            url_youtube: {
-                required: true
-            },
             photo: {
                 required: function() {
                     if ($('#id').val() == '') {
